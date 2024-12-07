@@ -1,0 +1,1830 @@
+[ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 1; ]
+import Toybox.Lang;
+[ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 2; ]
+using Toybox.WatchUi;
+[ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 3; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 4; ]
+using Toybox.Graphics;
+[ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 5; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 7; ]
+module Rez {
+    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 8; ]
+    module Drawables {
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 8; ]
+        <init> {
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 9; @position = 27; initialized = true; ]
+        var FunixLogo as ResourceId;
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 10; @position = 27; initialized = true; ]
+        var Sunrise as ResourceId;
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 11; @position = 27; initialized = true; ]
+        var Sunset as ResourceId;
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 12; @position = 27; initialized = true; ]
+        var Coeur as ResourceId;
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 13; @position = 27; initialized = true; ]
+        var Pas as ResourceId;
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 14; @position = 27; initialized = true; ]
+        var LauncherIcon as ResourceId;
+    }
+    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 17; ]
+    module Fonts {
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 17; ]
+        <init> {
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 18; @position = 27; initialized = true; ]
+        var PasFont as ResourceId;
+    }
+    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 21; ]
+    module Layouts {
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 21; ]
+        <init> {
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 22; ]
+        function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+_home_olivier_eclipse_workspace_Funix_watch_bin_gen_006_B3888_00_source_Rez_mcgen_22_73_51_8_start:
+[ "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" 23 12 ]
+            [ "_home_olivier_eclipse_workspace_Funix_watch_bin_gen_006_B3888_00_source_Rez_mcgen_22_73_51_8_start" "_home_olivier_eclipse_workspace_Funix_watch_bin_gen_006_B3888_00_source_Rez_mcgen_22_73_51_8_stop" ]
+            %local_Rez_Fonts_PasFont.1 = local;
+            %tmp.1 = getm $.Toybox.WatchUi;
+            %tmp.2 = getv function %tmp.1 :loadResource;
+            %tmp.3 = getm $;
+            %tmp.4 = getv %tmp.3 :Rez;
+            %tmp.5 = getv %tmp.4 :Fonts;
+            %tmp.6 = getv %tmp.5 :PasFont;
+            %tmp.7 = invoke %tmp.1 %tmp.2(%tmp.6);
+            %tmp.8 = as %tmp.7 WatchUi.FontResource;
+            lputv %local_Rez_Fonts_PasFont.1 %tmp.8;
+[ "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" 24 12 ]
+            [ "_home_olivier_eclipse_workspace_Funix_watch_bin_gen_006_B3888_00_source_Rez_mcgen_22_73_51_8_start" "_home_olivier_eclipse_workspace_Funix_watch_bin_gen_006_B3888_00_source_Rez_mcgen_22_73_51_8_stop" ]
+            %rez_cmp_local_text_TimeLabel.2 = local;
+            %tmp.11 = getm $.Toybox.WatchUi;
+            %tmp.12 = getv function ? %tmp.11 :Text;
+            %tmp.13 = newd 6;
+            %tmp.15 = const :identifier;
+            %tmp.16 = "TimeLabel";
+            %tmp.17 = dup %tmp.13;
+            %tmp.18 = aputv %tmp.17 %tmp.15 %tmp.16;
+            %tmp.20 = const :color;
+            %tmp.21 = getm $.Toybox.Graphics;
+            %tmp.22 = getv %tmp.21 :COLOR_WHITE;
+            %tmp.23 = dup %tmp.18;
+            %tmp.24 = aputv %tmp.23 %tmp.20 %tmp.22;
+            %tmp.26 = const :locX;
+            %tmp.27 = 67;
+            %tmp.28 = dup %tmp.24;
+            %tmp.29 = aputv %tmp.28 %tmp.26 %tmp.27;
+            %tmp.31 = const :locY;
+            %tmp.32 = 72;
+            %tmp.33 = dup %tmp.29;
+            %tmp.34 = aputv %tmp.33 %tmp.31 %tmp.32;
+            %tmp.36 = const :justification;
+            %tmp.37 = getm $.Toybox.Graphics;
+            %tmp.38 = getv %tmp.37 :TEXT_JUSTIFY_CENTER;
+            %tmp.39 = dup %tmp.34;
+            %tmp.40 = aputv %tmp.39 %tmp.36 %tmp.38;
+            %tmp.42 = const :font;
+            %tmp.43 = getm $.Toybox.Graphics;
+            %tmp.44 = getv %tmp.43 :FONT_SYSTEM_NUMBER_THAI_HOT;
+            %tmp.45 = dup %tmp.40;
+            %tmp.46 = aputv %tmp.45 %tmp.42 %tmp.44;
+            %tmp.9 = newc %tmp.12 (%tmp.46);
+            lputv %rez_cmp_local_text_TimeLabel.2 %tmp.9;
+[ "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" 26 12 ]
+            [ "_home_olivier_eclipse_workspace_Funix_watch_bin_gen_006_B3888_00_source_Rez_mcgen_22_73_51_8_start" "_home_olivier_eclipse_workspace_Funix_watch_bin_gen_006_B3888_00_source_Rez_mcgen_22_73_51_8_stop" ]
+            %rez_cmp_local_text_SecondLabel.3 = local;
+            %tmp.49 = getm $.Toybox.WatchUi;
+            %tmp.50 = getv function ? %tmp.49 :Text;
+            %tmp.51 = newd 6;
+            %tmp.53 = const :identifier;
+            %tmp.54 = "SecondLabel";
+            %tmp.55 = dup %tmp.51;
+            %tmp.56 = aputv %tmp.55 %tmp.53 %tmp.54;
+            %tmp.58 = const :color;
+            %tmp.59 = getm $.Toybox.Graphics;
+            %tmp.60 = getv %tmp.59 :COLOR_BLUE;
+            %tmp.61 = dup %tmp.56;
+            %tmp.62 = aputv %tmp.61 %tmp.58 %tmp.60;
+            %tmp.64 = const :locX;
+            %tmp.65 = 119;
+            %tmp.66 = dup %tmp.62;
+            %tmp.67 = aputv %tmp.66 %tmp.64 %tmp.65;
+            %tmp.69 = const :locY;
+            %tmp.70 = 75;
+            %tmp.71 = dup %tmp.67;
+            %tmp.72 = aputv %tmp.71 %tmp.69 %tmp.70;
+            %tmp.74 = const :justification;
+            %tmp.75 = getm $.Toybox.Graphics;
+            %tmp.76 = getv %tmp.75 :TEXT_JUSTIFY_LEFT;
+            %tmp.77 = dup %tmp.72;
+            %tmp.78 = aputv %tmp.77 %tmp.74 %tmp.76;
+            %tmp.80 = const :font;
+            %tmp.81 = getm $.Toybox.Graphics;
+            %tmp.82 = getv %tmp.81 :FONT_SYSTEM_NUMBER_MEDIUM;
+            %tmp.83 = dup %tmp.78;
+            %tmp.84 = aputv %tmp.83 %tmp.80 %tmp.82;
+            %tmp.47 = newc %tmp.50 (%tmp.84);
+            lputv %rez_cmp_local_text_SecondLabel.3 %tmp.47;
+[ "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" 28 12 ]
+            [ "_home_olivier_eclipse_workspace_Funix_watch_bin_gen_006_B3888_00_source_Rez_mcgen_22_73_51_8_start" "_home_olivier_eclipse_workspace_Funix_watch_bin_gen_006_B3888_00_source_Rez_mcgen_22_73_51_8_stop" ]
+            %rez_cmp_local_text_BatteryDisplay.4 = local;
+            %tmp.87 = getm $.Toybox.WatchUi;
+            %tmp.88 = getv function ? %tmp.87 :Text;
+            %tmp.89 = newd 6;
+            %tmp.91 = const :identifier;
+            %tmp.92 = "BatteryDisplay";
+            %tmp.93 = dup %tmp.89;
+            %tmp.94 = aputv %tmp.93 %tmp.91 %tmp.92;
+            %tmp.96 = const :color;
+            %tmp.97 = getm $.Toybox.Graphics;
+            %tmp.98 = getv %tmp.97 :COLOR_BLUE;
+            %tmp.99 = dup %tmp.94;
+            %tmp.100 = aputv %tmp.99 %tmp.96 %tmp.98;
+            %tmp.102 = const :locX;
+            %tmp.103 = 100;
+            %tmp.104 = dup %tmp.100;
+            %tmp.105 = aputv %tmp.104 %tmp.102 %tmp.103;
+            %tmp.107 = const :locY;
+            %tmp.108 = 59;
+            %tmp.109 = dup %tmp.105;
+            %tmp.110 = aputv %tmp.109 %tmp.107 %tmp.108;
+            %tmp.112 = const :justification;
+            %tmp.113 = getm $.Toybox.Graphics;
+            %tmp.114 = getv %tmp.113 :TEXT_JUSTIFY_CENTER;
+            %tmp.115 = dup %tmp.110;
+            %tmp.116 = aputv %tmp.115 %tmp.112 %tmp.114;
+            %tmp.118 = const :font;
+            %tmp.119 = getm $.Toybox.Graphics;
+            %tmp.120 = getv %tmp.119 :FONT_XTINY;
+            %tmp.121 = dup %tmp.116;
+            %tmp.122 = aputv %tmp.121 %tmp.118 %tmp.120;
+            %tmp.85 = newc %tmp.88 (%tmp.122);
+            lputv %rez_cmp_local_text_BatteryDisplay.4 %tmp.85;
+[ "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" 30 12 ]
+            [ "_home_olivier_eclipse_workspace_Funix_watch_bin_gen_006_B3888_00_source_Rez_mcgen_22_73_51_8_start" "_home_olivier_eclipse_workspace_Funix_watch_bin_gen_006_B3888_00_source_Rez_mcgen_22_73_51_8_stop" ]
+            %rez_cmp_local_text_DateDisplay.5 = local;
+            %tmp.125 = getm $.Toybox.WatchUi;
+            %tmp.126 = getv function ? %tmp.125 :Text;
+            %tmp.127 = newd 6;
+            %tmp.129 = const :identifier;
+            %tmp.130 = "DateDisplay";
+            %tmp.131 = dup %tmp.127;
+            %tmp.132 = aputv %tmp.131 %tmp.129 %tmp.130;
+            %tmp.134 = const :color;
+            %tmp.135 = getm $.Toybox.Graphics;
+            %tmp.136 = getv %tmp.135 :COLOR_BLUE;
+            %tmp.137 = dup %tmp.132;
+            %tmp.138 = aputv %tmp.137 %tmp.134 %tmp.136;
+            %tmp.140 = const :locX;
+            %tmp.141 = 176;
+            %tmp.142 = 0.5;
+            %tmp.143 = mul %tmp.141 %tmp.142;
+            %tmp.144 = dup %tmp.138;
+            %tmp.145 = aputv %tmp.144 %tmp.140 %tmp.143;
+            %tmp.147 = const :locY;
+            %tmp.148 = getm $.Toybox.WatchUi;
+            %tmp.149 = getv %tmp.148 :LAYOUT_VALIGN_BOTTOM;
+            %tmp.150 = dup %tmp.145;
+            %tmp.151 = aputv %tmp.150 %tmp.147 %tmp.149;
+            %tmp.153 = const :justification;
+            %tmp.154 = getm $.Toybox.Graphics;
+            %tmp.155 = getv %tmp.154 :TEXT_JUSTIFY_CENTER;
+            %tmp.156 = dup %tmp.151;
+            %tmp.157 = aputv %tmp.156 %tmp.153 %tmp.155;
+            %tmp.159 = const :font;
+            %tmp.160 = getm $.Toybox.Graphics;
+            %tmp.161 = getv %tmp.160 :FONT_XTINY;
+            %tmp.162 = dup %tmp.157;
+            %tmp.163 = aputv %tmp.162 %tmp.159 %tmp.161;
+            %tmp.123 = newc %tmp.126 (%tmp.163);
+            lputv %rez_cmp_local_text_DateDisplay.5 %tmp.123;
+[ "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" 32 12 ]
+            [ "_home_olivier_eclipse_workspace_Funix_watch_bin_gen_006_B3888_00_source_Rez_mcgen_22_73_51_8_start" "_home_olivier_eclipse_workspace_Funix_watch_bin_gen_006_B3888_00_source_Rez_mcgen_22_73_51_8_stop" ]
+            %rez_cmp_local_text_Ephemeride.6 = local;
+            %tmp.166 = getm $.Toybox.WatchUi;
+            %tmp.167 = getv function ? %tmp.166 :Text;
+            %tmp.168 = newd 6;
+            %tmp.170 = const :identifier;
+            %tmp.171 = "Ephemeride";
+            %tmp.172 = dup %tmp.168;
+            %tmp.173 = aputv %tmp.172 %tmp.170 %tmp.171;
+            %tmp.175 = const :color;
+            %tmp.176 = getm $.Toybox.Graphics;
+            %tmp.177 = getv %tmp.176 :COLOR_BLUE;
+            %tmp.178 = dup %tmp.173;
+            %tmp.179 = aputv %tmp.178 %tmp.175 %tmp.177;
+            %tmp.181 = const :locX;
+            %tmp.182 = 176;
+            %tmp.183 = 0.5;
+            %tmp.184 = mul %tmp.182 %tmp.183;
+            %tmp.185 = dup %tmp.179;
+            %tmp.186 = aputv %tmp.185 %tmp.181 %tmp.184;
+            %tmp.188 = const :locY;
+            %tmp.189 = 127;
+            %tmp.190 = dup %tmp.186;
+            %tmp.191 = aputv %tmp.190 %tmp.188 %tmp.189;
+            %tmp.193 = const :justification;
+            %tmp.194 = getm $.Toybox.Graphics;
+            %tmp.195 = getv %tmp.194 :TEXT_JUSTIFY_CENTER;
+            %tmp.196 = dup %tmp.191;
+            %tmp.197 = aputv %tmp.196 %tmp.193 %tmp.195;
+            %tmp.199 = const :font;
+            %tmp.200 = getm $.Toybox.Graphics;
+            %tmp.201 = getv %tmp.200 :FONT_XTINY;
+            %tmp.202 = dup %tmp.197;
+            %tmp.203 = aputv %tmp.202 %tmp.199 %tmp.201;
+            %tmp.164 = newc %tmp.167 (%tmp.203);
+            lputv %rez_cmp_local_text_Ephemeride.6 %tmp.164;
+[ "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" 34 12 ]
+            [ "_home_olivier_eclipse_workspace_Funix_watch_bin_gen_006_B3888_00_source_Rez_mcgen_22_73_51_8_start" "_home_olivier_eclipse_workspace_Funix_watch_bin_gen_006_B3888_00_source_Rez_mcgen_22_73_51_8_stop" ]
+            %rez_cmp_local_text_HeartBeat.7 = local;
+            %tmp.206 = getm $.Toybox.WatchUi;
+            %tmp.207 = getv function ? %tmp.206 :Text;
+            %tmp.208 = newd 6;
+            %tmp.210 = const :identifier;
+            %tmp.211 = "HeartBeat";
+            %tmp.212 = dup %tmp.208;
+            %tmp.213 = aputv %tmp.212 %tmp.210 %tmp.211;
+            %tmp.215 = const :color;
+            %tmp.216 = getm $.Toybox.Graphics;
+            %tmp.217 = getv %tmp.216 :COLOR_BLUE;
+            %tmp.218 = dup %tmp.213;
+            %tmp.219 = aputv %tmp.218 %tmp.215 %tmp.217;
+            %tmp.221 = const :locX;
+            %tmp.222 = 152;
+            %tmp.223 = dup %tmp.219;
+            %tmp.224 = aputv %tmp.223 %tmp.221 %tmp.222;
+            %tmp.226 = const :locY;
+            %tmp.227 = 7;
+            %tmp.228 = dup %tmp.224;
+            %tmp.229 = aputv %tmp.228 %tmp.226 %tmp.227;
+            %tmp.231 = const :justification;
+            %tmp.232 = getm $.Toybox.Graphics;
+            %tmp.233 = getv %tmp.232 :TEXT_JUSTIFY_CENTER;
+            %tmp.234 = dup %tmp.229;
+            %tmp.235 = aputv %tmp.234 %tmp.231 %tmp.233;
+            %tmp.237 = const :font;
+            %tmp.238 = getm $.Toybox.Graphics;
+            %tmp.239 = getv %tmp.238 :FONT_XTINY;
+            %tmp.240 = dup %tmp.235;
+            %tmp.241 = aputv %tmp.240 %tmp.237 %tmp.239;
+            %tmp.204 = newc %tmp.207 (%tmp.241);
+            lputv %rez_cmp_local_text_HeartBeat.7 %tmp.204;
+[ "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" 36 12 ]
+            [ "_home_olivier_eclipse_workspace_Funix_watch_bin_gen_006_B3888_00_source_Rez_mcgen_22_73_51_8_start" "_home_olivier_eclipse_workspace_Funix_watch_bin_gen_006_B3888_00_source_Rez_mcgen_22_73_51_8_stop" ]
+            %rez_cmp_local_text_Pas.8 = local;
+            %tmp.244 = getm $.Toybox.WatchUi;
+            %tmp.245 = getv function ? %tmp.244 :Text;
+            %tmp.246 = newd 6;
+            %tmp.248 = const :identifier;
+            %tmp.249 = "Pas";
+            %tmp.250 = dup %tmp.246;
+            %tmp.251 = aputv %tmp.250 %tmp.248 %tmp.249;
+            %tmp.253 = const :color;
+            %tmp.254 = getm $.Toybox.Graphics;
+            %tmp.255 = getv %tmp.254 :COLOR_BLUE;
+            %tmp.256 = dup %tmp.251;
+            %tmp.257 = aputv %tmp.256 %tmp.253 %tmp.255;
+            %tmp.259 = const :locX;
+            %tmp.260 = 150;
+            %tmp.261 = dup %tmp.257;
+            %tmp.262 = aputv %tmp.261 %tmp.259 %tmp.260;
+            %tmp.264 = const :locY;
+            %tmp.265 = 32;
+            %tmp.266 = dup %tmp.262;
+            %tmp.267 = aputv %tmp.266 %tmp.264 %tmp.265;
+            %tmp.269 = const :justification;
+            %tmp.270 = getm $.Toybox.Graphics;
+            %tmp.271 = getv %tmp.270 :TEXT_JUSTIFY_CENTER;
+            %tmp.272 = dup %tmp.267;
+            %tmp.273 = aputv %tmp.272 %tmp.269 %tmp.271;
+            %tmp.275 = const :font;
+            %tmp.277 = lgetv %local_Rez_Fonts_PasFont.1;
+            %tmp.278 = dup %tmp.273;
+            %tmp.279 = aputv %tmp.278 %tmp.275 %tmp.277;
+            %tmp.242 = newc %tmp.245 (%tmp.279);
+            lputv %rez_cmp_local_text_Pas.8 %tmp.242;
+[ "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" 38 12 ]
+            [ "_home_olivier_eclipse_workspace_Funix_watch_bin_gen_006_B3888_00_source_Rez_mcgen_22_73_51_8_start" "_home_olivier_eclipse_workspace_Funix_watch_bin_gen_006_B3888_00_source_Rez_mcgen_22_73_51_8_stop" ]
+            %rez_cmp_local_custom_drawable_batterie.9 = local;
+            %tmp.283 = getv ? :Battery;
+            %tmp.284 = newd 5;
+            %tmp.286 = const :identifier;
+            %tmp.287 = "batterie";
+            %tmp.288 = dup %tmp.284;
+            %tmp.289 = aputv %tmp.288 %tmp.286 %tmp.287;
+            %tmp.291 = const :width;
+            %tmp.292 = 25;
+            %tmp.293 = dup %tmp.289;
+            %tmp.294 = aputv %tmp.293 %tmp.291 %tmp.292;
+            %tmp.296 = const :locX;
+            %tmp.297 = 62;
+            %tmp.298 = dup %tmp.294;
+            %tmp.299 = aputv %tmp.298 %tmp.296 %tmp.297;
+            %tmp.301 = const :locY;
+            %tmp.302 = 67;
+            %tmp.303 = dup %tmp.299;
+            %tmp.304 = aputv %tmp.303 %tmp.301 %tmp.302;
+            %tmp.306 = const :height;
+            %tmp.307 = 10;
+            %tmp.308 = dup %tmp.304;
+            %tmp.309 = aputv %tmp.308 %tmp.306 %tmp.307;
+            %tmp.280 = newc %tmp.283 (%tmp.309);
+            lputv %rez_cmp_local_custom_drawable_batterie.9 %tmp.280;
+[ "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" 40 12 ]
+            [ "_home_olivier_eclipse_workspace_Funix_watch_bin_gen_006_B3888_00_source_Rez_mcgen_22_73_51_8_start" "_home_olivier_eclipse_workspace_Funix_watch_bin_gen_006_B3888_00_source_Rez_mcgen_22_73_51_8_stop" ]
+            %rez_cmp_local_bitmap_FunixLogo.10 = local;
+            %tmp.312 = getm $.Toybox.WatchUi;
+            %tmp.313 = getv function ? %tmp.312 :Bitmap;
+            %tmp.314 = newd 4;
+            %tmp.316 = const :identifier;
+            %tmp.317 = "FunixLogo";
+            %tmp.318 = dup %tmp.314;
+            %tmp.319 = aputv %tmp.318 %tmp.316 %tmp.317;
+            %tmp.321 = const :rezId;
+            %tmp.322 = getm $;
+            %tmp.323 = getv %tmp.322 :Rez;
+            %tmp.324 = getv %tmp.323 :Drawables;
+            %tmp.325 = getv %tmp.324 :FunixLogo;
+            %tmp.326 = dup %tmp.319;
+            %tmp.327 = aputv %tmp.326 %tmp.321 %tmp.325;
+            %tmp.329 = const :locX;
+            %tmp.330 = 20;
+            %tmp.331 = dup %tmp.327;
+            %tmp.332 = aputv %tmp.331 %tmp.329 %tmp.330;
+            %tmp.334 = const :locY;
+            %tmp.335 = 4;
+            %tmp.336 = dup %tmp.332;
+            %tmp.337 = aputv %tmp.336 %tmp.334 %tmp.335;
+            %tmp.310 = newc %tmp.313 (%tmp.337);
+            lputv %rez_cmp_local_bitmap_FunixLogo.10 %tmp.310;
+[ "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" 42 12 ]
+            [ "_home_olivier_eclipse_workspace_Funix_watch_bin_gen_006_B3888_00_source_Rez_mcgen_22_73_51_8_start" "_home_olivier_eclipse_workspace_Funix_watch_bin_gen_006_B3888_00_source_Rez_mcgen_22_73_51_8_stop" ]
+            %rez_cmp_local_bitmap_Sunrise.11 = local;
+            %tmp.340 = getm $.Toybox.WatchUi;
+            %tmp.341 = getv function ? %tmp.340 :Bitmap;
+            %tmp.342 = newd 4;
+            %tmp.344 = const :identifier;
+            %tmp.345 = "Sunrise";
+            %tmp.346 = dup %tmp.342;
+            %tmp.347 = aputv %tmp.346 %tmp.344 %tmp.345;
+            %tmp.349 = const :rezId;
+            %tmp.350 = getm $;
+            %tmp.351 = getv %tmp.350 :Rez;
+            %tmp.352 = getv %tmp.351 :Drawables;
+            %tmp.353 = getv %tmp.352 :Sunrise;
+            %tmp.354 = dup %tmp.347;
+            %tmp.355 = aputv %tmp.354 %tmp.349 %tmp.353;
+            %tmp.357 = const :locX;
+            %tmp.358 = 20;
+            %tmp.359 = dup %tmp.355;
+            %tmp.360 = aputv %tmp.359 %tmp.357 %tmp.358;
+            %tmp.362 = const :locY;
+            %tmp.363 = 130;
+            %tmp.364 = dup %tmp.360;
+            %tmp.365 = aputv %tmp.364 %tmp.362 %tmp.363;
+            %tmp.338 = newc %tmp.341 (%tmp.365);
+            lputv %rez_cmp_local_bitmap_Sunrise.11 %tmp.338;
+[ "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" 44 12 ]
+            [ "_home_olivier_eclipse_workspace_Funix_watch_bin_gen_006_B3888_00_source_Rez_mcgen_22_73_51_8_start" "_home_olivier_eclipse_workspace_Funix_watch_bin_gen_006_B3888_00_source_Rez_mcgen_22_73_51_8_stop" ]
+            %rez_cmp_local_bitmap_Sunset.12 = local;
+            %tmp.368 = getm $.Toybox.WatchUi;
+            %tmp.369 = getv function ? %tmp.368 :Bitmap;
+            %tmp.370 = newd 4;
+            %tmp.372 = const :identifier;
+            %tmp.373 = "Sunset";
+            %tmp.374 = dup %tmp.370;
+            %tmp.375 = aputv %tmp.374 %tmp.372 %tmp.373;
+            %tmp.377 = const :rezId;
+            %tmp.378 = getm $;
+            %tmp.379 = getv %tmp.378 :Rez;
+            %tmp.380 = getv %tmp.379 :Drawables;
+            %tmp.381 = getv %tmp.380 :Sunset;
+            %tmp.382 = dup %tmp.375;
+            %tmp.383 = aputv %tmp.382 %tmp.377 %tmp.381;
+            %tmp.385 = const :locX;
+            %tmp.386 = 85;
+            %tmp.387 = dup %tmp.383;
+            %tmp.388 = aputv %tmp.387 %tmp.385 %tmp.386;
+            %tmp.390 = const :locY;
+            %tmp.391 = 130;
+            %tmp.392 = dup %tmp.388;
+            %tmp.393 = aputv %tmp.392 %tmp.390 %tmp.391;
+            %tmp.366 = newc %tmp.369 (%tmp.393);
+            lputv %rez_cmp_local_bitmap_Sunset.12 %tmp.366;
+[ "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" 46 12 ]
+            [ "_home_olivier_eclipse_workspace_Funix_watch_bin_gen_006_B3888_00_source_Rez_mcgen_22_73_51_8_start" "_home_olivier_eclipse_workspace_Funix_watch_bin_gen_006_B3888_00_source_Rez_mcgen_22_73_51_8_stop" ]
+            %rez_cmp_local_bitmap_Coeur.13 = local;
+            %tmp.396 = getm $.Toybox.WatchUi;
+            %tmp.397 = getv function ? %tmp.396 :Bitmap;
+            %tmp.398 = newd 4;
+            %tmp.400 = const :identifier;
+            %tmp.401 = "Coeur";
+            %tmp.402 = dup %tmp.398;
+            %tmp.403 = aputv %tmp.402 %tmp.400 %tmp.401;
+            %tmp.405 = const :rezId;
+            %tmp.406 = getm $;
+            %tmp.407 = getv %tmp.406 :Rez;
+            %tmp.408 = getv %tmp.407 :Drawables;
+            %tmp.409 = getv %tmp.408 :Coeur;
+            %tmp.410 = dup %tmp.403;
+            %tmp.411 = aputv %tmp.410 %tmp.405 %tmp.409;
+            %tmp.413 = const :locX;
+            %tmp.414 = 120;
+            %tmp.415 = dup %tmp.411;
+            %tmp.416 = aputv %tmp.415 %tmp.413 %tmp.414;
+            %tmp.418 = const :locY;
+            %tmp.419 = 12;
+            %tmp.420 = dup %tmp.416;
+            %tmp.421 = aputv %tmp.420 %tmp.418 %tmp.419;
+            %tmp.394 = newc %tmp.397 (%tmp.421);
+            lputv %rez_cmp_local_bitmap_Coeur.13 %tmp.394;
+[ "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" 48 12 ]
+            [ "_home_olivier_eclipse_workspace_Funix_watch_bin_gen_006_B3888_00_source_Rez_mcgen_22_73_51_8_start" "_home_olivier_eclipse_workspace_Funix_watch_bin_gen_006_B3888_00_source_Rez_mcgen_22_73_51_8_stop" ]
+            %rez_cmp_local_bitmap_Pas.14 = local;
+            %tmp.424 = getm $.Toybox.WatchUi;
+            %tmp.425 = getv function ? %tmp.424 :Bitmap;
+            %tmp.426 = newd 4;
+            %tmp.428 = const :identifier;
+            %tmp.429 = "Pas";
+            %tmp.430 = dup %tmp.426;
+            %tmp.431 = aputv %tmp.430 %tmp.428 %tmp.429;
+            %tmp.433 = const :rezId;
+            %tmp.434 = getm $;
+            %tmp.435 = getv %tmp.434 :Rez;
+            %tmp.436 = getv %tmp.435 :Drawables;
+            %tmp.437 = getv %tmp.436 :Pas;
+            %tmp.438 = dup %tmp.431;
+            %tmp.439 = aputv %tmp.438 %tmp.433 %tmp.437;
+            %tmp.441 = const :locX;
+            %tmp.442 = 120;
+            %tmp.443 = dup %tmp.439;
+            %tmp.444 = aputv %tmp.443 %tmp.441 %tmp.442;
+            %tmp.446 = const :locY;
+            %tmp.447 = 30;
+            %tmp.448 = dup %tmp.444;
+            %tmp.449 = aputv %tmp.448 %tmp.446 %tmp.447;
+            %tmp.422 = newc %tmp.425 (%tmp.449);
+            lputv %rez_cmp_local_bitmap_Pas.14 %tmp.422;
+[ "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" 50 12 ]
+            %tmp.450 = newa 13 Array<WatchUi.Drawable>;
+            %tmp.452 = lgetv %rez_cmp_local_text_TimeLabel.2;
+            %tmp.453 = dup %tmp.450;
+            %tmp.454 = aputv %tmp.453 0 %tmp.452;
+            %tmp.456 = lgetv %rez_cmp_local_text_SecondLabel.3;
+            %tmp.457 = dup %tmp.454;
+            %tmp.458 = aputv %tmp.457 1 %tmp.456;
+            %tmp.460 = lgetv %rez_cmp_local_text_BatteryDisplay.4;
+            %tmp.461 = dup %tmp.458;
+            %tmp.462 = aputv %tmp.461 2 %tmp.460;
+            %tmp.464 = lgetv %rez_cmp_local_text_DateDisplay.5;
+            %tmp.465 = dup %tmp.462;
+            %tmp.466 = aputv %tmp.465 3 %tmp.464;
+            %tmp.468 = lgetv %rez_cmp_local_text_Ephemeride.6;
+            %tmp.469 = dup %tmp.466;
+            %tmp.470 = aputv %tmp.469 4 %tmp.468;
+            %tmp.472 = lgetv %rez_cmp_local_text_HeartBeat.7;
+            %tmp.473 = dup %tmp.470;
+            %tmp.474 = aputv %tmp.473 5 %tmp.472;
+            %tmp.476 = lgetv %rez_cmp_local_text_Pas.8;
+            %tmp.477 = dup %tmp.474;
+            %tmp.478 = aputv %tmp.477 6 %tmp.476;
+            %tmp.480 = lgetv %rez_cmp_local_custom_drawable_batterie.9;
+            %tmp.481 = dup %tmp.478;
+            %tmp.482 = aputv %tmp.481 7 %tmp.480;
+            %tmp.484 = lgetv %rez_cmp_local_bitmap_FunixLogo.10;
+            %tmp.485 = dup %tmp.482;
+            %tmp.486 = aputv %tmp.485 8 %tmp.484;
+            %tmp.488 = lgetv %rez_cmp_local_bitmap_Sunrise.11;
+            %tmp.489 = dup %tmp.486;
+            %tmp.490 = aputv %tmp.489 9 %tmp.488;
+            %tmp.492 = lgetv %rez_cmp_local_bitmap_Sunset.12;
+            %tmp.493 = dup %tmp.490;
+            %tmp.494 = aputv %tmp.493 10 %tmp.492;
+            %tmp.496 = lgetv %rez_cmp_local_bitmap_Coeur.13;
+            %tmp.497 = dup %tmp.494;
+            %tmp.498 = aputv %tmp.497 11 %tmp.496;
+            %tmp.500 = lgetv %rez_cmp_local_bitmap_Pas.14;
+            %tmp.501 = dup %tmp.498;
+            %tmp.502 = aputv %tmp.501 12 %tmp.500;
+            ret %tmp.502;
+_home_olivier_eclipse_workspace_Funix_watch_bin_gen_006_B3888_00_source_Rez_mcgen_22_73_51_8_stop:
+        }
+    }
+    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 54; ]
+    module Strings {
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 54; ]
+        <init> {
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 55; @position = 27; initialized = true; ]
+        var AppName as ResourceId;
+    }
+    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 58; ]
+    module Styles {
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 58; ]
+        <init> {
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 59; ]
+        module prompt_font_enhanced_readability__body_with_title {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 59; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 60; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 63; ]
+        module system_size__menu_header {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 63; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 64; @position = 18; ]
+            const width as Number = 175;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 65; @position = 18; ]
+            const height as Number = 62;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 68; ]
+        module system_loc__hint_button_left_bottom {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 68; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 69; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 72; ]
+        module prompt_font_enhanced_readability__body_no_title {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 72; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 73; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 76; ]
+        module prompt_loc__body_no_title {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 76; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 77; @position = 18; ]
+            const x as Number = 5;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 78; @position = 18; ]
+            const y as Number = 77;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 81; ]
+        module system_icon_dark__about {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 81; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 82; @position = 18; ]
+            const filename as String = "/home/olivier/.Garmin/ConnectIQ/Devices/instinct2/system_icon_dark__about.svg";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 83; @position = 18; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 84; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 85; @position = 18; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 88; ]
+        module system_icon_light__question {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 88; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 89; @position = 18; ]
+            const filename as String = "/home/olivier/.Garmin/ConnectIQ/Devices/instinct2/system_icon_light__question.svg";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 90; @position = 18; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 91; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 92; @position = 18; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 95; ]
+        module system_loc__hint_button_left_top {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 95; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 96; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 99; ]
+        module prompt_font__title {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 99; ]
+            <init> {
+[ "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" 100 18 ]
+                %tmp.503 = getm $.Toybox.Graphics;
+                %tmp.504 = getv %tmp.503 :TEXT_JUSTIFY_RIGHT;
+                %tmp.505 = getm $.Toybox.Graphics;
+                %tmp.506 = getv %tmp.505 :TEXT_JUSTIFY_VCENTER;
+                %tmp.507 = bitor %tmp.504 %tmp.506;
+                putv self :justification %tmp.507;
+[ "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" 101 18 ]
+                %tmp.508 = getm $.Toybox.Graphics;
+                %tmp.509 = getv %tmp.508 :FONT_TINY;
+                putv self :font %tmp.509;
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 100; @position = 18; ]
+            const justification;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 101; @position = 18; ]
+            const font;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 104; ]
+        module system_icon_dark__discard {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 104; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 105; @position = 18; ]
+            const filename as String = "/home/olivier/.Garmin/ConnectIQ/Devices/instinct2/system_icon_dark__discard.svg";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 106; @position = 18; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 107; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 108; @position = 18; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 111; ]
+        module system_size__menu_item {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 111; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 112; @position = 18; ]
+            const width as Number = 175;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 113; @position = 18; ]
+            const height as Number = 58;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 116; ]
+        module system_color_dark__text {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 116; ]
+            <init> {
+[ "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" 118 18 ]
+                %tmp.510 = getm $.Toybox.Graphics;
+                %tmp.511 = getv %tmp.510 :COLOR_TRANSPARENT;
+                putv self :background %tmp.511;
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 117; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 118; @position = 18; ]
+            const background;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 121; ]
+        module system_icon_destructive__discard {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 121; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 122; @position = 18; ]
+            const filename as String = "/home/olivier/.Garmin/ConnectIQ/Devices/instinct2/system_icon_dark__discard.svg";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 123; @position = 18; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 124; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 125; @position = 18; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 128; ]
+        module system_icon_dark__hint_action_menu {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 128; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 129; @position = 18; ]
+            const filename as String = "/home/olivier/.Garmin/ConnectIQ/Devices/instinct2/system_icon_dark__hint_button_right_top.svg";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 130; @position = 18; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 131; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 132; @position = 18; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 135; ]
+        module prompt_size__title {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 135; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 136; @position = 18; ]
+            const width as Number = 67;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 137; @position = 18; ]
+            const height as Number = 60;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 140; ]
+        module confirmation_font__body {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 140; ]
+            <init> {
+[ "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" 141 18 ]
+                %tmp.512 = getm $.Toybox.Graphics;
+                %tmp.513 = getv %tmp.512 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.513;
+[ "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" 142 18 ]
+                %tmp.514 = getm $.Toybox.Graphics;
+                %tmp.515 = getv %tmp.514 :FONT_XTINY;
+                putv self :font %tmp.515;
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 141; @position = 18; ]
+            const justification;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 142; @position = 18; ]
+            const font;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 145; ]
+        module system_color_dark__background {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 145; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 146; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 147; @position = 18; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 150; ]
+        module system_icon_destructive__hint_button_left_top {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 150; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 151; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 154; ]
+        module system_size__launch_icon {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 154; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 155; @position = 18; ]
+            const scaleX as Number = 62;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 156; @position = 18; ]
+            const scaleY as Number = 62;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 157; @position = 18; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 160; ]
+        module confirmation_input__confirm {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 160; ]
+            <init> {
+[ "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" 161 18 ]
+                %tmp.516 = getm $.Toybox.WatchUi;
+                %tmp.517 = getv %tmp.516 :KEY_ENTER;
+                putv self :button %tmp.517;
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 161; @position = 18; ]
+            const button;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 164; ]
+        module prompt_font__body_with_title {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 164; ]
+            <init> {
+[ "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" 165 18 ]
+                %tmp.518 = getm $.Toybox.Graphics;
+                %tmp.519 = getv %tmp.518 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.519;
+[ "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" 166 18 ]
+                %tmp.520 = getm $.Toybox.Graphics;
+                %tmp.521 = getv %tmp.520 :FONT_TINY;
+                putv self :font %tmp.521;
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 165; @position = 18; ]
+            const justification;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 166; @position = 18; ]
+            const font;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 169; ]
+        module confirmation_loc__body {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 169; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 170; @position = 18; ]
+            const x as Number = 2;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 171; @position = 18; ]
+            const y as Number = 81;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 174; ]
+        module system_icon_destructive__hint_button_left_bottom {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 174; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 175; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 178; ]
+        module prompt_color_dark__background {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 178; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 179; @position = 18; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 182; ]
+        module system_loc__hint_action_menu {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 182; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 183; @position = 18; ]
+            const x as Number = 166;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 184; @position = 18; ]
+            const y as Number = 31;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 185; @position = 18; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 186; @position = 18; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 189; ]
+        module confirmation_icon__hint_confirm {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 189; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 190; @position = 18; ]
+            const filename as String = "/home/olivier/.Garmin/ConnectIQ/Devices/instinct2/confirmation_icon__hint_completion.svg";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 191; @position = 18; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 192; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 193; @position = 18; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 196; ]
+        module system_loc__hint_button_left_middle {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 196; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 197; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 200; ]
+        module prompt_size__body_no_title {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 200; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 201; @position = 18; ]
+            const width as Number = 166;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 202; @position = 18; ]
+            const height as Number = 99;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 205; ]
+        module system_icon_light__hint_button_left_top {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 205; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 206; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 209; ]
+        module prompt_color_light__background {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 209; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 210; @position = 18; ]
+            const background as Number = 0xFFFFFF;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 213; ]
+        module confirmation_input__delete {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 213; ]
+            <init> {
+[ "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" 214 18 ]
+                %tmp.522 = getm $.Toybox.WatchUi;
+                %tmp.523 = getv %tmp.522 :KEY_ENTER;
+                putv self :button %tmp.523;
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 214; @position = 18; ]
+            const button;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 217; ]
+        module system_icon_dark__hint_button_left_top {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 217; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 218; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 221; ]
+        module system_input__action_menu {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 221; ]
+            <init> {
+[ "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" 222 18 ]
+                %tmp.524 = getm $.Toybox.WatchUi;
+                %tmp.525 = getv %tmp.524 :KEY_ENTER;
+                putv self :button %tmp.525;
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 222; @position = 18; ]
+            const button;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 225; ]
+        module system_icon_light__save {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 225; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 226; @position = 18; ]
+            const filename as String = "/home/olivier/.Garmin/ConnectIQ/Devices/instinct2/system_icon_light__save.svg";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 227; @position = 18; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 228; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 229; @position = 18; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 232; ]
+        module prompt_color_light__body {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 232; ]
+            <init> {
+[ "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" 234 18 ]
+                %tmp.526 = getm $.Toybox.Graphics;
+                %tmp.527 = getv %tmp.526 :COLOR_TRANSPARENT;
+                putv self :background %tmp.527;
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 233; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 234; @position = 18; ]
+            const background;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 237; ]
+        module system_loc__subwindow {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 237; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 238; @position = 18; ]
+            const x as Number = 116;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 239; @position = 18; ]
+            const y as Number = 0;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 242; ]
+        module system_icon_light__warning {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 242; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 243; @position = 18; ]
+            const filename as String = "/home/olivier/.Garmin/ConnectIQ/Devices/instinct2/system_icon_light__warning.svg";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 244; @position = 18; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 245; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 246; @position = 18; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 249; ]
+        module confirmation_color_light__body {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 249; ]
+            <init> {
+[ "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" 251 18 ]
+                %tmp.528 = getm $.Toybox.Graphics;
+                %tmp.529 = getv %tmp.528 :COLOR_TRANSPARENT;
+                putv self :background %tmp.529;
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 250; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 251; @position = 18; ]
+            const background;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 254; ]
+        module activity_color_light__background {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 254; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 255; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 256; @position = 18; ]
+            const background as Number = 0xFFFFFF;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 259; ]
+        module system_icon_positive__hint_button_right_top {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 259; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 260; @position = 18; ]
+            const filename as String = "/home/olivier/.Garmin/ConnectIQ/Devices/instinct2/system_icon_dark__hint_button_right_top.svg";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 261; @position = 18; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 262; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 263; @position = 18; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 266; ]
+        module system_size__screen {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 266; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 267; @position = 18; ]
+            const width as Number = 176;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 268; @position = 18; ]
+            const height as Number = 176;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 271; ]
+        module system_icon_destructive__hint_button_right_bottom {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 271; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 272; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 275; ]
+        module system_color_light__background {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 275; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 276; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 277; @position = 18; ]
+            const background as Number = 0xFFFFFF;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 280; ]
+        module system_icon_destructive__hint_button_right_top {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 280; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 281; @position = 18; ]
+            const filename as String = "/home/olivier/.Garmin/ConnectIQ/Devices/instinct2/system_icon_dark__hint_button_right_top.svg";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 282; @position = 18; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 283; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 284; @position = 18; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 287; ]
+        module confirmation_loc__hint_confirm {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 287; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 288; @position = 18; ]
+            const x as Number = 113;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 289; @position = 18; ]
+            const y as Number = 1;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 292; ]
+        module activity_color_dark__text {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 292; ]
+            <init> {
+[ "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" 294 18 ]
+                %tmp.530 = getm $.Toybox.Graphics;
+                %tmp.531 = getv %tmp.530 :COLOR_TRANSPARENT;
+                putv self :background %tmp.531;
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 293; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 294; @position = 18; ]
+            const background;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 297; ]
+        module confirmation_input__keep {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 297; ]
+            <init> {
+[ "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" 298 18 ]
+                %tmp.532 = getm $.Toybox.WatchUi;
+                %tmp.533 = getv %tmp.532 :KEY_DOWN;
+                putv self :button %tmp.533;
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 298; @position = 18; ]
+            const button;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 301; ]
+        module prompt_loc__body_with_title {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 301; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 302; @position = 18; ]
+            const x as Number = 5;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 303; @position = 18; ]
+            const y as Number = 77;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 306; ]
+        module system_icon_dark__search {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 306; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 307; @position = 18; ]
+            const filename as String = "/home/olivier/.Garmin/ConnectIQ/Devices/instinct2/system_icon_dark__search.svg";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 308; @position = 18; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 309; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 310; @position = 18; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 313; ]
+        module activity_color_light__text {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 313; ]
+            <init> {
+[ "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" 315 18 ]
+                %tmp.534 = getm $.Toybox.Graphics;
+                %tmp.535 = getv %tmp.534 :COLOR_TRANSPARENT;
+                putv self :background %tmp.535;
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 314; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 315; @position = 18; ]
+            const background;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 318; ]
+        module confirmation_icon__hint_keep {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 318; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 319; @position = 18; ]
+            const filename as String = "/home/olivier/.Garmin/ConnectIQ/Devices/instinct2/confirmation_icon__hint_keep.svg";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 320; @position = 18; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 321; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 322; @position = 18; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 325; ]
+        module system_icon_dark__save {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 325; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 326; @position = 18; ]
+            const filename as String = "/home/olivier/.Garmin/ConnectIQ/Devices/instinct2/system_icon_dark__save.svg";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 327; @position = 18; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 328; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 329; @position = 18; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 332; ]
+        module system_icon_destructive__hint_button_left_middle {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 332; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 333; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 336; ]
+        module system_icon_light__search {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 336; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 337; @position = 18; ]
+            const filename as String = "/home/olivier/.Garmin/ConnectIQ/Devices/instinct2/system_icon_light__search.svg";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 338; @position = 18; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 339; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 340; @position = 18; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 343; ]
+        module system_icon_dark__hint_button_left_bottom {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 343; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 344; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 347; ]
+        module system_icon_positive__hint_button_left_top {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 347; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 348; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 351; ]
+        module system_loc__hint_button_right_bottom {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 351; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 352; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 355; ]
+        module confirmation_color_dark__body {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 355; ]
+            <init> {
+[ "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" 357 18 ]
+                %tmp.536 = getm $.Toybox.Graphics;
+                %tmp.537 = getv %tmp.536 :COLOR_TRANSPARENT;
+                putv self :background %tmp.537;
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 356; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 357; @position = 18; ]
+            const background;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 360; ]
+        module prompt_color_dark__title {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 360; ]
+            <init> {
+[ "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" 362 18 ]
+                %tmp.538 = getm $.Toybox.Graphics;
+                %tmp.539 = getv %tmp.538 :COLOR_TRANSPARENT;
+                putv self :background %tmp.539;
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 361; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 362; @position = 18; ]
+            const background;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 365; ]
+        module system_icon_destructive__cancel {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 365; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 366; @position = 18; ]
+            const filename as String = "/home/olivier/.Garmin/ConnectIQ/Devices/instinct2/system_icon_dark__cancel.svg";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 367; @position = 18; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 368; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 369; @position = 18; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 372; ]
+        module system_icon_light__hint_button_right_bottom {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 372; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 373; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 376; ]
+        module prompt_loc__title {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 376; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 377; @position = 18; ]
+            const x as Number = 25;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 378; @position = 18; ]
+            const y as Number = 9;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 381; ]
+        module confirmation_font_enhanced_readability__body {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 381; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 382; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 385; ]
+        module prompt_color_light__title {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 385; ]
+            <init> {
+[ "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" 387 18 ]
+                %tmp.540 = getm $.Toybox.Graphics;
+                %tmp.541 = getv %tmp.540 :COLOR_TRANSPARENT;
+                putv self :background %tmp.541;
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 386; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 387; @position = 18; ]
+            const background;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 390; ]
+        module system_icon_dark__hint_button_right_top {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 390; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 391; @position = 18; ]
+            const filename as String = "/home/olivier/.Garmin/ConnectIQ/Devices/instinct2/system_icon_dark__hint_button_right_top.svg";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 392; @position = 18; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 393; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 394; @position = 18; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 397; ]
+        module system_icon_dark__hint_button_left_middle {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 397; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 398; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 401; ]
+        module system_icon_light__cancel {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 401; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 402; @position = 18; ]
+            const filename as String = "/home/olivier/.Garmin/ConnectIQ/Devices/instinct2/system_icon_light__cancel.svg";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 403; @position = 18; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 404; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 405; @position = 18; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 408; ]
+        module system_icon_light__about {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 408; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 409; @position = 18; ]
+            const filename as String = "/home/olivier/.Garmin/ConnectIQ/Devices/instinct2/system_icon_light__about.svg";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 410; @position = 18; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 411; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 412; @position = 18; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 415; ]
+        module system_size__toast_icon {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 415; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 416; @position = 18; ]
+            const width as Number = 40;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 417; @position = 18; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 420; ]
+        module system_icon_dark__hint_button_right_middle {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 420; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 421; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 424; ]
+        module confirmation_icon__hint_reject {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 424; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 425; @position = 18; ]
+            const filename as String = "/home/olivier/.Garmin/ConnectIQ/Devices/instinct2/confirmation_icon__hint_reject.svg";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 426; @position = 18; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 427; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 428; @position = 18; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 431; ]
+        module system_icon_light__hint_action_menu {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 431; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 432; @position = 18; ]
+            const filename as String = "/home/olivier/.Garmin/ConnectIQ/Devices/instinct2/system_icon_light__hint_button_right_top.svg";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 433; @position = 18; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 434; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 435; @position = 18; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 438; ]
+        module system_icon_light__hint_button_right_middle {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 438; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 439; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 442; ]
+        module system_icon_destructive__hint_button_right_middle {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 442; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 443; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 446; ]
+        module confirmation_loc__hint_reject {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 446; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 447; @position = 18; ]
+            const x as Number = 0;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 448; @position = 18; ]
+            const y as Number = 138;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 451; ]
+        module activity_color_dark__background {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 451; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 452; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 453; @position = 18; ]
+            const background as Number = 0xFFFFFF;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 456; ]
+        module system_icon_light__hint_button_left_bottom {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 456; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 457; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 460; ]
+        module system_icon_positive__hint_button_left_middle {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 460; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 461; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 464; ]
+        module system_size__menu_icon {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 464; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 465; @position = 18; ]
+            const scaleX as Number = 38;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 466; @position = 18; ]
+            const scaleY as Number = 38;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 467; @position = 18; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 470; ]
+        module system_icon_destructive__warning {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 470; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 471; @position = 18; ]
+            const filename as String = "/home/olivier/.Garmin/ConnectIQ/Devices/instinct2/system_icon_dark__warning.svg";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 472; @position = 18; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 473; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 474; @position = 18; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 477; ]
+        module system_loc__hint_button_right_middle {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 477; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 478; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 481; ]
+        module system_icon_dark__cancel {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 481; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 482; @position = 18; ]
+            const filename as String = "/home/olivier/.Garmin/ConnectIQ/Devices/instinct2/system_icon_dark__cancel.svg";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 483; @position = 18; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 484; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 485; @position = 18; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 488; ]
+        module prompt_size__body_with_title {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 488; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 489; @position = 18; ]
+            const width as Number = 166;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 490; @position = 18; ]
+            const height as Number = 99;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 493; ]
+        module system_loc__hint_button_right_top {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 493; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 494; @position = 18; ]
+            const x as Number = 166;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 495; @position = 18; ]
+            const y as Number = 31;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 496; @position = 18; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 497; @position = 18; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 500; ]
+        module system_color_light__text {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 500; ]
+            <init> {
+[ "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" 502 18 ]
+                %tmp.542 = getm $.Toybox.Graphics;
+                %tmp.543 = getv %tmp.542 :COLOR_TRANSPARENT;
+                putv self :background %tmp.543;
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 501; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 502; @position = 18; ]
+            const background;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 505; ]
+        module system_icon_light__check {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 505; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 506; @position = 18; ]
+            const filename as String = "/home/olivier/.Garmin/ConnectIQ/Devices/instinct2/system_icon_light__check.svg";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 507; @position = 18; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 508; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 509; @position = 18; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 512; ]
+        module confirmation_input__reject {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 512; ]
+            <init> {
+[ "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" 513 18 ]
+                %tmp.544 = getm $.Toybox.WatchUi;
+                %tmp.545 = getv %tmp.544 :KEY_DOWN;
+                putv self :button %tmp.545;
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 513; @position = 18; ]
+            const button;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 516; ]
+        module system_icon_light__revert {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 516; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 517; @position = 18; ]
+            const filename as String = "/home/olivier/.Garmin/ConnectIQ/Devices/instinct2/system_icon_light__revert.svg";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 518; @position = 18; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 519; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 520; @position = 18; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 523; ]
+        module system_size__subwindow {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 523; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 524; @position = 18; ]
+            const width as Number = 62;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 525; @position = 18; ]
+            const height as Number = 62;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 528; ]
+        module system_icon_positive__hint_button_left_bottom {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 528; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 529; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 532; ]
+        module system_icon_dark__check {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 532; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 533; @position = 18; ]
+            const filename as String = "/home/olivier/.Garmin/ConnectIQ/Devices/instinct2/system_icon_dark__check.svg";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 534; @position = 18; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 535; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 536; @position = 18; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 539; ]
+        module confirmation_loc__hint_keep {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 539; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 540; @position = 18; ]
+            const x as Number = 0;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 541; @position = 18; ]
+            const y as Number = 138;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 544; ]
+        module confirmation_loc__hint_delete {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 544; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 545; @position = 18; ]
+            const verticallJustification as String = "center";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 546; @position = 18; ]
+            const x as Number = 146;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 547; @position = 18; ]
+            const y as Number = 15;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 548; @position = 18; ]
+            const horizontalJustification as String = "center";
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 551; ]
+        module system_icon_positive__hint_button_right_middle {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 551; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 552; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 555; ]
+        module system_icon_light__hint_button_left_middle {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 555; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 556; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 559; ]
+        module system_icon_dark__hint_button_right_bottom {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 559; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 560; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 563; ]
+        module system_icon_positive__hint_button_right_bottom {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 563; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 564; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 567; ]
+        module system_icon_dark__revert {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 567; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 568; @position = 18; ]
+            const filename as String = "/home/olivier/.Garmin/ConnectIQ/Devices/instinct2/system_icon_dark__revert.svg";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 569; @position = 18; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 570; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 571; @position = 18; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 574; ]
+        module system_icon_dark__question {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 574; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 575; @position = 18; ]
+            const filename as String = "/home/olivier/.Garmin/ConnectIQ/Devices/instinct2/system_icon_dark__question.svg";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 576; @position = 18; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 577; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 578; @position = 18; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 581; ]
+        module system_icon_light__discard {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 581; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 582; @position = 18; ]
+            const filename as String = "/home/olivier/.Garmin/ConnectIQ/Devices/instinct2/system_icon_light__discard.svg";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 583; @position = 18; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 584; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 585; @position = 18; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 588; ]
+        module device_info {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 588; ]
+            <init> {
+[ "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" 590 18 ]
+                %tmp.546 = getm $.Toybox.System;
+                %tmp.547 = getv %tmp.546 :SCREEN_SHAPE_SEMI_OCTAGON;
+                putv self :screenShape %tmp.547;
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 589; @position = 18; ]
+            const screenWidth as Number = 176;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 590; @position = 18; ]
+            const screenShape;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 591; @position = 18; ]
+            const hasNightMode as Boolean = false;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 592; @position = 18; ]
+            const screenHeight as Number = 176;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 593; @position = 18; ]
+            const hasTouchScreen as Boolean = false;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 594; @position = 18; ]
+            const hasEnhancedReadabilityMode as Boolean = false;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 597; ]
+        module prompt_font__body_no_title {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 597; ]
+            <init> {
+[ "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" 598 18 ]
+                %tmp.548 = getm $.Toybox.Graphics;
+                %tmp.549 = getv %tmp.548 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.549;
+[ "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" 599 18 ]
+                %tmp.550 = getm $.Toybox.Graphics;
+                %tmp.551 = getv %tmp.550 :FONT_TINY;
+                putv self :font %tmp.551;
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 598; @position = 18; ]
+            const justification;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 599; @position = 18; ]
+            const font;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 602; ]
+        module prompt_size__title_icon {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 602; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 603; @position = 18; ]
+            const scaleX as Number = 38;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 604; @position = 18; ]
+            const scaleY as Number = 38;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 605; @position = 18; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 608; ]
+        module system_icon_dark__warning {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 608; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 609; @position = 18; ]
+            const filename as String = "/home/olivier/.Garmin/ConnectIQ/Devices/instinct2/system_icon_dark__warning.svg";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 610; @position = 18; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 611; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 612; @position = 18; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 615; ]
+        module prompt_loc__title_icon {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 615; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 616; @position = 18; ]
+            const x as Number = 145;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 617; @position = 18; ]
+            const y as Number = 31;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 618; @position = 18; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 619; @position = 18; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 622; ]
+        module prompt_font_enhanced_readability__title {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 622; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 623; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 626; ]
+        module prompt_color_dark__body {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 626; ]
+            <init> {
+[ "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" 628 18 ]
+                %tmp.552 = getm $.Toybox.Graphics;
+                %tmp.553 = getv %tmp.552 :COLOR_TRANSPARENT;
+                putv self :background %tmp.553;
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 627; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 628; @position = 18; ]
+            const background;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 631; ]
+        module confirmation_icon__hint_delete {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 631; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 632; @position = 18; ]
+            const filename as String = "/home/olivier/.Garmin/ConnectIQ/Devices/instinct2/confirmation_icon__hint_delete.svg";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 633; @position = 18; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 634; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 635; @position = 18; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 638; ]
+        module system_icon_light__hint_button_right_top {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 638; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 639; @position = 18; ]
+            const filename as String = "/home/olivier/.Garmin/ConnectIQ/Devices/instinct2/system_icon_light__hint_button_right_top.svg";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 640; @position = 18; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 641; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 642; @position = 18; ]
+            const automaticPalette as Boolean = true;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 645; ]
+        module confirmation_size__body {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 645; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 646; @position = 18; ]
+            const width as Number = 173;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 647; @position = 18; ]
+            const height as Number = 63;
+        }
+        [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 650; ]
+        module system_icon_positive__check {
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 650; ]
+            <init> {
+            }
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 651; @position = 18; ]
+            const filename as String = "/home/olivier/.Garmin/ConnectIQ/Devices/instinct2/system_icon_dark__check.svg";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 652; @position = 18; ]
+            const disableTransparency as Boolean = true;
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 653; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 654; @position = 18; ]
+            const automaticPalette as Boolean = true;
+        }
+    }
+}
+[ @file = "/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen"; @line = 1; ]
+<init> {
+}

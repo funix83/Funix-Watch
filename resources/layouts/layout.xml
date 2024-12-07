@@ -1,0 +1,20 @@
+<layout id="WatchFace">
+    <label id="TimeLabel" x="67" y="72" font="Graphics.FONT_SYSTEM_NUMBER_THAI_HOT" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
+    <label id="SecondLabel" x="119" y="75" font="Graphics.FONT_SYSTEM_NUMBER_MEDIUM" justification="Graphics.TEXT_JUSTIFY_LEFT" color="Graphics.COLOR_BLUE" />
+    <label id="BatteryDisplay" x="100" y="59" font="Graphics.FONT_XTINY" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_BLUE" />
+    <label id="DateDisplay" x="center" y="bottom" font="Graphics.FONT_XTINY" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_BLUE" />      
+    <label id="Ephemeride" x="center" y="127" font="Graphics.FONT_XTINY"  justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_BLUE" />
+    <label id="HeartBeat" x="152" y="7" font="Graphics.FONT_XTINY"  justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_BLUE" />
+    <label id="Pas" x="150" y="32" font="@Fonts.PasFont"  justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_BLUE" />
+    <drawable id="batterie" class="Battery">
+        <param name="locX">62</param>
+        <param name="locY">67</param>
+        <param name="height">10</param>
+        <param name="width">25</param>
+    </drawable> 
+    <bitmap id="FunixLogo" x="20" y="4" filename="../drawables/avatar.png" />
+    <bitmap id="Sunrise" x="20" y="130" filename="../drawables/sunrise.png" />
+    <bitmap id="Sunset" x="85" y="130" filename="../drawables/sunset.png" />
+    <bitmap id="Coeur" x="120" y="12" filename="../drawables/coeur.png" />
+    <bitmap id="Pas" x="120" y="30" filename="../drawables/step.png" />
+</layout>

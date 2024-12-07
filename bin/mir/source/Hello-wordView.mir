@@ -1,0 +1,668 @@
+[ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 1; ]
+import Toybox.Graphics;
+[ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 2; ]
+import Toybox.Lang;
+[ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 3; ]
+import Toybox.System;
+[ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 4; ]
+import Toybox.Time;
+[ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 5; ]
+import Toybox.Time.Gregorian;
+[ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 6; ]
+import Toybox.WatchUi;
+[ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 7; ]
+import Toybox.Position;
+[ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 8; ]
+import Toybox.Activity;
+[ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 9; ]
+import Toybox.Weather;
+[ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 10; ]
+import Toybox.Sensor;
+[ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 12; ]
+class Battery extends WatchUi.Drawable{
+    [ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 12; ]
+    <init> {
+    }
+    [ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 12; ]
+    static
+    <init> {
+    }
+    [ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 14; @position = 15; ]
+    protected
+    var batteryLevel;
+    [ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 17; ]
+    function initialize(options) as Void {
+_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_17_33_19_4_start:
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 18 8 ]
+        %tmp.2 = getv ? :Drawable;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        %tmp.5 = lgetv %options;
+        invoke %tmp.2 %tmp.3(%tmp.5);
+_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_17_33_19_4_stop:
+    }
+    [ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 21; ]
+    function setLevel(percentage) {
+_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_21_34_23_4_start:
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 22 8 ]
+        %tmp.2 = lgetv %percentage;
+        putv self :batteryLevel %tmp.2;
+_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_21_34_23_4_stop:
+    }
+    [ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 25; ]
+    function draw(dc) {
+_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_25_22_29_4_start:
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 26 8 ]
+        %tmp.1 = lgetv %dc;
+        %tmp.2 = getv function %tmp.1 :setColor;
+        %tmp.3 = getm $.Toybox.Graphics;
+        %tmp.4 = getv %tmp.3 :COLOR_LT_GRAY;
+        %tmp.5 = getm $.Toybox.Graphics;
+        %tmp.6 = getv %tmp.5 :COLOR_LT_GRAY;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 27 8 ]
+        %tmp.7 = lgetv %dc;
+        %tmp.8 = getv function %tmp.7 :drawRectangle;
+        %tmp.10 = getv ? :locX;
+        %tmp.12 = getv ? :locY;
+        %tmp.14 = getv ? :width;
+        %tmp.16 = getv ? :height;
+        invoke %tmp.7 %tmp.8(%tmp.10, %tmp.12, %tmp.14, %tmp.16);
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 28 8 ]
+        %tmp.17 = lgetv %dc;
+        %tmp.18 = getv function %tmp.17 :fillRectangle;
+        %tmp.20 = getv ? :locX;
+        %tmp.21 = 2;
+        %tmp.22 = add %tmp.20 %tmp.21;
+        %tmp.24 = getv ? :locY;
+        %tmp.25 = 2;
+        %tmp.26 = add %tmp.24 %tmp.25;
+        %tmp.28 = getv ? :width;
+        %tmp.29 = 4;
+        %tmp.30 = sub %tmp.28 %tmp.29;
+        %tmp.32 = getv ? :batteryLevel;
+        %tmp.33 = mul %tmp.30 %tmp.32;
+        %tmp.34 = 100;
+        %tmp.35 = div %tmp.33 %tmp.34;
+        %tmp.37 = getv ? :height;
+        %tmp.38 = 4;
+        %tmp.39 = sub %tmp.37 %tmp.38;
+        invoke %tmp.17 %tmp.18(%tmp.22, %tmp.26, %tmp.35, %tmp.39);
+_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_25_22_29_4_stop:
+    }
+}
+[ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 32; ]
+class Hello_wordView extends WatchUi.WatchFace{
+    [ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 32; ]
+    <init> {
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 68 8 ]
+        %tmp.42 = getm $.Toybox.Position;
+        %tmp.43 = getv function ? %tmp.42 :Location;
+        %tmp.44 = newd 3;
+        %tmp.46 = const :latitude;
+        %tmp.47 = 43.1257311;
+        %tmp.48 = dup %tmp.44;
+        %tmp.49 = aputv %tmp.48 %tmp.46 %tmp.47;
+        %tmp.51 = const :longitude;
+        %tmp.52 = 5.9304919;
+        %tmp.53 = dup %tmp.49;
+        %tmp.54 = aputv %tmp.53 %tmp.51 %tmp.52;
+        %tmp.56 = const :format;
+        %tmp.58 = const :degrees;
+        %tmp.59 = dup %tmp.54;
+        %tmp.60 = aputv %tmp.59 %tmp.56 %tmp.58;
+        %tmp.40 = newc %tmp.43 (%tmp.60);
+        putv self :myLocation %tmp.40;
+    }
+    [ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 32; ]
+    static
+    <init> {
+    }
+    [ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 35; @position = 8; ]
+    var clockTime;
+    [ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 36; @position = 8; ]
+    var timeString;
+    [ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 37; @position = 8; ]
+    var viewheure;
+    [ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 38; @position = 8; ]
+    var secondString;
+    [ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 39; @position = 8; ]
+    var viewSecond;
+    [ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 41; @position = 8; ]
+    var today;
+    [ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 42; @position = 8; ]
+    var dateString;
+    [ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 43; @position = 8; ]
+    var viewdate;
+    [ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 45; @position = 8; ]
+    var mystats;
+    [ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 46; @position = 8; ]
+    var batString;
+    [ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 47; @position = 8; ]
+    var viewbat;
+    [ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 49; @position = 8; ]
+    var batteryLevel;
+    [ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 50; @position = 8; ]
+    var viewbatbar;
+    [ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 52; @position = 8; ]
+    var coeurbat;
+    [ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 53; @position = 8; ]
+    var coeurbatString;
+    [ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 54; @position = 8; ]
+    var viewcoeur;
+    [ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 56; @position = 8; ]
+    var pas;
+    [ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 57; @position = 8; ]
+    var pasString;
+    [ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 58; @position = 8; ]
+    var viewpas;
+    [ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 60; @position = 8; ]
+    var loc;
+    [ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 61; @position = 8; ]
+    var lever_moment;
+    [ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 62; @position = 8; ]
+    var coucher_moment;
+    [ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 63; @position = 8; ]
+    var lever;
+    [ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 64; @position = 8; ]
+    var coucher;
+    [ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 65; @position = 8; ]
+    var sunInfoString;
+    [ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 66; @position = 8; ]
+    var viewEphemeride;
+    [ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 68; @position = 8; ]
+    var myLocation;
+    [ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 75; ]
+    function initialize() as Void {
+_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_75_26_86_4_start:
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 76 8 ]
+        %tmp.2 = getv ? :WatchFace;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 78 8 ]
+        [ "_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_75_26_86_4_start" "_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_75_26_86_4_stop" ]
+        %FunixLogo.1 = local;
+        %tmp.6 = getm $.Toybox.WatchUi;
+        %tmp.7 = getv function ? %tmp.6 :Bitmap;
+        %tmp.8 = newd 1;
+        %tmp.10 = const :rezId;
+        %tmp.12 = getv ? :Rez;
+        %tmp.13 = getv %tmp.12 :Drawables;
+        %tmp.14 = getv %tmp.13 :FunixLogo;
+        %tmp.15 = dup %tmp.8;
+        %tmp.16 = aputv %tmp.15 %tmp.10 %tmp.14;
+        %tmp.4 = newc %tmp.7 (%tmp.16);
+        lputv %FunixLogo.1 %tmp.4;
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 80 8 ]
+        [ "_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_75_26_86_4_start" "_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_75_26_86_4_stop" ]
+        %Coeur.2 = local;
+        %tmp.19 = getm $.Toybox.WatchUi;
+        %tmp.20 = getv function ? %tmp.19 :Bitmap;
+        %tmp.21 = newd 1;
+        %tmp.23 = const :rezId;
+        %tmp.25 = getv ? :Rez;
+        %tmp.26 = getv %tmp.25 :Drawables;
+        %tmp.27 = getv %tmp.26 :Coeur;
+        %tmp.28 = dup %tmp.21;
+        %tmp.29 = aputv %tmp.28 %tmp.23 %tmp.27;
+        %tmp.17 = newc %tmp.20 (%tmp.29);
+        lputv %Coeur.2 %tmp.17;
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 82 8 ]
+        [ "_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_75_26_86_4_start" "_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_75_26_86_4_stop" ]
+        %Pas.3 = local;
+        %tmp.32 = getm $.Toybox.WatchUi;
+        %tmp.33 = getv function ? %tmp.32 :Bitmap;
+        %tmp.34 = newd 1;
+        %tmp.36 = const :rezId;
+        %tmp.38 = getv ? :Rez;
+        %tmp.39 = getv %tmp.38 :Drawables;
+        %tmp.40 = getv %tmp.39 :Pas;
+        %tmp.41 = dup %tmp.34;
+        %tmp.42 = aputv %tmp.41 %tmp.36 %tmp.40;
+        %tmp.30 = newc %tmp.33 (%tmp.42);
+        lputv %Pas.3 %tmp.30;
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 84 2 ]
+        [ "_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_75_26_86_4_start" "_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_75_26_86_4_stop" ]
+        %Sunrise.4 = local;
+        %tmp.45 = getm $.Toybox.WatchUi;
+        %tmp.46 = getv function ? %tmp.45 :Bitmap;
+        %tmp.47 = newd 1;
+        %tmp.49 = const :rezId;
+        %tmp.51 = getv ? :Rez;
+        %tmp.52 = getv %tmp.51 :Drawables;
+        %tmp.53 = getv %tmp.52 :Sunrise;
+        %tmp.54 = dup %tmp.47;
+        %tmp.55 = aputv %tmp.54 %tmp.49 %tmp.53;
+        %tmp.43 = newc %tmp.46 (%tmp.55);
+        lputv %Sunrise.4 %tmp.43;
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 85 8 ]
+        [ "_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_75_26_86_4_start" "_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_75_26_86_4_stop" ]
+        %Sunset.5 = local;
+        %tmp.58 = getm $.Toybox.WatchUi;
+        %tmp.59 = getv function ? %tmp.58 :Bitmap;
+        %tmp.60 = newd 1;
+        %tmp.62 = const :rezId;
+        %tmp.64 = getv ? :Rez;
+        %tmp.65 = getv %tmp.64 :Drawables;
+        %tmp.66 = getv %tmp.65 :Sunset;
+        %tmp.67 = dup %tmp.60;
+        %tmp.68 = aputv %tmp.67 %tmp.62 %tmp.66;
+        %tmp.56 = newc %tmp.59 (%tmp.68);
+        lputv %Sunset.5 %tmp.56;
+_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_75_26_86_4_stop:
+    }
+    [ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 89; ]
+    function onLayout(dc as Dc) as Void {
+_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_89_40_92_4_start:
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 90 8 ]
+        %tmp.1 = self;
+        %tmp.2 = getv function %tmp.1 :setLayout;
+        %tmp.4 = getv ? :Rez;
+        %tmp.5 = getv %tmp.4 :Layouts;
+        %tmp.6 = getv function %tmp.5 :WatchFace;
+        %tmp.8 = lgetv %dc;
+        %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
+        invoke %tmp.1 %tmp.2(%tmp.9);
+_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_89_40_92_4_stop:
+    }
+    [ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 97; ]
+    function onShow() as Void {
+    }
+    [ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 101; ]
+    function onPartialUpdate(dc) {
+_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_101_33_114_4_start:
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 103 8 ]
+        %tmp.1 = getm $.Toybox.System;
+        %tmp.2 = getv function %tmp.1 :getClockTime;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        putv self :clockTime %tmp.3;
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 104 8 ]
+        %tmp.4 = lgetv %dc;
+        %tmp.5 = getv function %tmp.4 :setClip;
+        %tmp.6 = 119;
+        %tmp.7 = 72;
+        %tmp.8 = 40;
+        %tmp.9 = 40;
+        invoke %tmp.4 %tmp.5(%tmp.6, %tmp.7, %tmp.8, %tmp.9);
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 105 2 ]
+        %tmp.10 = lgetv %dc;
+        %tmp.11 = getv function %tmp.10 :setColor;
+        %tmp.12 = getm $.Toybox.Graphics;
+        %tmp.13 = getv %tmp.12 :COLOR_WHITE;
+        %tmp.14 = getm $.Toybox.Graphics;
+        %tmp.15 = getv %tmp.14 :COLOR_BLACK;
+        invoke %tmp.10 %tmp.11(%tmp.13, %tmp.15);
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 106 2 ]
+        %tmp.16 = lgetv %dc;
+        %tmp.17 = getv function %tmp.16 :drawText;
+        %tmp.18 = 119;
+        %tmp.19 = 75;
+        %tmp.20 = getm $.Toybox.Graphics;
+        %tmp.21 = getv %tmp.20 :FONT_SYSTEM_NUMBER_MEDIUM;
+        %tmp.23 = getv ? :clockTime;
+        %tmp.24 = getv %tmp.23 :sec;
+        %tmp.25 = getv function %tmp.24 :format;
+        %tmp.26 = "%02d";
+        %tmp.27 = invoke %tmp.24 %tmp.25(%tmp.26);
+        %tmp.28 = getm $.Toybox.Graphics;
+        %tmp.29 = getv %tmp.28 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.16 %tmp.17(%tmp.18, %tmp.19, %tmp.21, %tmp.27, %tmp.29);
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 113 8 ]
+        %tmp.30 = lgetv %dc;
+        %tmp.31 = getv function %tmp.30 :clearClip;
+        invoke %tmp.30 %tmp.31();
+_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_101_33_114_4_stop:
+    }
+    [ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 116; ]
+    function onUpdate(dc as Dc) as Void {
+_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_116_40_174_4_start:
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 118 8 ]
+        %tmp.1 = getm $.Toybox.System;
+        %tmp.2 = getv function %tmp.1 :getClockTime;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        putv self :clockTime %tmp.3;
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 119 8 ]
+        %tmp.4 = getm $.Toybox.Lang;
+        %tmp.5 = getv function %tmp.4 :format;
+        %tmp.6 = "$1$:$2$";
+        %tmp.7 = newa 2;
+        %tmp.9 = getv ? :clockTime;
+        %tmp.10 = getv %tmp.9 :hour;
+        %tmp.11 = getv function %tmp.10 :format;
+        %tmp.12 = "%02d";
+        %tmp.13 = invoke %tmp.10 %tmp.11(%tmp.12);
+        %tmp.14 = dup %tmp.7;
+        %tmp.15 = aputv %tmp.14 0 %tmp.13;
+        %tmp.17 = getv ? :clockTime;
+        %tmp.18 = getv %tmp.17 :min;
+        %tmp.19 = getv function %tmp.18 :format;
+        %tmp.20 = "%02d";
+        %tmp.21 = invoke %tmp.18 %tmp.19(%tmp.20);
+        %tmp.22 = dup %tmp.15;
+        %tmp.23 = aputv %tmp.22 1 %tmp.21;
+        %tmp.24 = invoke %tmp.4 %tmp.5(%tmp.6, %tmp.23);
+        putv self :timeString %tmp.24;
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 120 8 ]
+        %tmp.26 = getv ? :View;
+        %tmp.27 = getv function %tmp.26 :findDrawableById;
+        %tmp.28 = "TimeLabel";
+        %tmp.29 = invoke %tmp.26 %tmp.27(%tmp.28);
+        %tmp.30 = as %tmp.29 Text;
+        putv self :viewheure %tmp.30;
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 121 8 ]
+        %tmp.32 = getv ? :viewheure;
+        %tmp.33 = getv function %tmp.32 :setText;
+        %tmp.35 = getv ? :timeString;
+        invoke %tmp.32 %tmp.33(%tmp.35);
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 123 8 ]
+        %tmp.36 = getm $.Toybox.Lang;
+        %tmp.37 = getv function %tmp.36 :format;
+        %tmp.38 = "$1$";
+        %tmp.39 = newa 1;
+        %tmp.41 = getv ? :clockTime;
+        %tmp.42 = getv %tmp.41 :sec;
+        %tmp.43 = getv function %tmp.42 :format;
+        %tmp.44 = "%02d";
+        %tmp.45 = invoke %tmp.42 %tmp.43(%tmp.44);
+        %tmp.46 = dup %tmp.39;
+        %tmp.47 = aputv %tmp.46 0 %tmp.45;
+        %tmp.48 = invoke %tmp.36 %tmp.37(%tmp.38, %tmp.47);
+        putv self :secondString %tmp.48;
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 124 8 ]
+        %tmp.50 = getv ? :View;
+        %tmp.51 = getv function %tmp.50 :findDrawableById;
+        %tmp.52 = "SecondLabel";
+        %tmp.53 = invoke %tmp.50 %tmp.51(%tmp.52);
+        %tmp.54 = as %tmp.53 Text;
+        putv self :viewSecond %tmp.54;
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 125 8 ]
+        %tmp.56 = getv ? :viewSecond;
+        %tmp.57 = getv function %tmp.56 :setText;
+        %tmp.59 = getv ? :secondString;
+        invoke %tmp.56 %tmp.57(%tmp.59);
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 127 8 ]
+        %tmp.60 = getm $.Toybox.Time.Gregorian;
+        %tmp.61 = getv function %tmp.60 :info;
+        %tmp.62 = getm $.Toybox.Time;
+        %tmp.63 = getv function %tmp.62 :now;
+        %tmp.64 = invoke %tmp.62 %tmp.63();
+        %tmp.65 = getm $.Toybox.Time;
+        %tmp.66 = getv %tmp.65 :FORMAT_MEDIUM;
+        %tmp.67 = invoke %tmp.60 %tmp.61(%tmp.64, %tmp.66);
+        putv self :today %tmp.67;
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 128 8 ]
+        %tmp.68 = getm $.Toybox.Lang;
+        %tmp.69 = getv function %tmp.68 :format;
+        %tmp.70 = "$1$ $2$ $3$";
+        %tmp.71 = newa 3;
+        %tmp.73 = getv ? :today;
+        %tmp.74 = getv %tmp.73 :day;
+        %tmp.75 = dup %tmp.71;
+        %tmp.76 = aputv %tmp.75 0 %tmp.74;
+        %tmp.78 = getv ? :today;
+        %tmp.79 = getv %tmp.78 :month;
+        %tmp.80 = dup %tmp.76;
+        %tmp.81 = aputv %tmp.80 1 %tmp.79;
+        %tmp.83 = getv ? :today;
+        %tmp.84 = getv %tmp.83 :year;
+        %tmp.85 = dup %tmp.81;
+        %tmp.86 = aputv %tmp.85 2 %tmp.84;
+        %tmp.87 = invoke %tmp.68 %tmp.69(%tmp.70, %tmp.86);
+        putv self :dateString %tmp.87;
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 129 8 ]
+        %tmp.89 = getv ? :View;
+        %tmp.90 = getv function %tmp.89 :findDrawableById;
+        %tmp.91 = "DateDisplay";
+        %tmp.92 = invoke %tmp.89 %tmp.90(%tmp.91);
+        %tmp.93 = as %tmp.92 Text;
+        putv self :viewdate %tmp.93;
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 130 8 ]
+        %tmp.95 = getv ? :viewdate;
+        %tmp.96 = getv function %tmp.95 :setText;
+        %tmp.98 = getv ? :dateString;
+        invoke %tmp.95 %tmp.96(%tmp.98);
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 132 8 ]
+        %tmp.99 = getm $.Toybox.System;
+        %tmp.100 = getv function %tmp.99 :getSystemStats;
+        %tmp.101 = invoke %tmp.99 %tmp.100();
+        putv self :mystats %tmp.101;
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 133 8 ]
+        %tmp.102 = getm $.Toybox.Lang;
+        %tmp.103 = getv function %tmp.102 :format;
+        %tmp.104 = "$1$j";
+        %tmp.105 = newa 1;
+        %tmp.107 = getv ? :mystats;
+        %tmp.108 = getv %tmp.107 :batteryInDays;
+        %tmp.109 = getv function %tmp.108 :format;
+        %tmp.110 = "%2d";
+        %tmp.111 = invoke %tmp.108 %tmp.109(%tmp.110);
+        %tmp.112 = dup %tmp.105;
+        %tmp.113 = aputv %tmp.112 0 %tmp.111;
+        %tmp.114 = invoke %tmp.102 %tmp.103(%tmp.104, %tmp.113);
+        putv self :batString %tmp.114;
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 134 8 ]
+        %tmp.116 = getv ? :View;
+        %tmp.117 = getv function %tmp.116 :findDrawableById;
+        %tmp.118 = "BatteryDisplay";
+        %tmp.119 = invoke %tmp.116 %tmp.117(%tmp.118);
+        %tmp.120 = as %tmp.119 Text;
+        putv self :viewbat %tmp.120;
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 135 8 ]
+        %tmp.122 = getv ? :viewbat;
+        %tmp.123 = getv function %tmp.122 :setText;
+        %tmp.125 = getv ? :batString;
+        invoke %tmp.122 %tmp.123(%tmp.125);
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 137 8 ]
+        %tmp.126 = getm $.Toybox.System;
+        %tmp.127 = getv function %tmp.126 :getSystemStats;
+        %tmp.128 = invoke %tmp.126 %tmp.127();
+        %tmp.129 = getv %tmp.128 :battery;
+        putv self :batteryLevel %tmp.129;
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 138 8 ]
+        %tmp.131 = getv ? :View;
+        %tmp.132 = getv function %tmp.131 :findDrawableById;
+        %tmp.133 = "batterie";
+        %tmp.134 = invoke %tmp.131 %tmp.132(%tmp.133);
+        %tmp.135 = as %tmp.134 Battery;
+        putv self :viewbatbar %tmp.135;
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 139 8 ]
+        %tmp.137 = getv ? :viewbatbar;
+        %tmp.138 = getv function %tmp.137 :setLevel;
+        %tmp.140 = getv ? :batteryLevel;
+        invoke %tmp.137 %tmp.138(%tmp.140);
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 141 8 ]
+        %tmp.141 = getm $.Toybox.Activity;
+        %tmp.142 = getv function %tmp.141 :getActivityInfo;
+        %tmp.143 = invoke %tmp.141 %tmp.142();
+        %tmp.144 = getv %tmp.143 :currentHeartRate;
+        putv self :coeurbat %tmp.144;
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 142 8 ]
+_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_142_8_145_8_if_stmt:
+        %tmp.146 = getv ? :coeurbat;
+        %tmp.147 = null;
+        %tmp.148 = eq %tmp.146 %tmp.147;
+        bf %tmp.148 @_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_142_8_145_8_if_end;
+_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_142_8_145_8_if_true:
+_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_143_8_145_8_start:
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 144 12 ]
+        %tmp.149 = "0";
+        putv self :coeurbat %tmp.149;
+_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_143_8_145_8_stop:
+        goto @_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_142_8_145_8_if_end;
+_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_142_8_145_8_if_end:
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 146 8 ]
+        %tmp.151 = getv ? :coeurbat;
+        %tmp.152 = getv function %tmp.151 :toString;
+        %tmp.153 = invoke %tmp.151 %tmp.152();
+        putv self :coeurbatString %tmp.153;
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 147 8 ]
+        %tmp.155 = getv ? :View;
+        %tmp.156 = getv function %tmp.155 :findDrawableById;
+        %tmp.157 = "HeartBeat";
+        %tmp.158 = invoke %tmp.155 %tmp.156(%tmp.157);
+        %tmp.159 = as %tmp.158 Text;
+        putv self :viewcoeur %tmp.159;
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 148 8 ]
+        %tmp.161 = getv ? :viewcoeur;
+        %tmp.162 = getv function %tmp.161 :setText;
+        %tmp.164 = getv ? :coeurbatString;
+        invoke %tmp.161 %tmp.162(%tmp.164);
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 150 8 ]
+        %tmp.166 = getv ? :ActivityMonitor;
+        %tmp.167 = getv function %tmp.166 :getInfo;
+        %tmp.168 = invoke %tmp.166 %tmp.167();
+        %tmp.169 = getv %tmp.168 :steps;
+        putv self :pas %tmp.169;
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 151 8 ]
+_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_151_8_154_8_if_stmt:
+        %tmp.171 = getv ? :pas;
+        %tmp.172 = null;
+        %tmp.173 = eq %tmp.171 %tmp.172;
+        bf %tmp.173 @_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_151_8_154_8_if_end;
+_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_151_8_154_8_if_true:
+_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_152_8_154_8_start:
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 153 12 ]
+        %tmp.174 = "0";
+        putv self :pas %tmp.174;
+_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_152_8_154_8_stop:
+        goto @_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_151_8_154_8_if_end;
+_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_151_8_154_8_if_end:
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 155 8 ]
+        %tmp.176 = getv ? :pas;
+        %tmp.177 = getv function %tmp.176 :toString;
+        %tmp.178 = invoke %tmp.176 %tmp.177();
+        putv self :pasString %tmp.178;
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 156 8 ]
+        %tmp.180 = getv ? :View;
+        %tmp.181 = getv function %tmp.180 :findDrawableById;
+        %tmp.182 = "Pas";
+        %tmp.183 = invoke %tmp.180 %tmp.181(%tmp.182);
+        %tmp.184 = as %tmp.183 Text;
+        putv self :viewpas %tmp.184;
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 157 8 ]
+        %tmp.186 = getv ? :viewpas;
+        %tmp.187 = getv function %tmp.186 :setText;
+        %tmp.189 = getv ? :pasString;
+        invoke %tmp.186 %tmp.187(%tmp.189);
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 159 8 ]
+        [ "_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_116_40_174_4_start" "_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_116_40_174_4_stop" ]
+        %loc.1 = local;
+        %tmp.190 = getm $.Toybox.Activity;
+        %tmp.191 = getv function %tmp.190 :getActivityInfo;
+        %tmp.192 = invoke %tmp.190 %tmp.191();
+        %tmp.193 = getv %tmp.192 :currentLocation;
+        lputv %loc.1 %tmp.193;
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 160 8 ]
+_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_160_8_163_8_if_stmt:
+        %tmp.195 = lgetv %loc.1;
+        %tmp.196 = null;
+        %tmp.197 = eq %tmp.195 %tmp.196;
+        bf %tmp.197 @_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_160_8_163_8_if_end;
+_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_160_8_163_8_if_true:
+_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_161_8_163_8_start:
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 162 12 ]
+        %tmp.199 = getv ? :myLocation;
+        lputv %loc.1 %tmp.199;
+_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_161_8_163_8_stop:
+        goto @_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_160_8_163_8_if_end;
+_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_160_8_163_8_if_end:
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 164 8 ]
+        %tmp.200 = getm $.Toybox.Weather;
+        %tmp.201 = getv function %tmp.200 :getSunrise;
+        %tmp.203 = lgetv %loc.1;
+        %tmp.204 = getm $.Toybox.Time;
+        %tmp.205 = getv function %tmp.204 :now;
+        %tmp.206 = invoke %tmp.204 %tmp.205();
+        %tmp.207 = invoke %tmp.200 %tmp.201(%tmp.203, %tmp.206);
+        putv self :lever_moment %tmp.207;
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 165 8 ]
+        %tmp.208 = getm $.Toybox.Weather;
+        %tmp.209 = getv function %tmp.208 :getSunset;
+        %tmp.211 = lgetv %loc.1;
+        %tmp.212 = getm $.Toybox.Time;
+        %tmp.213 = getv function %tmp.212 :now;
+        %tmp.214 = invoke %tmp.212 %tmp.213();
+        %tmp.215 = invoke %tmp.208 %tmp.209(%tmp.211, %tmp.214);
+        putv self :coucher_moment %tmp.215;
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 166 8 ]
+        %tmp.216 = getm $.Toybox.Time.Gregorian;
+        %tmp.217 = getv function %tmp.216 :info;
+        %tmp.219 = getv ? :lever_moment;
+        %tmp.220 = getm $.Toybox.Time;
+        %tmp.221 = getv %tmp.220 :FORMAT_MEDIUM;
+        %tmp.222 = invoke %tmp.216 %tmp.217(%tmp.219, %tmp.221);
+        putv self :lever %tmp.222;
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 167 8 ]
+        %tmp.223 = getm $.Toybox.Time.Gregorian;
+        %tmp.224 = getv function %tmp.223 :info;
+        %tmp.226 = getv ? :coucher_moment;
+        %tmp.227 = getm $.Toybox.Time;
+        %tmp.228 = getv %tmp.227 :FORMAT_MEDIUM;
+        %tmp.229 = invoke %tmp.223 %tmp.224(%tmp.226, %tmp.228);
+        putv self :coucher %tmp.229;
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 168 8 ]
+        %tmp.230 = getm $.Toybox.Lang;
+        %tmp.231 = getv function %tmp.230 :format;
+        %tmp.232 = "   $1$:$2$     $3$:$4$";
+        %tmp.233 = newa 4;
+        %tmp.235 = getv ? :lever;
+        %tmp.236 = getv %tmp.235 :hour;
+        %tmp.237 = getv function %tmp.236 :format;
+        %tmp.238 = "%02d";
+        %tmp.239 = invoke %tmp.236 %tmp.237(%tmp.238);
+        %tmp.240 = dup %tmp.233;
+        %tmp.241 = aputv %tmp.240 0 %tmp.239;
+        %tmp.243 = getv ? :lever;
+        %tmp.244 = getv %tmp.243 :min;
+        %tmp.245 = getv function %tmp.244 :format;
+        %tmp.246 = "%02d";
+        %tmp.247 = invoke %tmp.244 %tmp.245(%tmp.246);
+        %tmp.248 = dup %tmp.241;
+        %tmp.249 = aputv %tmp.248 1 %tmp.247;
+        %tmp.251 = getv ? :coucher;
+        %tmp.252 = getv %tmp.251 :hour;
+        %tmp.253 = getv function %tmp.252 :format;
+        %tmp.254 = "%02d";
+        %tmp.255 = invoke %tmp.252 %tmp.253(%tmp.254);
+        %tmp.256 = dup %tmp.249;
+        %tmp.257 = aputv %tmp.256 2 %tmp.255;
+        %tmp.259 = getv ? :coucher;
+        %tmp.260 = getv %tmp.259 :min;
+        %tmp.261 = getv function %tmp.260 :format;
+        %tmp.262 = "%02d";
+        %tmp.263 = invoke %tmp.260 %tmp.261(%tmp.262);
+        %tmp.264 = dup %tmp.257;
+        %tmp.265 = aputv %tmp.264 3 %tmp.263;
+        %tmp.266 = invoke %tmp.230 %tmp.231(%tmp.232, %tmp.265);
+        putv self :sunInfoString %tmp.266;
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 169 8 ]
+        %tmp.268 = getv ? :View;
+        %tmp.269 = getv function %tmp.268 :findDrawableById;
+        %tmp.270 = "Ephemeride";
+        %tmp.271 = invoke %tmp.268 %tmp.269(%tmp.270);
+        %tmp.272 = as %tmp.271 Text;
+        putv self :viewEphemeride %tmp.272;
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 170 8 ]
+        %tmp.274 = getv ? :viewEphemeride;
+        %tmp.275 = getv function %tmp.274 :setText;
+        %tmp.277 = getv ? :sunInfoString;
+        invoke %tmp.274 %tmp.275(%tmp.277);
+[ "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc" 173 8 ]
+        %tmp.279 = getv ? :View;
+        %tmp.280 = getv function %tmp.279 :onUpdate;
+        %tmp.282 = lgetv %dc;
+        invoke %tmp.279 %tmp.280(%tmp.282);
+_home_olivier_eclipse_workspace_Hello_word_source_Hello_wordView_mc_116_40_174_4_stop:
+    }
+    [ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 179; ]
+    function onHide() as Void {
+    }
+    [ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 183; ]
+    function onExitSleep() as Void {
+    }
+    [ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 187; ]
+    function onEnterSleep() as Void {
+    }
+}
+[ @file = "/home/olivier/eclipse-workspace/Hello-word/source/Hello-wordView.mc"; @line = 1; ]
+<init> {
+}
