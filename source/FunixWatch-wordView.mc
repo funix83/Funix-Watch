@@ -97,7 +97,9 @@ class FunixWatch_wordView extends WatchUi.WatchFace {
     function onShow() as Void {
     }
 
-    //update les secondes toutes les secondes
+    // on met à jour une zone partielle de l'affichage
+    // toutes les secondes pour l'affichage des secondes
+    // le reste de l'écran est mis à jour toutes les minutes
     function onPartialUpdate(dc) {
         // affichage de l'heure
         clockTime = System.getClockTime();
