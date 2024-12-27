@@ -9,11 +9,15 @@ import Toybox.Activity;
 import Toybox.Weather;
 import Toybox.Sensor;
 
-class Battery extends WatchUi.Drawable
+/*
+// class pour l'affichage d'une jauge de batterie
+// sous la forme d'un rectangle qui se remplit
+// class for displaying a battery gauge as a rectangle that fills
+class Batterie extends WatchUi.Drawable
 {
     hidden var batteryLevel;
 
-    // pass location as locX, locY params
+    // pass location as locX, locY params in layout.xml
     function initialize(options) {
         Drawable.initialize(options);
     }
@@ -27,20 +31,86 @@ class Battery extends WatchUi.Drawable
         dc.drawRectangle(locX, locY, width, height);
         dc.fillRectangle(locX+2,locY+2,(width-4)*batteryLevel/100,height-4);
     }
+}*/
+
+class JaugePasBatArc extends WatchUi.Drawable
+{
+    // Draw Body Battery and Steps arcs
+    // librement inspiré du site / freely inspired by the site
+    // https://medium.com/@ericbt/design-your-own-garmin-watch-face-21d004d38f99
+    var steps;
+    var stepGoal;
+    
+    function initialize(options) {
+        Drawable.initialize(options);
+    }
+
+    function draw(dc) {
+        var WIDTH = dc.getWidth();
+        var HEIGHT = dc.getHeight();
+        var ARCLENGTH = 40;
+        var ArcWidthBody = 2;
+        var ArcWidthFill = 10;
+        var nbSteps = ActivityMonitor.getInfo().steps;
+        var ObjSteps = Toybox.ActivityMonitor.getInfo().stepGoal;
+        var nivbatterie = System.getSystemStats().battery;
+        var ratio;
+     
+        // Dessin du corps de l'arc pour la charge batterie
+        // Draw Body Battery Arc
+        dc.setPenWidth(ArcWidthBody);
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        dc.drawArc(WIDTH/2+5, HEIGHT/2+20, HEIGHT/2 - ArcWidthBody/2, Graphics.ARC_CLOCKWISE, 180 + ARCLENGTH / 2, 180 - ARCLENGTH / 2);
+        dc.drawArc(WIDTH/2+15, HEIGHT/2+20, HEIGHT/2 - ArcWidthBody/2, Graphics.ARC_CLOCKWISE, 180 + ARCLENGTH / 2, 180 - ARCLENGTH / 2);
+        dc.drawLine(12,79,22,80);
+        dc.drawLine(12,139,22,136);
+
+        // remplissage du corps de l'arc batterie
+        // Fill body battery arc
+        dc.setPenWidth(ArcWidthFill);
+        if (nivbatterie != null) {
+            dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+            dc.drawArc(WIDTH/2+7, HEIGHT/2+20, HEIGHT/2 - ArcWidthFill/2, Graphics.ARC_CLOCKWISE, 180 + ARCLENGTH/2, 180 + ARCLENGTH/2 - ARCLENGTH * nivbatterie / 100);
+        }
+
+        // dessin du corps de l'arc pour le ratio entre le nb de pas et l'objectif des pas
+        // Draw Body Steps Arc
+        dc.setPenWidth(ArcWidthBody);
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        dc.drawArc(WIDTH/2-5, HEIGHT/2+20, HEIGHT / 2 - ArcWidthBody/2, Graphics.ARC_COUNTER_CLOCKWISE, 0 - ARCLENGTH / 2, 0 + ARCLENGTH / 2);
+        dc.drawArc(WIDTH/2-15, HEIGHT/2+20, HEIGHT / 2 - ArcWidthBody/2, Graphics.ARC_COUNTER_CLOCKWISE, 0 - ARCLENGTH / 2, 0 + ARCLENGTH / 2);
+        dc.drawLine(156,81,166,79);
+        dc.drawLine(156,136,166,140);
+        
+        // remplissage du corps de l'arc du ratio pas
+        // Fill body steps arc
+        dc.setPenWidth(ArcWidthFill);
+        if (nbSteps != null && nbSteps > 0 && ObjSteps != null) {
+            if (nbSteps > ObjSteps) {
+                nbSteps = ObjSteps;
+            }
+            ratio = 1.0 * nbSteps / ObjSteps;
+            dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+            dc.drawArc(WIDTH/2-7, HEIGHT/2+20, HEIGHT / 2 - ArcWidthFill / 2, Graphics.ARC_COUNTER_CLOCKWISE, 0 - ARCLENGTH / 2, 0 - ARCLENGTH / 2 + ARCLENGTH * ratio);
+        }
+    }
 }
 
-class FunixWatch_wordView extends WatchUi.WatchFace {
-
+class FunixWatchView extends WatchUi.WatchFace
+{
     //variables pour l'heure
     var clockTime;
-    var timeString;
-    var viewheure;
+    var hourString;
+    var minString;
+    var viewHeure;
+    var viewMin;
     var secondString;
     var viewSecond;
+    var fontSecond=WatchUi.loadResource(Rez.Fonts.DejaVu25);
     //variables date
     var today;
     var dateString;
-    var viewdate;
+    var viewDate;
     //variables pourcentage batterie
     var mystats;
     var batString;
@@ -56,6 +126,7 @@ class FunixWatch_wordView extends WatchUi.WatchFace {
     var pas;
     var pasString;
     var viewpas;
+    var viewsteps;
     //variables éphéméride
     var loc;
     var lever_moment;
@@ -64,7 +135,9 @@ class FunixWatch_wordView extends WatchUi.WatchFace {
     var coucher;
     var sunInfoString;
     var viewEphemeride;
+
     //position par défaut (Toulon)
+    //position by default (Toulon city)
     var myLocation = new Position.Location(
   	{
         	:latitude => 43.1257311,
@@ -74,13 +147,13 @@ class FunixWatch_wordView extends WatchUi.WatchFace {
 
     function initialize() {
         WatchFace.initialize();
-        // affichage logo Funix
+        // affichage logo Funix / display Funix logo
         var FunixLogo = new WatchUi.Bitmap({:rezId=>Rez.Drawables.FunixLogo});
-        // affichage logo coeur
+        // affichage logo coeur / display heart logo
         var Coeur = new WatchUi.Bitmap({:rezId=>Rez.Drawables.Coeur});
-        // affichage logo pas
+        // affichage logo pas /display step logo
         var Pas = new WatchUi.Bitmap({:rezId=>Rez.Drawables.Pas});
-        // affichage sunrise sunset
+        // affichage sunrise sunset / display sunrise & sunset logo
 		var Sunrise = new WatchUi.Bitmap({:rezId=>Rez.Drawables.Sunrise});
         var Sunset = new WatchUi.Bitmap({:rezId=>Rez.Drawables.Sunset});
     }
@@ -88,7 +161,6 @@ class FunixWatch_wordView extends WatchUi.WatchFace {
     // Load your resources here
     function onLayout(dc as Dc) as Void {
         setLayout(Rez.Layouts.WatchFace(dc));
-        //var myfont = Toybox.WatchUi.loadResource(Rez.Fonts.FONTdejavu5);
     }
 
     // Called when this View is brought to the foreground. Restore
@@ -100,46 +172,55 @@ class FunixWatch_wordView extends WatchUi.WatchFace {
     // on met à jour une zone partielle de l'affichage
     // toutes les secondes pour l'affichage des secondes
     // le reste de l'écran est mis à jour toutes les minutes
+    // a partial area of ​​the display is updated every second to display the seconds
+    // the rest of the screen is updated every minute by onupdate function
     function onPartialUpdate(dc) {
-        // affichage de l'heure
+        // affichage des secondes dans un petit carré
         clockTime = System.getClockTime();
-        dc.setClip(119,72,40,40);
+        // définition de la zone à rafraichir
+        // definition of the area to refresh
+        dc.setClip(134,80,30,30);
 		dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
+        // affichage des secondes
+        // attention de mettre la même position
+        // et la même font que dans layout.xml
+        // seconds display
+        // be careful to put the same position and the same font as in layout.xml
 		dc.drawText(
-				119,
-				75,
-				Graphics.FONT_SYSTEM_NUMBER_MEDIUM,
+				134,
+				80,
+				fontSecond,
                 clockTime.sec.format("%02d"),
 				Graphics.TEXT_JUSTIFY_LEFT
 			);
         dc.clearClip();
     }
-    // Update the view
+    // Update the view every minute
     function onUpdate(dc as Dc) as Void {
-        // affichage de l'heure
+        // affichage de l'heure / hour display
         clockTime = System.getClockTime();
-        timeString = Lang.format("$1$:$2$", [clockTime.hour.format("%02d"), clockTime.min.format("%02d")]);
-        viewheure = View.findDrawableById("TimeLabel") as Text;
-        viewheure.setText(timeString);
-        // affichage des secondes
+        hourString = Lang.format("$1$:", [clockTime.hour.format("%02d")]);
+        viewHeure = View.findDrawableById("HourLabel") as Text;
+        viewHeure.setText(hourString);
+        // affichage des minutes / minutes display
+        minString = Lang.format("$1$", [clockTime.min.format("%02d")]);
+        viewMin = View.findDrawableById("MinLabel") as Text;
+        viewMin.setText(minString);
+        // affichage des secondes /seconde display every minute only
         secondString = Lang.format("$1$", [clockTime.sec.format("%02d")]);
         viewSecond = View.findDrawableById("SecondLabel") as Text;
         viewSecond.setText(secondString);
-        // affichage de la date
+        // affichage de la date / date display
         today = Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
         dateString = Lang.format("$1$ $2$ $3$", [today.day, today.month, today.year]);
-        viewdate = View.findDrawableById("DateDisplay") as Text;
-        viewdate.setText(dateString);
-        // affichage de la batterie
+        viewDate = View.findDrawableById("DateDisplay") as Text;
+        viewDate.setText(dateString);
+        // affichage de l'état de la batterie en jour/ battery status display in days
         mystats = System.getSystemStats();
         batString = Lang.format("$1$j", [mystats.batteryInDays.format("%2d")]);
         viewbat = View.findDrawableById("BatteryDisplay") as Text;
         viewbat.setText(batString);
-        // affichage de la gauge batterie
-        batteryLevel = System.getSystemStats().battery;
-        viewbatbar = View.findDrawableById("batterie") as Battery;
-        viewbatbar.setLevel(batteryLevel); 
-        // affichage hearbeat
+        // affichage hearbeat / display heartbeat
         coeurbat = Activity.getActivityInfo().currentHeartRate;
         if (coeurbat == null)
         {
@@ -148,7 +229,7 @@ class FunixWatch_wordView extends WatchUi.WatchFace {
         coeurbatString = coeurbat.toString();
         viewcoeur = View.findDrawableById("HeartBeat") as Text;
         viewcoeur.setText(coeurbatString);
-        // affichage pas
+        // affichage nombre de pas quotidien / daily steps display
         pas = ActivityMonitor.getInfo().steps;
         if (pas == null)
         {
@@ -157,7 +238,7 @@ class FunixWatch_wordView extends WatchUi.WatchFace {
         pasString = pas.toString();
         viewpas = View.findDrawableById("Pas") as Text;
         viewpas.setText(pasString);
-        // affichage éphéméride
+        // affichage heures coucher et lever du soleil / display sunset and sunrise times
         var loc = Toybox.Activity.getActivityInfo().currentLocation;
         if (loc == null)
         {
@@ -170,7 +251,7 @@ class FunixWatch_wordView extends WatchUi.WatchFace {
         sunInfoString = Lang.format("   $1$:$2$     $3$:$4$", [lever.hour.format("%02d"), lever.min.format("%02d"), coucher.hour.format("%02d"), coucher.min.format("%02d")]);       
         viewEphemeride = View.findDrawableById("Ephemeride") as Text;
         viewEphemeride.setText(sunInfoString);
-     
+
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
     }

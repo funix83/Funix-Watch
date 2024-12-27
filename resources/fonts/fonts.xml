@@ -1,3 +1,6 @@
 <fonts>
-  <font id="PasFont" filename="PM_15_regular.fnt" antialias="true"/>
+	<font id="PasFont" filename="PM_15_regular.fnt" antialias="true"/>
+	<font id="Indigo44" filename="IndigoOutline44.fnt" antialias="true"/>
+	<font id="DejaVu25" filename="DejaVu25.fnt" antialias="true"/>
+	<font id="Samdan50" filename="Samdan50.fnt" antialias="true"/>
 </fonts>

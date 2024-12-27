@@ -2,8 +2,8 @@ import Toybox.Application;
 import Toybox.Lang;
 import Toybox.WatchUi;
 
-class FunixWatch_wordApp extends Application.AppBase {
-
+class FunixWatchApp extends Application.AppBase
+{
     function initialize() {
         AppBase.initialize();
     }
@@ -18,11 +18,7 @@ class FunixWatch_wordApp extends Application.AppBase {
 
     // Return the initial view of your application here
     function getInitialView() as [Views] or [Views, InputDelegates] {
-        return [ new FunixWatch_wordView() ];
+        return [ new FunixWatchView() ];
     }
 
-}
-
-function getApp() as FunixWatch_wordApp {
-    return Application.getApp() as FunixWatch_wordApp;
 }
