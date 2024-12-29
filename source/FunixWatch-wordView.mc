@@ -52,7 +52,8 @@ class JaugePasBatArc extends WatchUi.Drawable
         var ArcWidthBody = 2;
         var ArcWidthFill = 10;
         var nbSteps = ActivityMonitor.getInfo().steps;
-        var ObjSteps = Toybox.ActivityMonitor.getInfo().stepGoal;
+        //var ObjSteps = Toybox.ActivityMonitor.getInfo().stepGoal;
+        var ObjSteps = 10000;
         var nivbatterie = System.getSystemStats().battery;
         var ratio;
      
@@ -193,10 +194,29 @@ class FunixWatchView extends WatchUi.WatchFace
                 clockTime.sec.format("%02d"),
 				Graphics.TEXT_JUSTIFY_LEFT
 			);
+       
+        // seconde zone à dessiner pour la mise à jour du battement de coeur
+        // second area to draw for heartbeat update
+        coeurbat = Activity.getActivityInfo().currentHeartRate;
+        if (coeurbat == null)
+        {
+            coeurbat ="0";
+        }
+        dc.setClip(142,7,30,40);
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
+        dc.drawText(
+                152,
+                8,
+                Graphics.FONT_XTINY,
+                coeurbat,
+                Graphics.TEXT_JUSTIFY_CENTER
+        );
+
         dc.clearClip();
     }
     // Update the view every minute
     function onUpdate(dc as Dc) as Void {
+        
         // affichage de l'heure / hour display
         clockTime = System.getClockTime();
         hourString = Lang.format("$1$:", [clockTime.hour.format("%02d")]);
@@ -212,7 +232,7 @@ class FunixWatchView extends WatchUi.WatchFace
         viewSecond.setText(secondString);
         // affichage de la date / date display
         today = Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
-        dateString = Lang.format("$1$ $2$ $3$", [today.day, today.month, today.year]);
+        dateString = Lang.format("$1$ $2$ $3$ $4$", [today.day_of_week, today.day, today.month, today.year]);
         viewDate = View.findDrawableById("DateDisplay") as Text;
         viewDate.setText(dateString);
         // affichage de l'état de la batterie en jour/ battery status display in days

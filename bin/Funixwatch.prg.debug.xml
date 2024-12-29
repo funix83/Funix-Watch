@@ -2,272 +2,324 @@
 <debugInfo>
     <manifest filename="/home/olivier/eclipse-workspace/Funix-watch/manifest.xml"/>
     <pcToLineNum>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordApp.mc" id="1" lineNum="5" parent="globals/FunixWatch_wordApp" pc="268435460" symbol="&lt;init&gt;"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordApp.mc" id="2" lineNum="26" parent="globals" pc="268435479" symbol="getApp"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordApp.mc" id="2" lineNum="27" parent="globals" pc="268435489" symbol="getApp"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" id="3" lineNum="7" parent="globals/Rez" pc="268435505" symbol="&lt;init&gt;"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="4" lineNum="12" parent="globals/Battery" pc="268435529" symbol="&lt;init&gt;"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="5" lineNum="32" parent="globals/FunixWatch_wordView" pc="268435548" symbol="&lt;init&gt;"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="5" lineNum="68" parent="globals/FunixWatch_wordView" pc="268435566" symbol="&lt;init&gt;"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordApp.mc" id="6" lineNum="12" parent="globals/FunixWatch_wordApp" pc="268435646" symbol="onStart"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordApp.mc" id="7" lineNum="20" parent="globals/FunixWatch_wordApp" pc="268435649" symbol="getInitialView"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordApp.mc" id="7" lineNum="21" parent="globals/FunixWatch_wordApp" pc="268435651" symbol="getInitialView"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordApp.mc" id="8" lineNum="7" parent="globals/FunixWatch_wordApp" pc="268435692" symbol="initialize"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordApp.mc" id="8" lineNum="8" parent="globals/FunixWatch_wordApp" pc="268435694" symbol="initialize"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordApp.mc" id="9" lineNum="16" parent="globals/FunixWatch_wordApp" pc="268435713" symbol="onStop"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="10" lineNum="17" parent="globals/Battery" pc="268435716" symbol="initialize"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="10" lineNum="18" parent="globals/Battery" pc="268435718" symbol="initialize"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="11" lineNum="25" parent="globals/Battery" pc="268435739" symbol="draw"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="11" lineNum="26" parent="globals/Battery" pc="268435741" symbol="draw"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="11" lineNum="27" parent="globals/Battery" pc="268435763" symbol="draw"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="11" lineNum="28" parent="globals/Battery" pc="268435807" symbol="draw"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="12" lineNum="21" parent="globals/Battery" pc="268435891" symbol="setLevel"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="12" lineNum="22" parent="globals/Battery" pc="268435893" symbol="setLevel"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="16" lineNum="89" parent="globals/FunixWatch_wordView" pc="268435904" symbol="onLayout"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="16" lineNum="90" parent="globals/FunixWatch_wordView" pc="268435906" symbol="onLayout"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="17" lineNum="101" parent="globals/FunixWatch_wordView" pc="268435948" symbol="onPartialUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="17" lineNum="103" parent="globals/FunixWatch_wordView" pc="268435950" symbol="onPartialUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="17" lineNum="104" parent="globals/FunixWatch_wordView" pc="268435973" symbol="onPartialUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="17" lineNum="105" parent="globals/FunixWatch_wordView" pc="268436005" symbol="onPartialUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="17" lineNum="106" parent="globals/FunixWatch_wordView" pc="268436027" symbol="onPartialUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="17" lineNum="113" parent="globals/FunixWatch_wordView" pc="268436087" symbol="onPartialUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="19" lineNum="75" parent="globals/FunixWatch_wordView" pc="268436100" symbol="initialize"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="19" lineNum="76" parent="globals/FunixWatch_wordView" pc="268436104" symbol="initialize"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="19" lineNum="78" parent="globals/FunixWatch_wordView" pc="268436122" symbol="initialize"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="19" lineNum="80" parent="globals/FunixWatch_wordView" pc="268436188" symbol="initialize"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="19" lineNum="82" parent="globals/FunixWatch_wordView" pc="268436254" symbol="initialize"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="19" lineNum="84" parent="globals/FunixWatch_wordView" pc="268436320" symbol="initialize"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="19" lineNum="85" parent="globals/FunixWatch_wordView" pc="268436386" symbol="initialize"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="20" lineNum="116" parent="globals/FunixWatch_wordView" pc="268436453" symbol="onUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="20" lineNum="118" parent="globals/FunixWatch_wordView" pc="268436457" symbol="onUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="20" lineNum="119" parent="globals/FunixWatch_wordView" pc="268436480" symbol="onUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="20" lineNum="120" parent="globals/FunixWatch_wordView" pc="268436586" symbol="onUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="20" lineNum="121" parent="globals/FunixWatch_wordView" pc="268436620" symbol="onUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="20" lineNum="123" parent="globals/FunixWatch_wordView" pc="268436646" symbol="onUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="20" lineNum="124" parent="globals/FunixWatch_wordView" pc="268436716" symbol="onUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="20" lineNum="125" parent="globals/FunixWatch_wordView" pc="268436750" symbol="onUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="20" lineNum="127" parent="globals/FunixWatch_wordView" pc="268436776" symbol="onUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="20" lineNum="128" parent="globals/FunixWatch_wordView" pc="268436819" symbol="onUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="20" lineNum="129" parent="globals/FunixWatch_wordView" pc="268436919" symbol="onUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="20" lineNum="130" parent="globals/FunixWatch_wordView" pc="268436953" symbol="onUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="20" lineNum="132" parent="globals/FunixWatch_wordView" pc="268436979" symbol="onUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="20" lineNum="133" parent="globals/FunixWatch_wordView" pc="268437002" symbol="onUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="20" lineNum="134" parent="globals/FunixWatch_wordView" pc="268437072" symbol="onUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="20" lineNum="135" parent="globals/FunixWatch_wordView" pc="268437106" symbol="onUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="20" lineNum="137" parent="globals/FunixWatch_wordView" pc="268437132" symbol="onUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="20" lineNum="138" parent="globals/FunixWatch_wordView" pc="268437161" symbol="onUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="20" lineNum="139" parent="globals/FunixWatch_wordView" pc="268437195" symbol="onUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="20" lineNum="141" parent="globals/FunixWatch_wordView" pc="268437221" symbol="onUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="20" lineNum="142" parent="globals/FunixWatch_wordView" pc="268437250" symbol="onUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="20" lineNum="144" parent="globals/FunixWatch_wordView" pc="268437262" symbol="onUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="20" lineNum="146" parent="globals/FunixWatch_wordView" pc="268437278" symbol="onUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="20" lineNum="147" parent="globals/FunixWatch_wordView" pc="268437303" symbol="onUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="20" lineNum="148" parent="globals/FunixWatch_wordView" pc="268437337" symbol="onUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="20" lineNum="150" parent="globals/FunixWatch_wordView" pc="268437363" symbol="onUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="20" lineNum="151" parent="globals/FunixWatch_wordView" pc="268437394" symbol="onUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="20" lineNum="153" parent="globals/FunixWatch_wordView" pc="268437406" symbol="onUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="20" lineNum="155" parent="globals/FunixWatch_wordView" pc="268437422" symbol="onUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="20" lineNum="156" parent="globals/FunixWatch_wordView" pc="268437447" symbol="onUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="20" lineNum="157" parent="globals/FunixWatch_wordView" pc="268437481" symbol="onUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="20" lineNum="159" parent="globals/FunixWatch_wordView" pc="268437507" symbol="onUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="20" lineNum="160" parent="globals/FunixWatch_wordView" pc="268437530" symbol="onUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="20" lineNum="162" parent="globals/FunixWatch_wordView" pc="268437536" symbol="onUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="20" lineNum="164" parent="globals/FunixWatch_wordView" pc="268437549" symbol="onUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="20" lineNum="165" parent="globals/FunixWatch_wordView" pc="268437589" symbol="onUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="20" lineNum="166" parent="globals/FunixWatch_wordView" pc="268437629" symbol="onUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="20" lineNum="167" parent="globals/FunixWatch_wordView" pc="268437665" symbol="onUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="20" lineNum="168" parent="globals/FunixWatch_wordView" pc="268437701" symbol="onUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="20" lineNum="169" parent="globals/FunixWatch_wordView" pc="268437879" symbol="onUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="20" lineNum="170" parent="globals/FunixWatch_wordView" pc="268437913" symbol="onUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="20" lineNum="173" parent="globals/FunixWatch_wordView" pc="268437939" symbol="onUpdate"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" id="21" lineNum="22" parent="globals/Rez/Layouts" pc="268437964" symbol="WatchFace"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" id="21" lineNum="23" parent="globals/Rez/Layouts" pc="268437976" symbol="WatchFace"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" id="21" lineNum="24" parent="globals/Rez/Layouts" pc="268438017" symbol="WatchFace"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" id="21" lineNum="26" parent="globals/Rez/Layouts" pc="268438129" symbol="WatchFace"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" id="21" lineNum="28" parent="globals/Rez/Layouts" pc="268438241" symbol="WatchFace"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" id="21" lineNum="30" parent="globals/Rez/Layouts" pc="268438353" symbol="WatchFace"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" id="21" lineNum="32" parent="globals/Rez/Layouts" pc="268438465" symbol="WatchFace"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" id="21" lineNum="34" parent="globals/Rez/Layouts" pc="268438577" symbol="WatchFace"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" id="21" lineNum="36" parent="globals/Rez/Layouts" pc="268438689" symbol="WatchFace"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" id="21" lineNum="38" parent="globals/Rez/Layouts" pc="268438798" symbol="WatchFace"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" id="21" lineNum="40" parent="globals/Rez/Layouts" pc="268438897" symbol="WatchFace"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" id="21" lineNum="42" parent="globals/Rez/Layouts" pc="268439002" symbol="WatchFace"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" id="21" lineNum="44" parent="globals/Rez/Layouts" pc="268439107" symbol="WatchFace"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" id="21" lineNum="46" parent="globals/Rez/Layouts" pc="268439212" symbol="WatchFace"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" id="21" lineNum="48" parent="globals/Rez/Layouts" pc="268439317" symbol="WatchFace"/>
-        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" id="21" lineNum="50" parent="globals/Rez/Layouts" pc="268439422" symbol="WatchFace"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordApp.mc" id="1" lineNum="5" parent="globals/FunixWatchApp" pc="268435460" symbol="&lt;init&gt;"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" id="2" lineNum="7" parent="globals/Rez" pc="268435479" symbol="&lt;init&gt;"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="3" lineNum="100" parent="globals/FunixWatchView" pc="268435503" symbol="&lt;init&gt;"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="3" lineNum="110" parent="globals/FunixWatchView" pc="268435521" symbol="&lt;init&gt;"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="3" lineNum="142" parent="globals/FunixWatchView" pc="268435568" symbol="&lt;init&gt;"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="4" lineNum="36" parent="globals/JaugePasBatArc" pc="268435648" symbol="&lt;init&gt;"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordApp.mc" id="5" lineNum="12" parent="globals/FunixWatchApp" pc="268435667" symbol="onStart"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordApp.mc" id="6" lineNum="20" parent="globals/FunixWatchApp" pc="268435670" symbol="getInitialView"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordApp.mc" id="6" lineNum="21" parent="globals/FunixWatchApp" pc="268435672" symbol="getInitialView"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordApp.mc" id="7" lineNum="7" parent="globals/FunixWatchApp" pc="268435713" symbol="initialize"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordApp.mc" id="7" lineNum="8" parent="globals/FunixWatchApp" pc="268435715" symbol="initialize"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordApp.mc" id="8" lineNum="16" parent="globals/FunixWatchApp" pc="268435734" symbol="onStop"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="12" lineNum="163" parent="globals/FunixWatchView" pc="268435737" symbol="onLayout"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="12" lineNum="164" parent="globals/FunixWatchView" pc="268435739" symbol="onLayout"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="13" lineNum="178" parent="globals/FunixWatchView" pc="268435781" symbol="onPartialUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="13" lineNum="180" parent="globals/FunixWatchView" pc="268435783" symbol="onPartialUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="13" lineNum="183" parent="globals/FunixWatchView" pc="268435806" symbol="onPartialUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="13" lineNum="184" parent="globals/FunixWatchView" pc="268435838" symbol="onPartialUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="13" lineNum="190" parent="globals/FunixWatchView" pc="268435860" symbol="onPartialUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="13" lineNum="200" parent="globals/FunixWatchView" pc="268435923" symbol="onPartialUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="13" lineNum="201" parent="globals/FunixWatchView" pc="268435952" symbol="onPartialUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="13" lineNum="203" parent="globals/FunixWatchView" pc="268435964" symbol="onPartialUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="13" lineNum="205" parent="globals/FunixWatchView" pc="268435980" symbol="onPartialUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="13" lineNum="206" parent="globals/FunixWatchView" pc="268436012" symbol="onPartialUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="13" lineNum="207" parent="globals/FunixWatchView" pc="268436034" symbol="onPartialUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="13" lineNum="215" parent="globals/FunixWatchView" pc="268436074" symbol="onPartialUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="15" lineNum="149" parent="globals/FunixWatchView" pc="268436087" symbol="initialize"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="15" lineNum="150" parent="globals/FunixWatchView" pc="268436091" symbol="initialize"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="15" lineNum="152" parent="globals/FunixWatchView" pc="268436109" symbol="initialize"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="15" lineNum="154" parent="globals/FunixWatchView" pc="268436175" symbol="initialize"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="15" lineNum="156" parent="globals/FunixWatchView" pc="268436241" symbol="initialize"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="15" lineNum="158" parent="globals/FunixWatchView" pc="268436307" symbol="initialize"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="15" lineNum="159" parent="globals/FunixWatchView" pc="268436373" symbol="initialize"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="16" lineNum="218" parent="globals/FunixWatchView" pc="268436440" symbol="onUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="16" lineNum="221" parent="globals/FunixWatchView" pc="268436444" symbol="onUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="16" lineNum="222" parent="globals/FunixWatchView" pc="268436467" symbol="onUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="16" lineNum="223" parent="globals/FunixWatchView" pc="268436537" symbol="onUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="16" lineNum="224" parent="globals/FunixWatchView" pc="268436571" symbol="onUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="16" lineNum="226" parent="globals/FunixWatchView" pc="268436597" symbol="onUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="16" lineNum="227" parent="globals/FunixWatchView" pc="268436667" symbol="onUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="16" lineNum="228" parent="globals/FunixWatchView" pc="268436701" symbol="onUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="16" lineNum="230" parent="globals/FunixWatchView" pc="268436727" symbol="onUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="16" lineNum="231" parent="globals/FunixWatchView" pc="268436797" symbol="onUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="16" lineNum="232" parent="globals/FunixWatchView" pc="268436831" symbol="onUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="16" lineNum="234" parent="globals/FunixWatchView" pc="268436857" symbol="onUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="16" lineNum="235" parent="globals/FunixWatchView" pc="268436900" symbol="onUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="16" lineNum="236" parent="globals/FunixWatchView" pc="268437022" symbol="onUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="16" lineNum="237" parent="globals/FunixWatchView" pc="268437056" symbol="onUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="16" lineNum="239" parent="globals/FunixWatchView" pc="268437082" symbol="onUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="16" lineNum="240" parent="globals/FunixWatchView" pc="268437105" symbol="onUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="16" lineNum="241" parent="globals/FunixWatchView" pc="268437175" symbol="onUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="16" lineNum="242" parent="globals/FunixWatchView" pc="268437209" symbol="onUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="16" lineNum="244" parent="globals/FunixWatchView" pc="268437235" symbol="onUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="16" lineNum="245" parent="globals/FunixWatchView" pc="268437264" symbol="onUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="16" lineNum="247" parent="globals/FunixWatchView" pc="268437276" symbol="onUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="16" lineNum="249" parent="globals/FunixWatchView" pc="268437292" symbol="onUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="16" lineNum="250" parent="globals/FunixWatchView" pc="268437317" symbol="onUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="16" lineNum="251" parent="globals/FunixWatchView" pc="268437351" symbol="onUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="16" lineNum="253" parent="globals/FunixWatchView" pc="268437377" symbol="onUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="16" lineNum="254" parent="globals/FunixWatchView" pc="268437408" symbol="onUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="16" lineNum="256" parent="globals/FunixWatchView" pc="268437420" symbol="onUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="16" lineNum="258" parent="globals/FunixWatchView" pc="268437436" symbol="onUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="16" lineNum="259" parent="globals/FunixWatchView" pc="268437461" symbol="onUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="16" lineNum="260" parent="globals/FunixWatchView" pc="268437495" symbol="onUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="16" lineNum="262" parent="globals/FunixWatchView" pc="268437521" symbol="onUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="16" lineNum="263" parent="globals/FunixWatchView" pc="268437544" symbol="onUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="16" lineNum="265" parent="globals/FunixWatchView" pc="268437550" symbol="onUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="16" lineNum="267" parent="globals/FunixWatchView" pc="268437563" symbol="onUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="16" lineNum="268" parent="globals/FunixWatchView" pc="268437603" symbol="onUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="16" lineNum="269" parent="globals/FunixWatchView" pc="268437643" symbol="onUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="16" lineNum="270" parent="globals/FunixWatchView" pc="268437679" symbol="onUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="16" lineNum="271" parent="globals/FunixWatchView" pc="268437715" symbol="onUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="16" lineNum="272" parent="globals/FunixWatchView" pc="268437893" symbol="onUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="16" lineNum="273" parent="globals/FunixWatchView" pc="268437927" symbol="onUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="16" lineNum="276" parent="globals/FunixWatchView" pc="268437953" symbol="onUpdate"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="17" lineNum="44" parent="globals/JaugePasBatArc" pc="268437978" symbol="initialize"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="17" lineNum="45" parent="globals/JaugePasBatArc" pc="268437980" symbol="initialize"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="18" lineNum="48" parent="globals/JaugePasBatArc" pc="268438001" symbol="draw"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="18" lineNum="49" parent="globals/JaugePasBatArc" pc="268438005" symbol="draw"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="18" lineNum="50" parent="globals/JaugePasBatArc" pc="268438018" symbol="draw"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="18" lineNum="51" parent="globals/JaugePasBatArc" pc="268438031" symbol="draw"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="18" lineNum="52" parent="globals/JaugePasBatArc" pc="268438038" symbol="draw"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="18" lineNum="53" parent="globals/JaugePasBatArc" pc="268438045" symbol="draw"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="18" lineNum="54" parent="globals/JaugePasBatArc" pc="268438052" symbol="draw"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="18" lineNum="56" parent="globals/JaugePasBatArc" pc="268438077" symbol="draw"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="18" lineNum="57" parent="globals/JaugePasBatArc" pc="268438084" symbol="draw"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="18" lineNum="62" parent="globals/JaugePasBatArc" pc="268438107" symbol="draw"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="18" lineNum="63" parent="globals/JaugePasBatArc" pc="268438121" symbol="draw"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="18" lineNum="64" parent="globals/JaugePasBatArc" pc="268438143" symbol="draw"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="18" lineNum="65" parent="globals/JaugePasBatArc" pc="268438233" symbol="draw"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="18" lineNum="66" parent="globals/JaugePasBatArc" pc="268438323" symbol="draw"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="18" lineNum="67" parent="globals/JaugePasBatArc" pc="268438355" symbol="draw"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="18" lineNum="71" parent="globals/JaugePasBatArc" pc="268438387" symbol="draw"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="18" lineNum="72" parent="globals/JaugePasBatArc" pc="268438401" symbol="draw"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="18" lineNum="73" parent="globals/JaugePasBatArc" pc="268438408" symbol="draw"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="18" lineNum="74" parent="globals/JaugePasBatArc" pc="268438430" symbol="draw"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="18" lineNum="79" parent="globals/JaugePasBatArc" pc="268438535" symbol="draw"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="18" lineNum="80" parent="globals/JaugePasBatArc" pc="268438549" symbol="draw"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="18" lineNum="81" parent="globals/JaugePasBatArc" pc="268438571" symbol="draw"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="18" lineNum="82" parent="globals/JaugePasBatArc" pc="268438661" symbol="draw"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="18" lineNum="83" parent="globals/JaugePasBatArc" pc="268438751" symbol="draw"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="18" lineNum="84" parent="globals/JaugePasBatArc" pc="268438783" symbol="draw"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="18" lineNum="88" parent="globals/JaugePasBatArc" pc="268438815" symbol="draw"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="18" lineNum="89" parent="globals/JaugePasBatArc" pc="268438829" symbol="draw"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="18" lineNum="90" parent="globals/JaugePasBatArc" pc="268438854" symbol="draw"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="18" lineNum="91" parent="globals/JaugePasBatArc" pc="268438862" symbol="draw"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="18" lineNum="93" parent="globals/JaugePasBatArc" pc="268438869" symbol="draw"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="18" lineNum="94" parent="globals/JaugePasBatArc" pc="268438882" symbol="draw"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" id="18" lineNum="95" parent="globals/JaugePasBatArc" pc="268438904" symbol="draw"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" id="19" lineNum="25" parent="globals/Rez/Layouts" pc="268439004" symbol="WatchFace"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" id="19" lineNum="26" parent="globals/Rez/Layouts" pc="268439016" symbol="WatchFace"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" id="19" lineNum="27" parent="globals/Rez/Layouts" pc="268439057" symbol="WatchFace"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" id="19" lineNum="28" parent="globals/Rez/Layouts" pc="268439098" symbol="WatchFace"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" id="19" lineNum="29" parent="globals/Rez/Layouts" pc="268439139" symbol="WatchFace"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" id="19" lineNum="30" parent="globals/Rez/Layouts" pc="268439180" symbol="WatchFace"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" id="19" lineNum="32" parent="globals/Rez/Layouts" pc="268439289" symbol="WatchFace"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" id="19" lineNum="34" parent="globals/Rez/Layouts" pc="268439398" symbol="WatchFace"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" id="19" lineNum="36" parent="globals/Rez/Layouts" pc="268439507" symbol="WatchFace"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" id="19" lineNum="38" parent="globals/Rez/Layouts" pc="268439619" symbol="WatchFace"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" id="19" lineNum="40" parent="globals/Rez/Layouts" pc="268439731" symbol="WatchFace"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" id="19" lineNum="42" parent="globals/Rez/Layouts" pc="268439843" symbol="WatchFace"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" id="19" lineNum="44" parent="globals/Rez/Layouts" pc="268439955" symbol="WatchFace"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" id="19" lineNum="46" parent="globals/Rez/Layouts" pc="268440064" symbol="WatchFace"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" id="19" lineNum="48" parent="globals/Rez/Layouts" pc="268440111" symbol="WatchFace"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" id="19" lineNum="50" parent="globals/Rez/Layouts" pc="268440216" symbol="WatchFace"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" id="19" lineNum="52" parent="globals/Rez/Layouts" pc="268440321" symbol="WatchFace"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" id="19" lineNum="54" parent="globals/Rez/Layouts" pc="268440426" symbol="WatchFace"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" id="19" lineNum="56" parent="globals/Rez/Layouts" pc="268440531" symbol="WatchFace"/>
+        <entry filename="/home/olivier/eclipse-workspace/Funix-watch/bin/gen/006-B3888-00/source/Rez.mcgen" id="19" lineNum="58" parent="globals/Rez/Layouts" pc="268440636" symbol="WatchFace"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
-        <entry field="true" id="28" symbol="sunInfoString"/>
+        <entry field="true" id="30" symbol="sunInfoString"/>
         <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
-        <entry field="true" id="18" symbol="coucher_moment"/>
-        <entry field="true" id="16" symbol="coeurbatString"/>
-        <entry field="true" id="32" symbol="viewbat"/>
-        <entry field="true" id="19" symbol="dateString"/>
+        <entry field="true" id="17" symbol="coucher_moment"/>
+        <entry id="9" object="true" symbol="JaugePasBatArc"/>
+        <entry id="7" object="true" symbol="FunixWatchApp"/>
+        <entry field="true" id="15" symbol="coeurbatString"/>
+        <entry field="true" id="36" symbol="viewbat"/>
+        <entry field="true" id="18" symbol="dateString"/>
         <entry id="8388924" module="true" symbol="Gregorian"/>
         <entry field="true" id="8388611" module="true" symbol="Toybox"/>
-        <entry field="true" id="26" symbol="pasString"/>
-        <entry field="true" id="44" symbol="PasFont"/>
-        <entry field="true" id="45" symbol="AppName"/>
-        <entry field="true" id="39" symbol="FunixLogo"/>
+        <entry field="true" id="28" symbol="pasString"/>
+        <entry field="true" id="49" symbol="PasFont"/>
+        <entry field="true" id="51" symbol="AppName"/>
+        <entry field="true" id="42" symbol="FunixLogo"/>
         <entry id="6" module="true" symbol="globals/Rez/Strings"/>
+        <entry field="true" id="24" symbol="minString"/>
         <entry id="8388772" module="true" object="true" symbol="Fonts"/>
         <entry id="8389345" symbol="rezId"/>
+        <entry field="true" id="8388912" symbol="steps"/>
         <entry id="8388631" module="true" symbol="Activity"/>
         <entry id="8388648" module="true" symbol="WatchUi"/>
         <entry id="8390097" method="true" symbol="onPartialUpdate"/>
+        <entry id="8" object="true" symbol="FunixWatchView"/>
+        <entry field="true" id="8388913" symbol="stepGoal"/>
         <entry id="2" module="true" symbol="globals/Rez"/>
-        <entry field="true" id="31" symbol="viewSecond"/>
+        <entry field="true" id="35" symbol="viewSecond"/>
         <entry id="8389124" method="true" symbol="onUpdate"/>
         <entry id="8389375" method="true" object="true" symbol="WatchFace"/>
         <entry field="true" id="8389065" symbol="locY"/>
         <entry field="true" id="8389064" symbol="locX"/>
-        <entry field="true" id="43" symbol="Sunset"/>
+        <entry field="true" id="46" symbol="Sunset"/>
         <entry id="8391489" module="true" symbol="Weather"/>
         <entry id="8388764" method="true" symbol="format"/>
         <entry id="8388771" module="true" object="true" symbol="Drawables"/>
         <entry id="8389314" symbol="latitude"/>
         <entry id="8389348" symbol="font"/>
-        <entry field="true" id="8389067" symbol="height"/>
-        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry field="true" id="34" symbol="viewMin"/>
         <entry id="5" module="true" symbol="globals/Rez/Layouts"/>
-        <entry field="true" id="8389066" symbol="width"/>
         <entry field="true" id="8388923" method="true" symbol="today"/>
         <entry id="8389122" method="true" symbol="onLayout"/>
         <entry id="8389376" method="true" symbol="onEnterSleep"/>
         <entry field="true" id="8389063" symbol="identifier"/>
-        <entry id="12" method="true" symbol="setLevel"/>
         <entry id="8389349" symbol="justification"/>
-        <entry field="true" id="11" symbol="batteryLevel"/>
-        <entry field="true" id="22" symbol="loc"/>
+        <entry field="true" id="12" symbol="batteryLevel"/>
+        <entry field="true" id="23" symbol="loc"/>
         <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
-        <entry field="true" id="33" symbol="viewbatbar"/>
-        <entry field="true" id="34" symbol="viewcoeur"/>
-        <entry field="true" id="29" symbol="timeString"/>
-        <entry id="9" object="true" symbol="FunixWatch_wordView"/>
+        <entry field="true" id="37" symbol="viewbatbar"/>
+        <entry field="true" id="38" symbol="viewcoeur"/>
         <entry id="8389377" method="true" symbol="onExitSleep"/>
         <entry id="8388644" module="true" symbol="System"/>
         <entry id="8389315" symbol="longitude"/>
-        <entry field="true" id="30" symbol="viewEphemeride"/>
+        <entry field="true" id="20" symbol="hourString"/>
+        <entry field="true" id="32" symbol="viewEphemeride"/>
         <entry id="8388645" module="true" symbol="Time"/>
         <entry id="8388769" module="true" object="true" symbol="Rez"/>
-        <entry field="true" id="35" symbol="viewdate"/>
-        <entry field="true" id="21" symbol="lever_moment"/>
+        <entry field="true" id="50" symbol="Samdan50"/>
+        <entry field="true" id="48" symbol="Indigo44"/>
+        <entry field="true" id="22" symbol="lever_moment"/>
         <entry id="8388640" module="true" symbol="Lang"/>
-        <entry field="true" id="27" symbol="secondString"/>
+        <entry field="true" id="29" symbol="secondString"/>
+        <entry field="true" id="19" symbol="fontSecond"/>
         <entry id="8389068" method="true" symbol="draw"/>
-        <entry field="true" id="38" symbol="Coeur"/>
-        <entry field="true" id="40" symbol="LauncherIcon"/>
-        <entry field="true" id="14" symbol="clockTime"/>
+        <entry field="true" id="41" symbol="Coeur"/>
+        <entry field="true" id="33" symbol="viewHeure"/>
+        <entry field="true" id="43" symbol="LauncherIcon"/>
+        <entry field="true" id="13" symbol="clockTime"/>
         <entry id="8388610" symbol="statics"/>
         <entry id="8389123" method="true" symbol="onShow"/>
         <entry id="8388643" module="true" symbol="Sensor"/>
-        <entry field="true" id="42" symbol="Sunrise"/>
-        <entry id="8" object="true" symbol="FunixWatch_wordApp"/>
+        <entry field="true" id="45" symbol="Sunrise"/>
         <entry id="8389350" module="true" symbol="globals"/>
+        <entry field="true" id="47" symbol="DejaVu25"/>
         <entry id="8388770" module="true" object="true" symbol="Strings"/>
-        <entry field="true" id="23" symbol="myLocation"/>
-        <entry id="7" object="true" symbol="Battery"/>
-        <entry field="true" id="24" symbol="mystats"/>
+        <entry field="true" id="25" symbol="myLocation"/>
+        <entry field="true" id="26" symbol="mystats"/>
         <entry id="8388702" method="true" symbol="initialize"/>
         <entry id="8389279" method="true" symbol="onStart"/>
-        <entry field="true" id="20" symbol="lever"/>
+        <entry field="true" id="21" symbol="lever"/>
+        <entry field="true" id="31" symbol="viewDate"/>
         <entry id="8389280" method="true" symbol="getInitialView"/>
         <entry id="8389281" method="true" symbol="onStop"/>
         <entry id="8389347" symbol="color"/>
         <entry id="10" module="true" symbol="Layouts"/>
         <entry id="8389317" symbol="degrees"/>
-        <entry field="true" id="36" symbol="viewheure"/>
         <entry id="8388642" module="true" symbol="Position"/>
-        <entry field="true" id="17" symbol="coucher"/>
+        <entry field="true" id="16" symbol="coucher"/>
         <entry id="4" module="true" symbol="globals/Rez/Fonts"/>
         <entry id="8389125" method="true" symbol="onHide"/>
-        <entry field="true" id="37" symbol="viewpas"/>
-        <entry field="true" id="25" symbol="pas"/>
-        <entry field="true" id="41" symbol="Pas"/>
+        <entry field="true" id="39" symbol="viewpas"/>
+        <entry field="true" id="27" symbol="pas"/>
+        <entry field="true" id="40" symbol="viewsteps"/>
+        <entry field="true" id="44" symbol="Pas"/>
         <entry id="8388635" module="true" symbol="Application"/>
-        <entry field="true" id="15" symbol="coeurbat"/>
-        <entry field="true" id="13" symbol="batString"/>
+        <entry field="true" id="14" symbol="coeurbat"/>
+        <entry field="true" id="11" symbol="batString"/>
     </symbolTable>
     <localVars>
-        <entry arg="true" endPc="268435738" name="options" stackId="1" startPc="268435716"/>
-        <entry arg="true" endPc="268435890" name="dc" stackId="1" startPc="268435739"/>
-        <entry arg="true" endPc="268435903" name="percentage" stackId="1" startPc="268435891"/>
-        <entry arg="true" endPc="268435947" name="dc" stackId="1" startPc="268435904"/>
-        <entry arg="true" endPc="268436099" name="dc" stackId="1" startPc="268435948"/>
-        <entry endPc="268436451" name="FunixLogo" stackId="1" startPc="268436104"/>
-        <entry endPc="268436451" name="Coeur" stackId="2" startPc="268436104"/>
-        <entry endPc="268436451" name="Pas" stackId="3" startPc="268436104"/>
-        <entry endPc="268436451" name="Sunrise" stackId="4" startPc="268436104"/>
-        <entry endPc="268436451" name="Sunset" stackId="5" startPc="268436104"/>
-        <entry arg="true" endPc="268437963" name="dc" stackId="1" startPc="268436453"/>
-        <entry endPc="268437962" name="loc" stackId="2" startPc="268436457"/>
-        <entry arg="true" endPc="268439558" name="dc" stackId="1" startPc="268437964"/>
-        <entry endPc="268439558" name="local_Rez_Fonts_PasFont" stackId="2" startPc="268437976"/>
-        <entry endPc="268439558" name="rez_cmp_local_text_TimeLabel" stackId="3" startPc="268437976"/>
-        <entry endPc="268439558" name="rez_cmp_local_text_SecondLabel" stackId="4" startPc="268437976"/>
-        <entry endPc="268439558" name="rez_cmp_local_text_BatteryDisplay" stackId="5" startPc="268437976"/>
-        <entry endPc="268439558" name="rez_cmp_local_text_DateDisplay" stackId="6" startPc="268437976"/>
-        <entry endPc="268439558" name="rez_cmp_local_text_Ephemeride" stackId="7" startPc="268437976"/>
-        <entry endPc="268439558" name="rez_cmp_local_text_HeartBeat" stackId="8" startPc="268437976"/>
-        <entry endPc="268439558" name="rez_cmp_local_text_Pas" stackId="9" startPc="268437976"/>
-        <entry endPc="268439558" name="rez_cmp_local_custom_drawable_batterie" stackId="10" startPc="268437976"/>
-        <entry endPc="268439558" name="rez_cmp_local_bitmap_FunixLogo" stackId="11" startPc="268437976"/>
-        <entry endPc="268439558" name="rez_cmp_local_bitmap_Sunrise" stackId="12" startPc="268437976"/>
-        <entry endPc="268439558" name="rez_cmp_local_bitmap_Sunset" stackId="13" startPc="268437976"/>
-        <entry endPc="268439558" name="rez_cmp_local_bitmap_Coeur" stackId="14" startPc="268437976"/>
-        <entry endPc="268439558" name="rez_cmp_local_bitmap_Pas" stackId="15" startPc="268437976"/>
+        <entry arg="true" endPc="268435780" name="dc" stackId="1" startPc="268435737"/>
+        <entry arg="true" endPc="268436086" name="dc" stackId="1" startPc="268435781"/>
+        <entry endPc="268436438" name="FunixLogo" stackId="1" startPc="268436091"/>
+        <entry endPc="268436438" name="Coeur" stackId="2" startPc="268436091"/>
+        <entry endPc="268436438" name="Pas" stackId="3" startPc="268436091"/>
+        <entry endPc="268436438" name="Sunrise" stackId="4" startPc="268436091"/>
+        <entry endPc="268436438" name="Sunset" stackId="5" startPc="268436091"/>
+        <entry arg="true" endPc="268437977" name="dc" stackId="1" startPc="268436440"/>
+        <entry endPc="268437976" name="loc" stackId="2" startPc="268436444"/>
+        <entry arg="true" endPc="268438000" name="options" stackId="1" startPc="268437978"/>
+        <entry arg="true" endPc="268439003" name="dc" stackId="1" startPc="268438001"/>
+        <entry endPc="268439002" name="WIDTH" stackId="2" startPc="268438005"/>
+        <entry endPc="268439002" name="HEIGHT" stackId="3" startPc="268438005"/>
+        <entry endPc="268439002" name="ARCLENGTH" stackId="4" startPc="268438005"/>
+        <entry endPc="268439002" name="ArcWidthBody" stackId="5" startPc="268438005"/>
+        <entry endPc="268439002" name="ArcWidthFill" stackId="6" startPc="268438005"/>
+        <entry endPc="268439002" name="nbSteps" stackId="7" startPc="268438005"/>
+        <entry endPc="268439002" name="ObjSteps" stackId="8" startPc="268438005"/>
+        <entry endPc="268439002" name="nivbatterie" stackId="9" startPc="268438005"/>
+        <entry endPc="268439002" name="ratio" stackId="10" startPc="268438005"/>
+        <entry arg="true" endPc="268440782" name="dc" stackId="1" startPc="268439004"/>
+        <entry endPc="268440782" name="local_Rez_Fonts_Indigo44" stackId="2" startPc="268439016"/>
+        <entry endPc="268440782" name="local_Rez_Fonts_DejaVu25" stackId="3" startPc="268439016"/>
+        <entry endPc="268440782" name="local_Rez_Fonts_Samdan50" stackId="4" startPc="268439016"/>
+        <entry endPc="268440782" name="local_Rez_Fonts_PasFont" stackId="5" startPc="268439016"/>
+        <entry endPc="268440782" name="rez_cmp_local_text_HourLabel" stackId="6" startPc="268439016"/>
+        <entry endPc="268440782" name="rez_cmp_local_text_MinLabel" stackId="7" startPc="268439016"/>
+        <entry endPc="268440782" name="rez_cmp_local_text_SecondLabel" stackId="8" startPc="268439016"/>
+        <entry endPc="268440782" name="rez_cmp_local_text_BatteryDisplay" stackId="9" startPc="268439016"/>
+        <entry endPc="268440782" name="rez_cmp_local_text_DateDisplay" stackId="10" startPc="268439016"/>
+        <entry endPc="268440782" name="rez_cmp_local_text_Ephemeride" stackId="11" startPc="268439016"/>
+        <entry endPc="268440782" name="rez_cmp_local_text_HeartBeat" stackId="12" startPc="268439016"/>
+        <entry endPc="268440782" name="rez_cmp_local_text_Pas" stackId="13" startPc="268439016"/>
+        <entry endPc="268440782" name="rez_cmp_local_custom_drawable_Jaugepas" stackId="14" startPc="268439016"/>
+        <entry endPc="268440782" name="rez_cmp_local_bitmap_FunixLogo" stackId="15" startPc="268439016"/>
+        <entry endPc="268440782" name="rez_cmp_local_bitmap_Sunrise" stackId="16" startPc="268439016"/>
+        <entry endPc="268440782" name="rez_cmp_local_bitmap_Sunset" stackId="17" startPc="268439016"/>
+        <entry endPc="268440782" name="rez_cmp_local_bitmap_Coeur" stackId="18" startPc="268439016"/>
+        <entry endPc="268440782" name="rez_cmp_local_bitmap_Pas" stackId="19" startPc="268439016"/>
     </localVars>
     <deviceInfo partNumber="006-B3888-00"/>
     <annotations>
         <annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="PasFont"/>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="Indigo44"/>
+        <annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="Samdan50"/>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="FunixLogo"/>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="Sunrise"/>
         <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="Coeur"/>
+        <annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="DejaVu25"/>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="Pas"/>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="Sunset"/>
     </annotations>
     <dataEntryOffsetMappings>
         <dataEntry label="globals" offset="71" parentId="" symbolId="globals" type="module"/>
-        <dataEntry label="globals/FunixWatch_wordApp" offset="150" parentId="globals" symbolId="FunixWatch_wordApp" type="class"/>
-        <dataEntry label="globals/Rez" offset="221" parentId="globals" symbolId="Rez" type="module"/>
-        <dataEntry label="globals/Battery" offset="284" parentId="globals" symbolId="Battery" type="class"/>
-        <dataEntry label="globals/FunixWatch_wordView" offset="355" parentId="globals" symbolId="FunixWatch_wordView" type="class"/>
-        <dataEntry label="globals/Rez/Drawables" offset="674" parentId="Rez" symbolId="Drawables" type="module"/>
-        <dataEntry label="globals/Rez/Layouts" offset="753" parentId="Rez" symbolId="Layouts" type="module"/>
-        <dataEntry label="globals/Rez/Fonts" offset="792" parentId="Rez" symbolId="Fonts" type="module"/>
-        <dataEntry label="globals/Rez/Strings" offset="831" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/FunixWatchApp" offset="142" parentId="globals" symbolId="FunixWatchApp" type="class"/>
+        <dataEntry label="globals/Rez" offset="213" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/FunixWatchView" offset="276" parentId="globals" symbolId="FunixWatchView" type="class"/>
+        <dataEntry label="globals/JaugePasBatArc" offset="627" parentId="globals" symbolId="JaugePasBatArc" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="698" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="777" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Fonts" offset="816" parentId="Rez" symbolId="Fonts" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="879" parentId="Rez" symbolId="Strings" type="module"/>
     </dataEntryOffsetMappings>
     <functions>
-        <functionEntry accessMode="public" endPc="268435478" name="&lt;init&gt;" parent="FunixWatch_wordApp" startPc="268435460">
+        <functionEntry accessMode="public" endPc="268435478" name="&lt;init&gt;" parent="FunixWatchApp" startPc="268435460">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435504" name="getApp" startPc="268435479">
+        <functionEntry accessMode="public" endPc="268435502" name="&lt;init&gt;" parent="Rez" startPc="268435479">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435528" name="&lt;init&gt;" parent="Rez" startPc="268435505">
+        <functionEntry accessMode="public" endPc="268435647" name="&lt;init&gt;" parent="FunixWatchView" startPc="268435503">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435547" name="&lt;init&gt;" parent="Battery" startPc="268435529">
+        <functionEntry accessMode="public" endPc="268435666" name="&lt;init&gt;" parent="JaugePasBatArc" startPc="268435648">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435645" name="&lt;init&gt;" parent="FunixWatch_wordView" startPc="268435548">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268435648" name="onStart" parent="FunixWatch_wordApp" startPc="268435646">
+        <functionEntry accessMode="public" endPc="268435669" name="onStart" parent="FunixWatchApp" startPc="268435667">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435691" name="getInitialView" parent="FunixWatch_wordApp" startPc="268435649">
+        <functionEntry accessMode="public" endPc="268435712" name="getInitialView" parent="FunixWatchApp" startPc="268435670">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435712" name="initialize" parent="FunixWatch_wordApp" startPc="268435692">
+        <functionEntry accessMode="public" endPc="268435733" name="initialize" parent="FunixWatchApp" startPc="268435713">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435715" name="onStop" parent="FunixWatch_wordApp" startPc="268435713">
+        <functionEntry accessMode="public" endPc="268435736" name="onStop" parent="FunixWatchApp" startPc="268435734">
             <param id="state"/>
             <documentation/>
         </functionEntry>
@@ -283,46 +335,42 @@
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435738" name="initialize" parent="Battery" startPc="268435716">
+        <functionEntry accessMode="public" name="onHide" parent="FunixWatchView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onExitSleep" parent="FunixWatchView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShow" parent="FunixWatchView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435780" name="onLayout" parent="FunixWatchView" startPc="268435737">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436086" name="onPartialUpdate" parent="FunixWatchView" startPc="268435781">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onEnterSleep" parent="FunixWatchView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436439" name="initialize" parent="FunixWatchView" startPc="268436087">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437977" name="onUpdate" parent="FunixWatchView" startPc="268436440">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438000" name="initialize" parent="JaugePasBatArc" startPc="268437978">
             <param id="options"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435890" name="draw" parent="Battery" startPc="268435739">
+        <functionEntry accessMode="public" endPc="268439003" name="draw" parent="JaugePasBatArc" startPc="268438001">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435903" name="setLevel" parent="Battery" startPc="268435891">
-            <param id="percentage"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" name="onHide" parent="FunixWatch_wordView">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" name="onExitSleep" parent="FunixWatch_wordView">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" name="onShow" parent="FunixWatch_wordView">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268435947" name="onLayout" parent="FunixWatch_wordView" startPc="268435904">
-            <param id="dc"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268436099" name="onPartialUpdate" parent="FunixWatch_wordView" startPc="268435948">
-            <param id="dc"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" name="onEnterSleep" parent="FunixWatch_wordView">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268436452" name="initialize" parent="FunixWatch_wordView" startPc="268436100">
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268437963" name="onUpdate" parent="FunixWatch_wordView" startPc="268436453">
-            <param id="dc"/>
-            <documentation/>
-        </functionEntry>
-        <functionEntry accessMode="public" endPc="268439558" name="WatchFace" parent="Layouts" startPc="268437964">
+        <functionEntry accessMode="public" endPc="268440782" name="WatchFace" parent="Layouts" startPc="268439004">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
