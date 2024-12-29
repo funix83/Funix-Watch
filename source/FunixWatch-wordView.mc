@@ -52,8 +52,7 @@ class JaugePasBatArc extends WatchUi.Drawable
         var ArcWidthBody = 2;
         var ArcWidthFill = 10;
         var nbSteps = ActivityMonitor.getInfo().steps;
-        //var ObjSteps = Toybox.ActivityMonitor.getInfo().stepGoal;
-        var ObjSteps = 10000;
+        var ObjSteps = Toybox.ActivityMonitor.getInfo().stepGoal;
         var nivbatterie = System.getSystemStats().battery;
         var ratio;
      
@@ -171,16 +170,16 @@ class FunixWatchView extends WatchUi.WatchFace
     }
 
     // on met à jour une zone partielle de l'affichage
-    // toutes les secondes pour l'affichage des secondes
+    // toutes les secondes pour l'affichage des secondes et du battement de coeur
     // le reste de l'écran est mis à jour toutes les minutes
-    // a partial area of ​​the display is updated every second to display the seconds
+    // a partial area of ​​the display is updated every second to display the seconds and heartbeat
     // the rest of the screen is updated every minute by onupdate function
     function onPartialUpdate(dc) {
         // affichage des secondes dans un petit carré
         clockTime = System.getClockTime();
-        // définition de la zone à rafraichir
-        // definition of the area to refresh
-        dc.setClip(134,80,30,30);
+        // définition de la zone des seconds à rafraichir
+        // definition of the area for displaying seconds to refresh
+        dc.setClip(135,80,30,30);
 		dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
         // affichage des secondes
         // attention de mettre la même position
@@ -189,8 +188,9 @@ class FunixWatchView extends WatchUi.WatchFace
         // be careful to put the same position and the same font as in layout.xml
 		dc.drawText(
 				134,
-				80,
-				fontSecond,
+				82,
+				//fontSecond,
+                Graphics.FONT_MEDIUM,
                 clockTime.sec.format("%02d"),
 				Graphics.TEXT_JUSTIFY_LEFT
 			);

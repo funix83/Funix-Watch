@@ -23,15 +23,14 @@ module Rez {
 
     module Layouts {
         function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var local_Rez_Fonts_Indigo44 = (WatchUi.loadResource($.Rez.Fonts.Indigo44) as WatchUi.FontResource);
-            var local_Rez_Fonts_DejaVu25 = (WatchUi.loadResource($.Rez.Fonts.DejaVu25) as WatchUi.FontResource);
             var local_Rez_Fonts_Samdan50 = (WatchUi.loadResource($.Rez.Fonts.Samdan50) as WatchUi.FontResource);
+            var local_Rez_Fonts_Indigo44 = (WatchUi.loadResource($.Rez.Fonts.Indigo44) as WatchUi.FontResource);
             var local_Rez_Fonts_PasFont = (WatchUi.loadResource($.Rez.Fonts.PasFont) as WatchUi.FontResource);
             var rez_cmp_local_text_HourLabel = new WatchUi.Text({:identifier=>"HourLabel", :color=>Graphics.COLOR_WHITE, :locX=>46, :locY=>75, :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_Samdan50});
 
             var rez_cmp_local_text_MinLabel = new WatchUi.Text({:identifier=>"MinLabel", :color=>Graphics.COLOR_WHITE, :locX=>103, :locY=>82, :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_Indigo44});
 
-            var rez_cmp_local_text_SecondLabel = new WatchUi.Text({:identifier=>"SecondLabel", :color=>Graphics.COLOR_WHITE, :locX=>134, :locY=>80, :justification=>Graphics.TEXT_JUSTIFY_LEFT, :font=>local_Rez_Fonts_DejaVu25});
+            var rez_cmp_local_text_SecondLabel = new WatchUi.Text({:identifier=>"SecondLabel", :color=>Graphics.COLOR_WHITE, :locX=>134, :locY=>82, :justification=>Graphics.TEXT_JUSTIFY_LEFT, :font=>Graphics.FONT_MEDIUM});
 
             var rez_cmp_local_text_BatteryDisplay = new WatchUi.Text({:identifier=>"BatteryDisplay", :color=>Graphics.COLOR_WHITE, :locX=>11, :locY=>50, :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
 
@@ -39,7 +38,7 @@ module Rez {
 
             var rez_cmp_local_text_Ephemeride = new WatchUi.Text({:identifier=>"Ephemeride", :color=>Graphics.COLOR_WHITE, :locX=>92, :locY=>127, :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
 
-            var rez_cmp_local_text_HeartBeat = new WatchUi.Text({:identifier=>"HeartBeat", :color=>Graphics.COLOR_WHITE, :locX=>152, :locY=>10, :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
+            var rez_cmp_local_text_HeartBeat = new WatchUi.Text({:identifier=>"HeartBeat", :color=>Graphics.COLOR_WHITE, :locX=>152, :locY=>8, :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_XTINY});
 
             var rez_cmp_local_text_Pas = new WatchUi.Text({:identifier=>"Pas", :color=>Graphics.COLOR_WHITE, :locX=>150, :locY=>32, :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_PasFont});
 

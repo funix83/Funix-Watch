@@ -1,7 +1,7 @@
 <layout id="WatchFace">
     <label id="HourLabel" x="46" y="75" font="@Fonts.Samdan50" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
     <label id="MinLabel" x="103" y="82" font="@Fonts.Indigo44" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
-    <label id="SecondLabel" x="134" y="80" font="@Fonts.DejaVu25" justification="Graphics.TEXT_JUSTIFY_LEFT" color="Graphics.COLOR_WHITE" />
+    <label id="SecondLabel" x="134" y="82" font="Graphics.FONT_MEDIUM" justification="Graphics.TEXT_JUSTIFY_LEFT" color="Graphics.COLOR_WHITE" />
     <label id="BatteryDisplay" x="11" y="50" font="Graphics.FONT_XTINY" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
     <label id="DateDisplay" x="center" y="147" font="Graphics.FONT_XTINY" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />      
     <label id="Ephemeride" x="92" y="127" font="Graphics.FONT_XTINY"  justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />

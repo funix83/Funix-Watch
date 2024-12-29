@@ -43,528 +43,531 @@ _home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_44_33_
     }
     [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 48; ]
     function draw(dc) {
-_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_48_22_97_4_start:
+_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_48_22_96_4_start:
 [ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 49 8 ]
-        [ "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_48_22_97_4_start" "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_48_22_97_4_stop" ]
+        [ "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_48_22_96_4_start" "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_48_22_96_4_stop" ]
         %WIDTH.1 = local;
         %tmp.1 = lgetv %dc;
         %tmp.2 = getv function %tmp.1 :getWidth;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %WIDTH.1 %tmp.3;
 [ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 50 8 ]
-        [ "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_48_22_97_4_start" "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_48_22_97_4_stop" ]
+        [ "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_48_22_96_4_start" "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_48_22_96_4_stop" ]
         %HEIGHT.2 = local;
         %tmp.4 = lgetv %dc;
         %tmp.5 = getv function %tmp.4 :getHeight;
         %tmp.6 = invoke %tmp.4 %tmp.5();
         lputv %HEIGHT.2 %tmp.6;
 [ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 51 8 ]
-        [ "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_48_22_97_4_start" "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_48_22_97_4_stop" ]
+        [ "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_48_22_96_4_start" "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_48_22_96_4_stop" ]
         %ARCLENGTH.3 = local;
         %tmp.7 = 40;
         lputv %ARCLENGTH.3 %tmp.7;
 [ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 52 8 ]
-        [ "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_48_22_97_4_start" "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_48_22_97_4_stop" ]
+        [ "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_48_22_96_4_start" "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_48_22_96_4_stop" ]
         %ArcWidthBody.4 = local;
         %tmp.8 = 2;
         lputv %ArcWidthBody.4 %tmp.8;
 [ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 53 8 ]
-        [ "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_48_22_97_4_start" "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_48_22_97_4_stop" ]
+        [ "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_48_22_96_4_start" "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_48_22_96_4_stop" ]
         %ArcWidthFill.5 = local;
         %tmp.9 = 10;
         lputv %ArcWidthFill.5 %tmp.9;
 [ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 54 8 ]
-        [ "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_48_22_97_4_start" "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_48_22_97_4_stop" ]
+        [ "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_48_22_96_4_start" "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_48_22_96_4_stop" ]
         %nbSteps.6 = local;
         %tmp.11 = getv ? :ActivityMonitor;
         %tmp.12 = getv function %tmp.11 :getInfo;
         %tmp.13 = invoke %tmp.11 %tmp.12();
         %tmp.14 = getv %tmp.13 :steps;
         lputv %nbSteps.6 %tmp.14;
-[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 56 8 ]
-        [ "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_48_22_97_4_start" "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_48_22_97_4_stop" ]
+[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 55 8 ]
+        [ "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_48_22_96_4_start" "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_48_22_96_4_stop" ]
         %ObjSteps.7 = local;
-        %tmp.15 = 10000;
-        lputv %ObjSteps.7 %tmp.15;
-[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 57 8 ]
-        [ "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_48_22_97_4_start" "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_48_22_97_4_stop" ]
+        %tmp.15 = getm $.Toybox.ActivityMonitor;
+        %tmp.16 = getv function %tmp.15 :getInfo;
+        %tmp.17 = invoke %tmp.15 %tmp.16();
+        %tmp.18 = getv %tmp.17 :stepGoal;
+        lputv %ObjSteps.7 %tmp.18;
+[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 56 8 ]
+        [ "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_48_22_96_4_start" "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_48_22_96_4_stop" ]
         %nivbatterie.8 = local;
-        %tmp.16 = getm $.Toybox.System;
-        %tmp.17 = getv function %tmp.16 :getSystemStats;
-        %tmp.18 = invoke %tmp.16 %tmp.17();
-        %tmp.19 = getv %tmp.18 :battery;
-        lputv %nivbatterie.8 %tmp.19;
-[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 58 8 ]
-        [ "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_48_22_97_4_start" "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_48_22_97_4_stop" ]
+        %tmp.19 = getm $.Toybox.System;
+        %tmp.20 = getv function %tmp.19 :getSystemStats;
+        %tmp.21 = invoke %tmp.19 %tmp.20();
+        %tmp.22 = getv %tmp.21 :battery;
+        lputv %nivbatterie.8 %tmp.22;
+[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 57 8 ]
+        [ "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_48_22_96_4_start" "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_48_22_96_4_stop" ]
         %ratio.9 = local;
+[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 61 8 ]
+        %tmp.23 = lgetv %dc;
+        %tmp.24 = getv function %tmp.23 :setPenWidth;
+        %tmp.26 = lgetv %ArcWidthBody.4;
+        invoke %tmp.23 %tmp.24(%tmp.26);
 [ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 62 8 ]
-        %tmp.20 = lgetv %dc;
-        %tmp.21 = getv function %tmp.20 :setPenWidth;
-        %tmp.23 = lgetv %ArcWidthBody.4;
-        invoke %tmp.20 %tmp.21(%tmp.23);
+        %tmp.27 = lgetv %dc;
+        %tmp.28 = getv function %tmp.27 :setColor;
+        %tmp.29 = getm $.Toybox.Graphics;
+        %tmp.30 = getv %tmp.29 :COLOR_WHITE;
+        %tmp.31 = getm $.Toybox.Graphics;
+        %tmp.32 = getv %tmp.31 :COLOR_TRANSPARENT;
+        invoke %tmp.27 %tmp.28(%tmp.30, %tmp.32);
 [ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 63 8 ]
-        %tmp.24 = lgetv %dc;
-        %tmp.25 = getv function %tmp.24 :setColor;
-        %tmp.26 = getm $.Toybox.Graphics;
-        %tmp.27 = getv %tmp.26 :COLOR_WHITE;
-        %tmp.28 = getm $.Toybox.Graphics;
-        %tmp.29 = getv %tmp.28 :COLOR_TRANSPARENT;
-        invoke %tmp.24 %tmp.25(%tmp.27, %tmp.29);
+        %tmp.33 = lgetv %dc;
+        %tmp.34 = getv function %tmp.33 :drawArc;
+        %tmp.36 = lgetv %WIDTH.1;
+        %tmp.37 = 2;
+        %tmp.38 = div %tmp.36 %tmp.37;
+        %tmp.39 = 5;
+        %tmp.40 = add %tmp.38 %tmp.39;
+        %tmp.42 = lgetv %HEIGHT.2;
+        %tmp.43 = 2;
+        %tmp.44 = div %tmp.42 %tmp.43;
+        %tmp.45 = 20;
+        %tmp.46 = add %tmp.44 %tmp.45;
+        %tmp.48 = lgetv %HEIGHT.2;
+        %tmp.49 = 2;
+        %tmp.50 = div %tmp.48 %tmp.49;
+        %tmp.52 = lgetv %ArcWidthBody.4;
+        %tmp.53 = 2;
+        %tmp.54 = div %tmp.52 %tmp.53;
+        %tmp.55 = sub %tmp.50 %tmp.54;
+        %tmp.56 = getm $.Toybox.Graphics;
+        %tmp.57 = getv %tmp.56 :ARC_CLOCKWISE;
+        %tmp.58 = 180;
+        %tmp.60 = lgetv %ARCLENGTH.3;
+        %tmp.61 = 2;
+        %tmp.62 = div %tmp.60 %tmp.61;
+        %tmp.63 = add %tmp.58 %tmp.62;
+        %tmp.64 = 180;
+        %tmp.66 = lgetv %ARCLENGTH.3;
+        %tmp.67 = 2;
+        %tmp.68 = div %tmp.66 %tmp.67;
+        %tmp.69 = sub %tmp.64 %tmp.68;
+        invoke %tmp.33 %tmp.34(%tmp.40, %tmp.46, %tmp.55, %tmp.57, %tmp.63, %tmp.69);
 [ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 64 8 ]
-        %tmp.30 = lgetv %dc;
-        %tmp.31 = getv function %tmp.30 :drawArc;
-        %tmp.33 = lgetv %WIDTH.1;
-        %tmp.34 = 2;
-        %tmp.35 = div %tmp.33 %tmp.34;
-        %tmp.36 = 5;
-        %tmp.37 = add %tmp.35 %tmp.36;
-        %tmp.39 = lgetv %HEIGHT.2;
-        %tmp.40 = 2;
-        %tmp.41 = div %tmp.39 %tmp.40;
-        %tmp.42 = 20;
-        %tmp.43 = add %tmp.41 %tmp.42;
-        %tmp.45 = lgetv %HEIGHT.2;
-        %tmp.46 = 2;
-        %tmp.47 = div %tmp.45 %tmp.46;
-        %tmp.49 = lgetv %ArcWidthBody.4;
-        %tmp.50 = 2;
-        %tmp.51 = div %tmp.49 %tmp.50;
-        %tmp.52 = sub %tmp.47 %tmp.51;
-        %tmp.53 = getm $.Toybox.Graphics;
-        %tmp.54 = getv %tmp.53 :ARC_CLOCKWISE;
-        %tmp.55 = 180;
-        %tmp.57 = lgetv %ARCLENGTH.3;
-        %tmp.58 = 2;
-        %tmp.59 = div %tmp.57 %tmp.58;
-        %tmp.60 = add %tmp.55 %tmp.59;
-        %tmp.61 = 180;
-        %tmp.63 = lgetv %ARCLENGTH.3;
-        %tmp.64 = 2;
-        %tmp.65 = div %tmp.63 %tmp.64;
-        %tmp.66 = sub %tmp.61 %tmp.65;
-        invoke %tmp.30 %tmp.31(%tmp.37, %tmp.43, %tmp.52, %tmp.54, %tmp.60, %tmp.66);
+        %tmp.70 = lgetv %dc;
+        %tmp.71 = getv function %tmp.70 :drawArc;
+        %tmp.73 = lgetv %WIDTH.1;
+        %tmp.74 = 2;
+        %tmp.75 = div %tmp.73 %tmp.74;
+        %tmp.76 = 15;
+        %tmp.77 = add %tmp.75 %tmp.76;
+        %tmp.79 = lgetv %HEIGHT.2;
+        %tmp.80 = 2;
+        %tmp.81 = div %tmp.79 %tmp.80;
+        %tmp.82 = 20;
+        %tmp.83 = add %tmp.81 %tmp.82;
+        %tmp.85 = lgetv %HEIGHT.2;
+        %tmp.86 = 2;
+        %tmp.87 = div %tmp.85 %tmp.86;
+        %tmp.89 = lgetv %ArcWidthBody.4;
+        %tmp.90 = 2;
+        %tmp.91 = div %tmp.89 %tmp.90;
+        %tmp.92 = sub %tmp.87 %tmp.91;
+        %tmp.93 = getm $.Toybox.Graphics;
+        %tmp.94 = getv %tmp.93 :ARC_CLOCKWISE;
+        %tmp.95 = 180;
+        %tmp.97 = lgetv %ARCLENGTH.3;
+        %tmp.98 = 2;
+        %tmp.99 = div %tmp.97 %tmp.98;
+        %tmp.100 = add %tmp.95 %tmp.99;
+        %tmp.101 = 180;
+        %tmp.103 = lgetv %ARCLENGTH.3;
+        %tmp.104 = 2;
+        %tmp.105 = div %tmp.103 %tmp.104;
+        %tmp.106 = sub %tmp.101 %tmp.105;
+        invoke %tmp.70 %tmp.71(%tmp.77, %tmp.83, %tmp.92, %tmp.94, %tmp.100, %tmp.106);
 [ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 65 8 ]
-        %tmp.67 = lgetv %dc;
-        %tmp.68 = getv function %tmp.67 :drawArc;
-        %tmp.70 = lgetv %WIDTH.1;
-        %tmp.71 = 2;
-        %tmp.72 = div %tmp.70 %tmp.71;
-        %tmp.73 = 15;
-        %tmp.74 = add %tmp.72 %tmp.73;
-        %tmp.76 = lgetv %HEIGHT.2;
-        %tmp.77 = 2;
-        %tmp.78 = div %tmp.76 %tmp.77;
-        %tmp.79 = 20;
-        %tmp.80 = add %tmp.78 %tmp.79;
-        %tmp.82 = lgetv %HEIGHT.2;
-        %tmp.83 = 2;
-        %tmp.84 = div %tmp.82 %tmp.83;
-        %tmp.86 = lgetv %ArcWidthBody.4;
-        %tmp.87 = 2;
-        %tmp.88 = div %tmp.86 %tmp.87;
-        %tmp.89 = sub %tmp.84 %tmp.88;
-        %tmp.90 = getm $.Toybox.Graphics;
-        %tmp.91 = getv %tmp.90 :ARC_CLOCKWISE;
-        %tmp.92 = 180;
-        %tmp.94 = lgetv %ARCLENGTH.3;
-        %tmp.95 = 2;
-        %tmp.96 = div %tmp.94 %tmp.95;
-        %tmp.97 = add %tmp.92 %tmp.96;
-        %tmp.98 = 180;
-        %tmp.100 = lgetv %ARCLENGTH.3;
-        %tmp.101 = 2;
-        %tmp.102 = div %tmp.100 %tmp.101;
-        %tmp.103 = sub %tmp.98 %tmp.102;
-        invoke %tmp.67 %tmp.68(%tmp.74, %tmp.80, %tmp.89, %tmp.91, %tmp.97, %tmp.103);
+        %tmp.107 = lgetv %dc;
+        %tmp.108 = getv function %tmp.107 :drawLine;
+        %tmp.109 = 12;
+        %tmp.110 = 79;
+        %tmp.111 = 22;
+        %tmp.112 = 80;
+        invoke %tmp.107 %tmp.108(%tmp.109, %tmp.110, %tmp.111, %tmp.112);
 [ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 66 8 ]
-        %tmp.104 = lgetv %dc;
-        %tmp.105 = getv function %tmp.104 :drawLine;
-        %tmp.106 = 12;
-        %tmp.107 = 79;
-        %tmp.108 = 22;
-        %tmp.109 = 80;
-        invoke %tmp.104 %tmp.105(%tmp.106, %tmp.107, %tmp.108, %tmp.109);
-[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 67 8 ]
-        %tmp.110 = lgetv %dc;
-        %tmp.111 = getv function %tmp.110 :drawLine;
-        %tmp.112 = 12;
-        %tmp.113 = 139;
-        %tmp.114 = 22;
-        %tmp.115 = 136;
-        invoke %tmp.110 %tmp.111(%tmp.112, %tmp.113, %tmp.114, %tmp.115);
+        %tmp.113 = lgetv %dc;
+        %tmp.114 = getv function %tmp.113 :drawLine;
+        %tmp.115 = 12;
+        %tmp.116 = 139;
+        %tmp.117 = 22;
+        %tmp.118 = 136;
+        invoke %tmp.113 %tmp.114(%tmp.115, %tmp.116, %tmp.117, %tmp.118);
+[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 70 8 ]
+        %tmp.119 = lgetv %dc;
+        %tmp.120 = getv function %tmp.119 :setPenWidth;
+        %tmp.122 = lgetv %ArcWidthFill.5;
+        invoke %tmp.119 %tmp.120(%tmp.122);
 [ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 71 8 ]
-        %tmp.116 = lgetv %dc;
-        %tmp.117 = getv function %tmp.116 :setPenWidth;
-        %tmp.119 = lgetv %ArcWidthFill.5;
-        invoke %tmp.116 %tmp.117(%tmp.119);
-[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 72 8 ]
-_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_72_8_75_8_if_stmt:
-        %tmp.121 = lgetv %nivbatterie.8;
-        %tmp.122 = null;
-        %tmp.123 = ne %tmp.121 %tmp.122;
-        bf %tmp.123 @_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_72_8_75_8_if_end;
-_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_72_8_75_8_if_true:
-_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_72_33_75_8_start:
+_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_71_8_74_8_if_stmt:
+        %tmp.124 = lgetv %nivbatterie.8;
+        %tmp.125 = null;
+        %tmp.126 = ne %tmp.124 %tmp.125;
+        bf %tmp.126 @_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_71_8_74_8_if_end;
+_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_71_8_74_8_if_true:
+_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_71_33_74_8_start:
+[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 72 12 ]
+        %tmp.127 = lgetv %dc;
+        %tmp.128 = getv function %tmp.127 :setColor;
+        %tmp.129 = getm $.Toybox.Graphics;
+        %tmp.130 = getv %tmp.129 :COLOR_WHITE;
+        %tmp.131 = getm $.Toybox.Graphics;
+        %tmp.132 = getv %tmp.131 :COLOR_TRANSPARENT;
+        invoke %tmp.127 %tmp.128(%tmp.130, %tmp.132);
 [ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 73 12 ]
-        %tmp.124 = lgetv %dc;
-        %tmp.125 = getv function %tmp.124 :setColor;
-        %tmp.126 = getm $.Toybox.Graphics;
-        %tmp.127 = getv %tmp.126 :COLOR_WHITE;
-        %tmp.128 = getm $.Toybox.Graphics;
-        %tmp.129 = getv %tmp.128 :COLOR_TRANSPARENT;
-        invoke %tmp.124 %tmp.125(%tmp.127, %tmp.129);
-[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 74 12 ]
-        %tmp.130 = lgetv %dc;
-        %tmp.131 = getv function %tmp.130 :drawArc;
-        %tmp.133 = lgetv %WIDTH.1;
-        %tmp.134 = 2;
-        %tmp.135 = div %tmp.133 %tmp.134;
-        %tmp.136 = 7;
-        %tmp.137 = add %tmp.135 %tmp.136;
-        %tmp.139 = lgetv %HEIGHT.2;
-        %tmp.140 = 2;
-        %tmp.141 = div %tmp.139 %tmp.140;
-        %tmp.142 = 20;
-        %tmp.143 = add %tmp.141 %tmp.142;
-        %tmp.145 = lgetv %HEIGHT.2;
-        %tmp.146 = 2;
-        %tmp.147 = div %tmp.145 %tmp.146;
-        %tmp.149 = lgetv %ArcWidthFill.5;
-        %tmp.150 = 2;
-        %tmp.151 = div %tmp.149 %tmp.150;
-        %tmp.152 = sub %tmp.147 %tmp.151;
-        %tmp.153 = getm $.Toybox.Graphics;
-        %tmp.154 = getv %tmp.153 :ARC_CLOCKWISE;
-        %tmp.155 = 180;
-        %tmp.157 = lgetv %ARCLENGTH.3;
-        %tmp.158 = 2;
-        %tmp.159 = div %tmp.157 %tmp.158;
-        %tmp.160 = add %tmp.155 %tmp.159;
-        %tmp.161 = 180;
-        %tmp.163 = lgetv %ARCLENGTH.3;
-        %tmp.164 = 2;
-        %tmp.165 = div %tmp.163 %tmp.164;
-        %tmp.166 = add %tmp.161 %tmp.165;
-        %tmp.168 = lgetv %ARCLENGTH.3;
-        %tmp.170 = lgetv %nivbatterie.8;
-        %tmp.171 = as %tmp.170 { (!Null) };
-        %tmp.172 = mul %tmp.168 %tmp.171;
-        %tmp.173 = 100;
-        %tmp.174 = div %tmp.172 %tmp.173;
-        %tmp.175 = sub %tmp.166 %tmp.174;
-        invoke %tmp.130 %tmp.131(%tmp.137, %tmp.143, %tmp.152, %tmp.154, %tmp.160, %tmp.175);
-_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_72_33_75_8_stop:
-        goto @_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_72_8_75_8_if_end;
-_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_72_8_75_8_if_end:
+        %tmp.133 = lgetv %dc;
+        %tmp.134 = getv function %tmp.133 :drawArc;
+        %tmp.136 = lgetv %WIDTH.1;
+        %tmp.137 = 2;
+        %tmp.138 = div %tmp.136 %tmp.137;
+        %tmp.139 = 7;
+        %tmp.140 = add %tmp.138 %tmp.139;
+        %tmp.142 = lgetv %HEIGHT.2;
+        %tmp.143 = 2;
+        %tmp.144 = div %tmp.142 %tmp.143;
+        %tmp.145 = 20;
+        %tmp.146 = add %tmp.144 %tmp.145;
+        %tmp.148 = lgetv %HEIGHT.2;
+        %tmp.149 = 2;
+        %tmp.150 = div %tmp.148 %tmp.149;
+        %tmp.152 = lgetv %ArcWidthFill.5;
+        %tmp.153 = 2;
+        %tmp.154 = div %tmp.152 %tmp.153;
+        %tmp.155 = sub %tmp.150 %tmp.154;
+        %tmp.156 = getm $.Toybox.Graphics;
+        %tmp.157 = getv %tmp.156 :ARC_CLOCKWISE;
+        %tmp.158 = 180;
+        %tmp.160 = lgetv %ARCLENGTH.3;
+        %tmp.161 = 2;
+        %tmp.162 = div %tmp.160 %tmp.161;
+        %tmp.163 = add %tmp.158 %tmp.162;
+        %tmp.164 = 180;
+        %tmp.166 = lgetv %ARCLENGTH.3;
+        %tmp.167 = 2;
+        %tmp.168 = div %tmp.166 %tmp.167;
+        %tmp.169 = add %tmp.164 %tmp.168;
+        %tmp.171 = lgetv %ARCLENGTH.3;
+        %tmp.173 = lgetv %nivbatterie.8;
+        %tmp.174 = as %tmp.173 { (!Null) };
+        %tmp.175 = mul %tmp.171 %tmp.174;
+        %tmp.176 = 100;
+        %tmp.177 = div %tmp.175 %tmp.176;
+        %tmp.178 = sub %tmp.169 %tmp.177;
+        invoke %tmp.133 %tmp.134(%tmp.140, %tmp.146, %tmp.155, %tmp.157, %tmp.163, %tmp.178);
+_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_71_33_74_8_stop:
+        goto @_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_71_8_74_8_if_end;
+_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_71_8_74_8_if_end:
+[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 78 8 ]
+        %tmp.179 = lgetv %dc;
+        %tmp.180 = getv function %tmp.179 :setPenWidth;
+        %tmp.182 = lgetv %ArcWidthBody.4;
+        invoke %tmp.179 %tmp.180(%tmp.182);
 [ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 79 8 ]
-        %tmp.176 = lgetv %dc;
-        %tmp.177 = getv function %tmp.176 :setPenWidth;
-        %tmp.179 = lgetv %ArcWidthBody.4;
-        invoke %tmp.176 %tmp.177(%tmp.179);
+        %tmp.183 = lgetv %dc;
+        %tmp.184 = getv function %tmp.183 :setColor;
+        %tmp.185 = getm $.Toybox.Graphics;
+        %tmp.186 = getv %tmp.185 :COLOR_WHITE;
+        %tmp.187 = getm $.Toybox.Graphics;
+        %tmp.188 = getv %tmp.187 :COLOR_TRANSPARENT;
+        invoke %tmp.183 %tmp.184(%tmp.186, %tmp.188);
 [ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 80 8 ]
-        %tmp.180 = lgetv %dc;
-        %tmp.181 = getv function %tmp.180 :setColor;
-        %tmp.182 = getm $.Toybox.Graphics;
-        %tmp.183 = getv %tmp.182 :COLOR_WHITE;
-        %tmp.184 = getm $.Toybox.Graphics;
-        %tmp.185 = getv %tmp.184 :COLOR_TRANSPARENT;
-        invoke %tmp.180 %tmp.181(%tmp.183, %tmp.185);
+        %tmp.189 = lgetv %dc;
+        %tmp.190 = getv function %tmp.189 :drawArc;
+        %tmp.192 = lgetv %WIDTH.1;
+        %tmp.193 = 2;
+        %tmp.194 = div %tmp.192 %tmp.193;
+        %tmp.195 = 5;
+        %tmp.196 = sub %tmp.194 %tmp.195;
+        %tmp.198 = lgetv %HEIGHT.2;
+        %tmp.199 = 2;
+        %tmp.200 = div %tmp.198 %tmp.199;
+        %tmp.201 = 20;
+        %tmp.202 = add %tmp.200 %tmp.201;
+        %tmp.204 = lgetv %HEIGHT.2;
+        %tmp.205 = 2;
+        %tmp.206 = div %tmp.204 %tmp.205;
+        %tmp.208 = lgetv %ArcWidthBody.4;
+        %tmp.209 = 2;
+        %tmp.210 = div %tmp.208 %tmp.209;
+        %tmp.211 = sub %tmp.206 %tmp.210;
+        %tmp.212 = getm $.Toybox.Graphics;
+        %tmp.213 = getv %tmp.212 :ARC_COUNTER_CLOCKWISE;
+        %tmp.214 = 0;
+        %tmp.216 = lgetv %ARCLENGTH.3;
+        %tmp.217 = 2;
+        %tmp.218 = div %tmp.216 %tmp.217;
+        %tmp.219 = sub %tmp.214 %tmp.218;
+        %tmp.220 = 0;
+        %tmp.222 = lgetv %ARCLENGTH.3;
+        %tmp.223 = 2;
+        %tmp.224 = div %tmp.222 %tmp.223;
+        %tmp.225 = add %tmp.220 %tmp.224;
+        invoke %tmp.189 %tmp.190(%tmp.196, %tmp.202, %tmp.211, %tmp.213, %tmp.219, %tmp.225);
 [ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 81 8 ]
-        %tmp.186 = lgetv %dc;
-        %tmp.187 = getv function %tmp.186 :drawArc;
-        %tmp.189 = lgetv %WIDTH.1;
-        %tmp.190 = 2;
-        %tmp.191 = div %tmp.189 %tmp.190;
-        %tmp.192 = 5;
-        %tmp.193 = sub %tmp.191 %tmp.192;
-        %tmp.195 = lgetv %HEIGHT.2;
-        %tmp.196 = 2;
-        %tmp.197 = div %tmp.195 %tmp.196;
-        %tmp.198 = 20;
-        %tmp.199 = add %tmp.197 %tmp.198;
-        %tmp.201 = lgetv %HEIGHT.2;
-        %tmp.202 = 2;
-        %tmp.203 = div %tmp.201 %tmp.202;
-        %tmp.205 = lgetv %ArcWidthBody.4;
-        %tmp.206 = 2;
-        %tmp.207 = div %tmp.205 %tmp.206;
-        %tmp.208 = sub %tmp.203 %tmp.207;
-        %tmp.209 = getm $.Toybox.Graphics;
-        %tmp.210 = getv %tmp.209 :ARC_COUNTER_CLOCKWISE;
-        %tmp.211 = 0;
-        %tmp.213 = lgetv %ARCLENGTH.3;
-        %tmp.214 = 2;
-        %tmp.215 = div %tmp.213 %tmp.214;
-        %tmp.216 = sub %tmp.211 %tmp.215;
-        %tmp.217 = 0;
-        %tmp.219 = lgetv %ARCLENGTH.3;
-        %tmp.220 = 2;
-        %tmp.221 = div %tmp.219 %tmp.220;
-        %tmp.222 = add %tmp.217 %tmp.221;
-        invoke %tmp.186 %tmp.187(%tmp.193, %tmp.199, %tmp.208, %tmp.210, %tmp.216, %tmp.222);
+        %tmp.226 = lgetv %dc;
+        %tmp.227 = getv function %tmp.226 :drawArc;
+        %tmp.229 = lgetv %WIDTH.1;
+        %tmp.230 = 2;
+        %tmp.231 = div %tmp.229 %tmp.230;
+        %tmp.232 = 15;
+        %tmp.233 = sub %tmp.231 %tmp.232;
+        %tmp.235 = lgetv %HEIGHT.2;
+        %tmp.236 = 2;
+        %tmp.237 = div %tmp.235 %tmp.236;
+        %tmp.238 = 20;
+        %tmp.239 = add %tmp.237 %tmp.238;
+        %tmp.241 = lgetv %HEIGHT.2;
+        %tmp.242 = 2;
+        %tmp.243 = div %tmp.241 %tmp.242;
+        %tmp.245 = lgetv %ArcWidthBody.4;
+        %tmp.246 = 2;
+        %tmp.247 = div %tmp.245 %tmp.246;
+        %tmp.248 = sub %tmp.243 %tmp.247;
+        %tmp.249 = getm $.Toybox.Graphics;
+        %tmp.250 = getv %tmp.249 :ARC_COUNTER_CLOCKWISE;
+        %tmp.251 = 0;
+        %tmp.253 = lgetv %ARCLENGTH.3;
+        %tmp.254 = 2;
+        %tmp.255 = div %tmp.253 %tmp.254;
+        %tmp.256 = sub %tmp.251 %tmp.255;
+        %tmp.257 = 0;
+        %tmp.259 = lgetv %ARCLENGTH.3;
+        %tmp.260 = 2;
+        %tmp.261 = div %tmp.259 %tmp.260;
+        %tmp.262 = add %tmp.257 %tmp.261;
+        invoke %tmp.226 %tmp.227(%tmp.233, %tmp.239, %tmp.248, %tmp.250, %tmp.256, %tmp.262);
 [ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 82 8 ]
-        %tmp.223 = lgetv %dc;
-        %tmp.224 = getv function %tmp.223 :drawArc;
-        %tmp.226 = lgetv %WIDTH.1;
-        %tmp.227 = 2;
-        %tmp.228 = div %tmp.226 %tmp.227;
-        %tmp.229 = 15;
-        %tmp.230 = sub %tmp.228 %tmp.229;
-        %tmp.232 = lgetv %HEIGHT.2;
-        %tmp.233 = 2;
-        %tmp.234 = div %tmp.232 %tmp.233;
-        %tmp.235 = 20;
-        %tmp.236 = add %tmp.234 %tmp.235;
-        %tmp.238 = lgetv %HEIGHT.2;
-        %tmp.239 = 2;
-        %tmp.240 = div %tmp.238 %tmp.239;
-        %tmp.242 = lgetv %ArcWidthBody.4;
-        %tmp.243 = 2;
-        %tmp.244 = div %tmp.242 %tmp.243;
-        %tmp.245 = sub %tmp.240 %tmp.244;
-        %tmp.246 = getm $.Toybox.Graphics;
-        %tmp.247 = getv %tmp.246 :ARC_COUNTER_CLOCKWISE;
-        %tmp.248 = 0;
-        %tmp.250 = lgetv %ARCLENGTH.3;
-        %tmp.251 = 2;
-        %tmp.252 = div %tmp.250 %tmp.251;
-        %tmp.253 = sub %tmp.248 %tmp.252;
-        %tmp.254 = 0;
-        %tmp.256 = lgetv %ARCLENGTH.3;
-        %tmp.257 = 2;
-        %tmp.258 = div %tmp.256 %tmp.257;
-        %tmp.259 = add %tmp.254 %tmp.258;
-        invoke %tmp.223 %tmp.224(%tmp.230, %tmp.236, %tmp.245, %tmp.247, %tmp.253, %tmp.259);
+        %tmp.263 = lgetv %dc;
+        %tmp.264 = getv function %tmp.263 :drawLine;
+        %tmp.265 = 156;
+        %tmp.266 = 81;
+        %tmp.267 = 166;
+        %tmp.268 = 79;
+        invoke %tmp.263 %tmp.264(%tmp.265, %tmp.266, %tmp.267, %tmp.268);
 [ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 83 8 ]
-        %tmp.260 = lgetv %dc;
-        %tmp.261 = getv function %tmp.260 :drawLine;
-        %tmp.262 = 156;
-        %tmp.263 = 81;
-        %tmp.264 = 166;
-        %tmp.265 = 79;
-        invoke %tmp.260 %tmp.261(%tmp.262, %tmp.263, %tmp.264, %tmp.265);
-[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 84 8 ]
-        %tmp.266 = lgetv %dc;
-        %tmp.267 = getv function %tmp.266 :drawLine;
-        %tmp.268 = 156;
-        %tmp.269 = 136;
-        %tmp.270 = 166;
-        %tmp.271 = 140;
-        invoke %tmp.266 %tmp.267(%tmp.268, %tmp.269, %tmp.270, %tmp.271);
+        %tmp.269 = lgetv %dc;
+        %tmp.270 = getv function %tmp.269 :drawLine;
+        %tmp.271 = 156;
+        %tmp.272 = 136;
+        %tmp.273 = 166;
+        %tmp.274 = 140;
+        invoke %tmp.269 %tmp.270(%tmp.271, %tmp.272, %tmp.273, %tmp.274);
+[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 87 8 ]
+        %tmp.275 = lgetv %dc;
+        %tmp.276 = getv function %tmp.275 :setPenWidth;
+        %tmp.278 = lgetv %ArcWidthFill.5;
+        invoke %tmp.275 %tmp.276(%tmp.278);
 [ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 88 8 ]
-        %tmp.272 = lgetv %dc;
-        %tmp.273 = getv function %tmp.272 :setPenWidth;
-        %tmp.275 = lgetv %ArcWidthFill.5;
-        invoke %tmp.272 %tmp.273(%tmp.275);
-[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 89 8 ]
-_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_89_8_96_8_if_stmt:
-_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_89_12_89_58_begin:
-_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_89_12_89_41_begin:
-        %tmp.277 = lgetv %nbSteps.6;
-        %tmp.278 = null;
-        %tmp.279 = ne %tmp.277 %tmp.278;
-        bf %tmp.279 @_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_89_8_96_8_if_end;
-_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_89_31_89_41_true:
-        %tmp.281 = lgetv %nbSteps.6;
-        %tmp.282 = as %tmp.281 { (!Null) };
-        %tmp.283 = 0;
-        %tmp.284 = gt %tmp.282 %tmp.283;
-        push %tmp.284;
-_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_89_31_89_41_end:
-        %tmp.285 = phi [%tmp.279 @_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_89_12_89_41_begin] [%tmp.284 @_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_89_31_89_41_true] [%tmp.285 @_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_89_31_89_41_end];
-        bf %tmp.285 @_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_89_8_96_8_if_end;
-_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_89_46_89_58_true:
-        %tmp.287 = lgetv %ObjSteps.7;
-        %tmp.288 = null;
-        %tmp.289 = ne %tmp.287 %tmp.288;
-        push %tmp.289;
-_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_89_46_89_58_end:
-        %tmp.290 = phi [%tmp.285 @_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_89_12_89_58_begin] [%tmp.289 @_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_89_46_89_58_true] [%tmp.290 @_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_89_46_89_58_end];
-        bf %tmp.290 @_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_89_8_96_8_if_end;
-_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_89_8_96_8_if_true:
-_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_89_64_96_8_start:
-[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 90 12 ]
-_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_90_12_92_12_if_stmt:
-        %tmp.292 = lgetv %nbSteps.6;
-        %tmp.293 = as %tmp.292 { (!Null) };
-        %tmp.295 = lgetv %ObjSteps.7;
+_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_88_8_95_8_if_stmt:
+_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_88_12_88_58_begin:
+_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_88_12_88_41_begin:
+        %tmp.280 = lgetv %nbSteps.6;
+        %tmp.281 = null;
+        %tmp.282 = ne %tmp.280 %tmp.281;
+        bf %tmp.282 @_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_88_8_95_8_if_end;
+_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_88_31_88_41_true:
+        %tmp.284 = lgetv %nbSteps.6;
+        %tmp.285 = as %tmp.284 { (!Null) };
+        %tmp.286 = 0;
+        %tmp.287 = gt %tmp.285 %tmp.286;
+        push %tmp.287;
+_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_88_31_88_41_end:
+        %tmp.288 = phi [%tmp.282 @_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_88_12_88_41_begin] [%tmp.287 @_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_88_31_88_41_true] [%tmp.288 @_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_88_31_88_41_end];
+        bf %tmp.288 @_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_88_8_95_8_if_end;
+_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_88_46_88_58_true:
+        %tmp.290 = lgetv %ObjSteps.7;
+        %tmp.291 = null;
+        %tmp.292 = ne %tmp.290 %tmp.291;
+        push %tmp.292;
+_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_88_46_88_58_end:
+        %tmp.293 = phi [%tmp.288 @_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_88_12_88_58_begin] [%tmp.292 @_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_88_46_88_58_true] [%tmp.293 @_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_88_46_88_58_end];
+        bf %tmp.293 @_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_88_8_95_8_if_end;
+_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_88_8_95_8_if_true:
+_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_88_64_95_8_start:
+[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 89 12 ]
+_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_89_12_91_12_if_stmt:
+        %tmp.295 = lgetv %nbSteps.6;
         %tmp.296 = as %tmp.295 { (!Null) };
-        %tmp.297 = gt %tmp.293 %tmp.296;
-        bf %tmp.297 @_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_90_12_92_12_if_end;
-_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_90_12_92_12_if_true:
-_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_90_36_92_12_start:
-[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 91 16 ]
-        %tmp.299 = lgetv %ObjSteps.7;
-        %tmp.300 = as %tmp.299 { (!Null) };
-        lputv %nbSteps.6 %tmp.300;
-_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_90_36_92_12_stop:
-        goto @_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_90_12_92_12_if_end;
-_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_90_12_92_12_if_end:
+        %tmp.298 = lgetv %ObjSteps.7;
+        %tmp.299 = as %tmp.298 { (!Null) };
+        %tmp.300 = gt %tmp.296 %tmp.299;
+        bf %tmp.300 @_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_89_12_91_12_if_end;
+_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_89_12_91_12_if_true:
+_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_89_36_91_12_start:
+[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 90 16 ]
+        %tmp.302 = lgetv %ObjSteps.7;
+        %tmp.303 = as %tmp.302 { (!Null) };
+        lputv %nbSteps.6 %tmp.303;
+_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_89_36_91_12_stop:
+        goto @_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_89_12_91_12_if_end;
+_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_89_12_91_12_if_end:
+[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 92 12 ]
+        %tmp.304 = 1.0;
+        %tmp.306 = lgetv %nbSteps.6;
+        %tmp.307 = mul %tmp.304 %tmp.306;
+        %tmp.309 = lgetv %ObjSteps.7;
+        %tmp.310 = as %tmp.309 { (!Null) };
+        %tmp.311 = div %tmp.307 %tmp.310;
+        lputv %ratio.9 %tmp.311;
 [ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 93 12 ]
-        %tmp.301 = 1.0;
-        %tmp.303 = lgetv %nbSteps.6;
-        %tmp.304 = mul %tmp.301 %tmp.303;
-        %tmp.306 = lgetv %ObjSteps.7;
-        %tmp.307 = as %tmp.306 { (!Null) };
-        %tmp.308 = div %tmp.304 %tmp.307;
-        lputv %ratio.9 %tmp.308;
+        %tmp.312 = lgetv %dc;
+        %tmp.313 = getv function %tmp.312 :setColor;
+        %tmp.314 = getm $.Toybox.Graphics;
+        %tmp.315 = getv %tmp.314 :COLOR_WHITE;
+        %tmp.316 = getm $.Toybox.Graphics;
+        %tmp.317 = getv %tmp.316 :COLOR_TRANSPARENT;
+        invoke %tmp.312 %tmp.313(%tmp.315, %tmp.317);
 [ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 94 12 ]
-        %tmp.309 = lgetv %dc;
-        %tmp.310 = getv function %tmp.309 :setColor;
-        %tmp.311 = getm $.Toybox.Graphics;
-        %tmp.312 = getv %tmp.311 :COLOR_WHITE;
-        %tmp.313 = getm $.Toybox.Graphics;
-        %tmp.314 = getv %tmp.313 :COLOR_TRANSPARENT;
-        invoke %tmp.309 %tmp.310(%tmp.312, %tmp.314);
-[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 95 12 ]
-        %tmp.315 = lgetv %dc;
-        %tmp.316 = getv function %tmp.315 :drawArc;
-        %tmp.318 = lgetv %WIDTH.1;
-        %tmp.319 = 2;
-        %tmp.320 = div %tmp.318 %tmp.319;
-        %tmp.321 = 7;
-        %tmp.322 = sub %tmp.320 %tmp.321;
-        %tmp.324 = lgetv %HEIGHT.2;
-        %tmp.325 = 2;
-        %tmp.326 = div %tmp.324 %tmp.325;
-        %tmp.327 = 20;
-        %tmp.328 = add %tmp.326 %tmp.327;
-        %tmp.330 = lgetv %HEIGHT.2;
-        %tmp.331 = 2;
-        %tmp.332 = div %tmp.330 %tmp.331;
-        %tmp.334 = lgetv %ArcWidthFill.5;
-        %tmp.335 = 2;
-        %tmp.336 = div %tmp.334 %tmp.335;
-        %tmp.337 = sub %tmp.332 %tmp.336;
-        %tmp.338 = getm $.Toybox.Graphics;
-        %tmp.339 = getv %tmp.338 :ARC_COUNTER_CLOCKWISE;
-        %tmp.340 = 0;
-        %tmp.342 = lgetv %ARCLENGTH.3;
-        %tmp.343 = 2;
-        %tmp.344 = div %tmp.342 %tmp.343;
-        %tmp.345 = sub %tmp.340 %tmp.344;
-        %tmp.346 = 0;
-        %tmp.348 = lgetv %ARCLENGTH.3;
-        %tmp.349 = 2;
-        %tmp.350 = div %tmp.348 %tmp.349;
-        %tmp.351 = sub %tmp.346 %tmp.350;
-        %tmp.353 = lgetv %ARCLENGTH.3;
-        %tmp.355 = lgetv %ratio.9;
-        %tmp.356 = mul %tmp.353 %tmp.355;
-        %tmp.357 = add %tmp.351 %tmp.356;
-        invoke %tmp.315 %tmp.316(%tmp.322, %tmp.328, %tmp.337, %tmp.339, %tmp.345, %tmp.357);
-_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_89_64_96_8_stop:
-        goto @_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_89_8_96_8_if_end;
-_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_89_8_96_8_if_end:
-_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_48_22_97_4_stop:
+        %tmp.318 = lgetv %dc;
+        %tmp.319 = getv function %tmp.318 :drawArc;
+        %tmp.321 = lgetv %WIDTH.1;
+        %tmp.322 = 2;
+        %tmp.323 = div %tmp.321 %tmp.322;
+        %tmp.324 = 7;
+        %tmp.325 = sub %tmp.323 %tmp.324;
+        %tmp.327 = lgetv %HEIGHT.2;
+        %tmp.328 = 2;
+        %tmp.329 = div %tmp.327 %tmp.328;
+        %tmp.330 = 20;
+        %tmp.331 = add %tmp.329 %tmp.330;
+        %tmp.333 = lgetv %HEIGHT.2;
+        %tmp.334 = 2;
+        %tmp.335 = div %tmp.333 %tmp.334;
+        %tmp.337 = lgetv %ArcWidthFill.5;
+        %tmp.338 = 2;
+        %tmp.339 = div %tmp.337 %tmp.338;
+        %tmp.340 = sub %tmp.335 %tmp.339;
+        %tmp.341 = getm $.Toybox.Graphics;
+        %tmp.342 = getv %tmp.341 :ARC_COUNTER_CLOCKWISE;
+        %tmp.343 = 0;
+        %tmp.345 = lgetv %ARCLENGTH.3;
+        %tmp.346 = 2;
+        %tmp.347 = div %tmp.345 %tmp.346;
+        %tmp.348 = sub %tmp.343 %tmp.347;
+        %tmp.349 = 0;
+        %tmp.351 = lgetv %ARCLENGTH.3;
+        %tmp.352 = 2;
+        %tmp.353 = div %tmp.351 %tmp.352;
+        %tmp.354 = sub %tmp.349 %tmp.353;
+        %tmp.356 = lgetv %ARCLENGTH.3;
+        %tmp.358 = lgetv %ratio.9;
+        %tmp.359 = mul %tmp.356 %tmp.358;
+        %tmp.360 = add %tmp.354 %tmp.359;
+        invoke %tmp.318 %tmp.319(%tmp.325, %tmp.331, %tmp.340, %tmp.342, %tmp.348, %tmp.360);
+_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_88_64_95_8_stop:
+        goto @_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_88_8_95_8_if_end;
+_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_88_8_95_8_if_end:
+_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_48_22_96_4_stop:
     }
 }
-[ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 100; ]
+[ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 99; ]
 class FunixWatchView extends WatchUi.WatchFace{
-    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 100; ]
+    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 99; ]
     <init> {
-[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 110 8 ]
-        %tmp.358 = getm $.Toybox.WatchUi;
-        %tmp.359 = getv function %tmp.358 :loadResource;
-        %tmp.361 = getv ? :Rez;
-        %tmp.362 = getv %tmp.361 :Fonts;
-        %tmp.363 = getv %tmp.362 :DejaVu25;
-        %tmp.364 = invoke %tmp.358 %tmp.359(%tmp.363);
-        putv self :fontSecond %tmp.364;
-[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 142 8 ]
-        %tmp.367 = getm $.Toybox.Position;
-        %tmp.368 = getv function ? %tmp.367 :Location;
-        %tmp.369 = newd 3;
-        %tmp.371 = const :latitude;
-        %tmp.372 = 43.1257311;
-        %tmp.373 = dup %tmp.369;
-        %tmp.374 = aputv %tmp.373 %tmp.371 %tmp.372;
-        %tmp.376 = const :longitude;
-        %tmp.377 = 5.9304919;
-        %tmp.378 = dup %tmp.374;
-        %tmp.379 = aputv %tmp.378 %tmp.376 %tmp.377;
-        %tmp.381 = const :format;
-        %tmp.383 = const :degrees;
-        %tmp.384 = dup %tmp.379;
-        %tmp.385 = aputv %tmp.384 %tmp.381 %tmp.383;
-        %tmp.365 = newc %tmp.368 (%tmp.385);
-        putv self :myLocation %tmp.365;
+[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 109 8 ]
+        %tmp.361 = getm $.Toybox.WatchUi;
+        %tmp.362 = getv function %tmp.361 :loadResource;
+        %tmp.364 = getv ? :Rez;
+        %tmp.365 = getv %tmp.364 :Fonts;
+        %tmp.366 = getv %tmp.365 :DejaVu25;
+        %tmp.367 = invoke %tmp.361 %tmp.362(%tmp.366);
+        putv self :fontSecond %tmp.367;
+[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 141 8 ]
+        %tmp.370 = getm $.Toybox.Position;
+        %tmp.371 = getv function ? %tmp.370 :Location;
+        %tmp.372 = newd 3;
+        %tmp.374 = const :latitude;
+        %tmp.375 = 43.1257311;
+        %tmp.376 = dup %tmp.372;
+        %tmp.377 = aputv %tmp.376 %tmp.374 %tmp.375;
+        %tmp.379 = const :longitude;
+        %tmp.380 = 5.9304919;
+        %tmp.381 = dup %tmp.377;
+        %tmp.382 = aputv %tmp.381 %tmp.379 %tmp.380;
+        %tmp.384 = const :format;
+        %tmp.386 = const :degrees;
+        %tmp.387 = dup %tmp.382;
+        %tmp.388 = aputv %tmp.387 %tmp.384 %tmp.386;
+        %tmp.368 = newc %tmp.371 (%tmp.388);
+        putv self :myLocation %tmp.368;
     }
-    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 100; ]
+    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 99; ]
     static
     <init> {
     }
-    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 103; @position = 8; ]
+    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 102; @position = 8; ]
     var clockTime;
-    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 104; @position = 8; ]
+    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 103; @position = 8; ]
     var hourString;
-    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 105; @position = 8; ]
+    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 104; @position = 8; ]
     var minString;
-    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 106; @position = 8; ]
+    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 105; @position = 8; ]
     var viewHeure;
-    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 107; @position = 8; ]
+    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 106; @position = 8; ]
     var viewMin;
-    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 108; @position = 8; ]
+    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 107; @position = 8; ]
     var secondString;
-    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 109; @position = 8; ]
+    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 108; @position = 8; ]
     var viewSecond;
-    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 110; @position = 8; ]
+    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 109; @position = 8; ]
     var fontSecond;
-    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 112; @position = 8; ]
+    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 111; @position = 8; ]
     var today;
-    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 113; @position = 8; ]
+    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 112; @position = 8; ]
     var dateString;
-    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 114; @position = 8; ]
+    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 113; @position = 8; ]
     var viewDate;
-    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 116; @position = 8; ]
+    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 115; @position = 8; ]
     var mystats;
-    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 117; @position = 8; ]
+    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 116; @position = 8; ]
     var batString;
-    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 118; @position = 8; ]
+    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 117; @position = 8; ]
     var viewbat;
-    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 120; @position = 8; ]
+    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 119; @position = 8; ]
     var batteryLevel;
-    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 121; @position = 8; ]
+    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 120; @position = 8; ]
     var viewbatbar;
-    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 123; @position = 8; ]
+    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 122; @position = 8; ]
     var coeurbat;
-    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 124; @position = 8; ]
+    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 123; @position = 8; ]
     var coeurbatString;
-    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 125; @position = 8; ]
+    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 124; @position = 8; ]
     var viewcoeur;
-    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 127; @position = 8; ]
+    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 126; @position = 8; ]
     var pas;
-    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 128; @position = 8; ]
+    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 127; @position = 8; ]
     var pasString;
-    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 129; @position = 8; ]
+    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 128; @position = 8; ]
     var viewpas;
-    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 130; @position = 8; ]
+    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 129; @position = 8; ]
     var viewsteps;
-    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 132; @position = 8; ]
+    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 131; @position = 8; ]
     var loc;
-    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 133; @position = 8; ]
+    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 132; @position = 8; ]
     var lever_moment;
-    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 134; @position = 8; ]
+    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 133; @position = 8; ]
     var coucher_moment;
-    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 135; @position = 8; ]
+    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 134; @position = 8; ]
     var lever;
-    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 136; @position = 8; ]
+    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 135; @position = 8; ]
     var coucher;
-    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 137; @position = 8; ]
+    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 136; @position = 8; ]
     var sunInfoString;
-    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 138; @position = 8; ]
+    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 137; @position = 8; ]
     var viewEphemeride;
-    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 142; @position = 8; ]
+    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 141; @position = 8; ]
     var myLocation;
-    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 149; ]
+    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 148; ]
     function initialize() as Void {
-_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_149_26_160_4_start:
-[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 150 8 ]
+_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_148_26_159_4_start:
+[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 149 8 ]
         %tmp.2 = getv ? :WatchFace;
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 152 8 ]
-        [ "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_149_26_160_4_start" "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_149_26_160_4_stop" ]
+[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 151 8 ]
+        [ "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_148_26_159_4_start" "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_148_26_159_4_stop" ]
         %FunixLogo.1 = local;
         %tmp.6 = getm $.Toybox.WatchUi;
         %tmp.7 = getv function ? %tmp.6 :Bitmap;
@@ -577,8 +580,8 @@ _home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_149_26
         %tmp.16 = aputv %tmp.15 %tmp.10 %tmp.14;
         %tmp.4 = newc %tmp.7 (%tmp.16);
         lputv %FunixLogo.1 %tmp.4;
-[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 154 8 ]
-        [ "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_149_26_160_4_start" "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_149_26_160_4_stop" ]
+[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 153 8 ]
+        [ "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_148_26_159_4_start" "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_148_26_159_4_stop" ]
         %Coeur.2 = local;
         %tmp.19 = getm $.Toybox.WatchUi;
         %tmp.20 = getv function ? %tmp.19 :Bitmap;
@@ -591,8 +594,8 @@ _home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_149_26
         %tmp.29 = aputv %tmp.28 %tmp.23 %tmp.27;
         %tmp.17 = newc %tmp.20 (%tmp.29);
         lputv %Coeur.2 %tmp.17;
-[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 156 8 ]
-        [ "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_149_26_160_4_start" "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_149_26_160_4_stop" ]
+[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 155 8 ]
+        [ "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_148_26_159_4_start" "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_148_26_159_4_stop" ]
         %Pas.3 = local;
         %tmp.32 = getm $.Toybox.WatchUi;
         %tmp.33 = getv function ? %tmp.32 :Bitmap;
@@ -605,8 +608,8 @@ _home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_149_26
         %tmp.42 = aputv %tmp.41 %tmp.36 %tmp.40;
         %tmp.30 = newc %tmp.33 (%tmp.42);
         lputv %Pas.3 %tmp.30;
-[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 158 2 ]
-        [ "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_149_26_160_4_start" "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_149_26_160_4_stop" ]
+[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 157 2 ]
+        [ "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_148_26_159_4_start" "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_148_26_159_4_stop" ]
         %Sunrise.4 = local;
         %tmp.45 = getm $.Toybox.WatchUi;
         %tmp.46 = getv function ? %tmp.45 :Bitmap;
@@ -619,8 +622,8 @@ _home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_149_26
         %tmp.55 = aputv %tmp.54 %tmp.49 %tmp.53;
         %tmp.43 = newc %tmp.46 (%tmp.55);
         lputv %Sunrise.4 %tmp.43;
-[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 159 8 ]
-        [ "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_149_26_160_4_start" "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_149_26_160_4_stop" ]
+[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 158 8 ]
+        [ "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_148_26_159_4_start" "_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_148_26_159_4_stop" ]
         %Sunset.5 = local;
         %tmp.58 = getm $.Toybox.WatchUi;
         %tmp.59 = getv function ? %tmp.58 :Bitmap;
@@ -633,12 +636,12 @@ _home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_149_26
         %tmp.68 = aputv %tmp.67 %tmp.62 %tmp.66;
         %tmp.56 = newc %tmp.59 (%tmp.68);
         lputv %Sunset.5 %tmp.56;
-_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_149_26_160_4_stop:
+_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_148_26_159_4_stop:
     }
-    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 163; ]
+    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 162; ]
     function onLayout(dc as Dc) as Void {
-_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_163_40_165_4_start:
-[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 164 8 ]
+_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_162_40_164_4_start:
+[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 163 8 ]
         %tmp.1 = self;
         %tmp.2 = getv function %tmp.1 :setLayout;
         %tmp.4 = getv ? :Rez;
@@ -647,28 +650,28 @@ _home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_163_40
         %tmp.8 = lgetv %dc;
         %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
         invoke %tmp.1 %tmp.2(%tmp.9);
-_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_163_40_165_4_stop:
+_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_162_40_164_4_stop:
     }
-    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 170; ]
+    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 169; ]
     function onShow() as Void {
     }
-    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 178; ]
+    [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 177; ]
     function onPartialUpdate(dc) {
-_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_178_33_216_4_start:
-[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 180 8 ]
+_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_177_33_216_4_start:
+[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 179 8 ]
         %tmp.1 = getm $.Toybox.System;
         %tmp.2 = getv function %tmp.1 :getClockTime;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         putv self :clockTime %tmp.3;
-[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 183 8 ]
+[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 182 8 ]
         %tmp.4 = lgetv %dc;
         %tmp.5 = getv function %tmp.4 :setClip;
-        %tmp.6 = 134;
+        %tmp.6 = 135;
         %tmp.7 = 80;
         %tmp.8 = 30;
         %tmp.9 = 30;
         invoke %tmp.4 %tmp.5(%tmp.6, %tmp.7, %tmp.8, %tmp.9);
-[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 184 2 ]
+[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 183 2 ]
         %tmp.10 = lgetv %dc;
         %tmp.11 = getv function %tmp.10 :setColor;
         %tmp.12 = getm $.Toybox.Graphics;
@@ -676,12 +679,13 @@ _home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_178_33
         %tmp.14 = getm $.Toybox.Graphics;
         %tmp.15 = getv %tmp.14 :COLOR_BLACK;
         invoke %tmp.10 %tmp.11(%tmp.13, %tmp.15);
-[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 190 2 ]
+[ "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc" 189 2 ]
         %tmp.16 = lgetv %dc;
         %tmp.17 = getv function %tmp.16 :drawText;
         %tmp.18 = 134;
-        %tmp.19 = 80;
-        %tmp.21 = getv ? :fontSecond;
+        %tmp.19 = 82;
+        %tmp.20 = getm $.Toybox.Graphics;
+        %tmp.21 = getv %tmp.20 :FONT_MEDIUM;
         %tmp.23 = getv ? :clockTime;
         %tmp.24 = getv %tmp.23 :sec;
         %tmp.25 = getv function %tmp.24 :format;
@@ -730,7 +734,7 @@ _home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_201_8_
         %tmp.51 = lgetv %dc;
         %tmp.52 = getv function %tmp.51 :drawText;
         %tmp.53 = 152;
-        %tmp.54 = 10;
+        %tmp.54 = 8;
         %tmp.55 = getm $.Toybox.Graphics;
         %tmp.56 = getv %tmp.55 :FONT_XTINY;
         %tmp.58 = getv ? :coeurbat;
@@ -741,7 +745,7 @@ _home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_201_8_
         %tmp.61 = lgetv %dc;
         %tmp.62 = getv function %tmp.61 :clearClip;
         invoke %tmp.61 %tmp.62();
-_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_178_33_216_4_stop:
+_home_olivier_eclipse_workspace_Funix_watch_source_FunixWatch_wordView_mc_177_33_216_4_stop:
     }
     [ @file = "/home/olivier/eclipse-workspace/Funix-watch/source/FunixWatch-wordView.mc"; @line = 218; ]
     function onUpdate(dc as Dc) as Void {
