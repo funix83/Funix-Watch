@@ -27,6 +27,12 @@ These sources are made available under GPL license for educational purposes with
 
 ## Change Log
 
+*Version 0.4.0*
+
+With a uniform font for hours and minutes
+
+![Garmin-Funix-Watch-1440-720-v0 4 0](https://github.com/user-attachments/assets/cfd318fc-26e8-44a6-8ec0-4c5b2b96dcc9)
+
 *Version 0.3.0*
 
 With the day of week, a different font for seconds and update of heartbeat every seconds
