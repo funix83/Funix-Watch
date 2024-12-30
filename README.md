@@ -31,6 +31,8 @@ These sources are made available under GPL license for educational purposes with
 
 With the day of week, a different font for seconds and update of heartbeat every seconds
 
+![Garmin-Funix-Watch-1440-720-v0 3 0](https://github.com/user-attachments/assets/ff99f5f5-88b9-4772-9dbf-26fe19347b03)
+
 *Version 0.2.0*
 
 With the arc-shaped gauges for battery and steps and a outline font for minutes
