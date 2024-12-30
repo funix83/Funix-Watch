@@ -106,7 +106,8 @@ class FunixWatchView extends WatchUi.WatchFace
     var viewMin;
     var secondString;
     var viewSecond;
-    var fontSecond=WatchUi.loadResource(Rez.Fonts.DejaVu25);
+    var viewSeparation;
+    var separation;
     //variables date
     var today;
     var dateString;
@@ -177,7 +178,7 @@ class FunixWatchView extends WatchUi.WatchFace
     function onPartialUpdate(dc) {
         // affichage des secondes dans un petit carré
         clockTime = System.getClockTime();
-        // définition de la zone des seconds à rafraichir
+        // définition de la zone des secondes à rafraichir
         // definition of the area for displaying seconds to refresh
         dc.setClip(135,80,30,30);
 		dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
@@ -187,9 +188,8 @@ class FunixWatchView extends WatchUi.WatchFace
         // seconds display
         // be careful to put the same position and the same font as in layout.xml
 		dc.drawText(
-				134,
+				132,
 				82,
-				//fontSecond,
                 Graphics.FONT_MEDIUM,
                 clockTime.sec.format("%02d"),
 				Graphics.TEXT_JUSTIFY_LEFT
@@ -219,9 +219,13 @@ class FunixWatchView extends WatchUi.WatchFace
         
         // affichage de l'heure / hour display
         clockTime = System.getClockTime();
-        hourString = Lang.format("$1$:", [clockTime.hour.format("%02d")]);
+        hourString = Lang.format("$1$", [clockTime.hour.format("%02d")]);
         viewHeure = View.findDrawableById("HourLabel") as Text;
         viewHeure.setText(hourString);
+        // affichage du : entre l'heure et la minute / display : between hour and minute
+        separation = ":";
+        viewSeparation = View.findDrawableById("Separation") as Text;
+        viewSeparation.setText(separation);
         // affichage des minutes / minutes display
         minString = Lang.format("$1$", [clockTime.min.format("%02d")]);
         viewMin = View.findDrawableById("MinLabel") as Text;
