@@ -27,7 +27,13 @@ These sources are made available under GPL license for educational purposes with
 
 ## Change Log
 
-*Version 0.4.0*
+* Version 1.0.0
+
+color inversion in the top right dial
+
+![Garmin-Funix-Watch-1440-720-v0 5 0](https://github.com/user-attachments/assets/c50e7b90-65aa-4d4d-919c-429a8b949337)
+
+* *Version 0.4.0*
 
 With a uniform font for hours and minutes
 
