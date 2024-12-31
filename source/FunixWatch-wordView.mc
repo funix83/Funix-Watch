@@ -33,11 +33,13 @@ class Batterie extends WatchUi.Drawable
     }
 }*/
 
+// class pour l'affichage des gauges batterie et ratio pas/objectif pas quotidien
+// en forme d'arc de cercle
+// class for drawing Body Battery and Steps arcs
+// librement inspiré du site / freely inspired by the site
+// https://medium.com/@ericbt/design-your-own-garmin-watch-face-21d004d38f99
 class JaugePasBatArc extends WatchUi.Drawable
 {
-    // Draw Body Battery and Steps arcs
-    // librement inspiré du site / freely inspired by the site
-    // https://medium.com/@ericbt/design-your-own-garmin-watch-face-21d004d38f99
     var steps;
     var stepGoal;
     
@@ -96,6 +98,56 @@ class JaugePasBatArc extends WatchUi.Drawable
     }
 }
 
+// class pour l'affichage du cadran circulaire en haut à droite
+// affichage noir sur fond transparent
+// class for displaying the circular dial at the top right
+// black display on transparent background
+class cadran extends WatchUi.Drawable
+{
+        
+    function initialize(options) {
+        Drawable.initialize(options);
+    }
+
+     function draw(dc) {
+        
+        var pas = ActivityMonitor.getInfo().steps;
+        var fontPas=WatchUi.loadResource(Rez.Fonts.PasFont);
+        if (pas == null)
+        {
+            pas = "0";
+        }
+       
+        var coeurbat = Activity.getActivityInfo().currentHeartRate;
+        if (coeurbat == null)
+        {
+            coeurbat = "0";
+        }
+        
+        // remplissage du cadran / fill the circular dial
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        dc.fillCircle(144, 31, 31);
+
+        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
+        //dessin heartbeat / heartbeat display
+        dc.drawText(
+				152,
+				8,
+                Graphics.FONT_XTINY,
+                coeurbat,
+				Graphics.TEXT_JUSTIFY_CENTER
+		);
+        //dessin pas / step display
+        dc.drawText(
+				150,
+				32,
+                fontPas,
+                pas,
+				Graphics.TEXT_JUSTIFY_CENTER
+		);
+     }
+}
+
 class FunixWatchView extends WatchUi.WatchFace
 {
     //variables pour l'heure
@@ -148,15 +200,6 @@ class FunixWatchView extends WatchUi.WatchFace
 
     function initialize() {
         WatchFace.initialize();
-        // affichage logo Funix / display Funix logo
-        var FunixLogo = new WatchUi.Bitmap({:rezId=>Rez.Drawables.FunixLogo});
-        // affichage logo coeur / display heart logo
-        var Coeur = new WatchUi.Bitmap({:rezId=>Rez.Drawables.Coeur});
-        // affichage logo pas /display step logo
-        var Pas = new WatchUi.Bitmap({:rezId=>Rez.Drawables.Pas});
-        // affichage sunrise sunset / display sunrise & sunset logo
-		var Sunrise = new WatchUi.Bitmap({:rezId=>Rez.Drawables.Sunrise});
-        var Sunset = new WatchUi.Bitmap({:rezId=>Rez.Drawables.Sunset});
     }
 
     // Load your resources here
@@ -180,7 +223,7 @@ class FunixWatchView extends WatchUi.WatchFace
         clockTime = System.getClockTime();
         // définition de la zone des secondes à rafraichir
         // definition of the area for displaying seconds to refresh
-        dc.setClip(135,80,30,30);
+        dc.setClip(132,80,30,30);
 		dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
         // affichage des secondes
         // attention de mettre la même position
@@ -196,14 +239,15 @@ class FunixWatchView extends WatchUi.WatchFace
 			);
        
         // seconde zone à dessiner pour la mise à jour du battement de coeur
-        // second area to draw for heartbeat update
+        // couleur noir sur blanc
+        // second area to draw for heartbeat update, black color on white
         coeurbat = Activity.getActivityInfo().currentHeartRate;
         if (coeurbat == null)
         {
             coeurbat ="0";
         }
         dc.setClip(142,7,30,40);
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
+        dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
         dc.drawText(
                 152,
                 8,
@@ -214,6 +258,7 @@ class FunixWatchView extends WatchUi.WatchFace
 
         dc.clearClip();
     }
+   
     // Update the view every minute
     function onUpdate(dc as Dc) as Void {
         
@@ -244,24 +289,6 @@ class FunixWatchView extends WatchUi.WatchFace
         batString = Lang.format("$1$j", [mystats.batteryInDays.format("%2d")]);
         viewbat = View.findDrawableById("BatteryDisplay") as Text;
         viewbat.setText(batString);
-        // affichage hearbeat / display heartbeat
-        coeurbat = Activity.getActivityInfo().currentHeartRate;
-        if (coeurbat == null)
-        {
-            coeurbat ="0";
-        }
-        coeurbatString = coeurbat.toString();
-        viewcoeur = View.findDrawableById("HeartBeat") as Text;
-        viewcoeur.setText(coeurbatString);
-        // affichage nombre de pas quotidien / daily steps display
-        pas = ActivityMonitor.getInfo().steps;
-        if (pas == null)
-        {
-            pas = "0";
-        }
-        pasString = pas.toString();
-        viewpas = View.findDrawableById("Pas") as Text;
-        viewpas.setText(pasString);
         // affichage heures coucher et lever du soleil / display sunset and sunrise times
         var loc = Toybox.Activity.getActivityInfo().currentLocation;
         if (loc == null)
