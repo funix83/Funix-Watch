@@ -10,7 +10,9 @@
     </drawable>
     <drawable id="Cadran" class="cadran">
     </drawable>
-    <bitmap id="FunixLogo" x="25" y="8" filename="../drawables/avatar.png" />
+    <drawable id="SignalGPS" class="signalGPS">
+    </drawable>
+    <bitmap id="FunixLogo" x="25" y="6" filename="../drawables/avatar.png" />
     <bitmap id="Sunrise" x="25" y="130" filename="../drawables/sunrise.png" />
     <bitmap id="Sunset" x="90" y="130" filename="../drawables/sunset.png" />
     <bitmap id="Coeur" x="120" y="12" filename="../drawables/coeur-noir.png" />

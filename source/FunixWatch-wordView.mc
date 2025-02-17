@@ -33,6 +33,63 @@ class Batterie extends WatchUi.Drawable
     }
 }*/
 
+// classe pour l'affichage du signal GPS
+// attention pour les applications de type watchface
+// le GPS est désactivé par défaut, il faudra lancer une activité
+// pour avoir l'état GPS
+// class for displaying icon GPS quality
+// gps is disabled for watchface app, you must run an activity
+// to have gps quality
+class signalGPS extends WatchUi.Drawable
+{
+    function initialize(options) {
+        Drawable.initialize(options);
+    }
+
+    function draw(dc) {
+    
+        var gpsinfo = Position.getInfo();
+        var qualiteGPS= gpsinfo.accuracy;
+        var imageGPS;
+
+        switch(qualiteGPS) {
+            case 0: {
+                // GPS non dispo / non available GPS QUALITY_NOT_AVAILABLE
+                imageGPS= WatchUi.loadResource( Rez.Drawables.gpsSignal0 );
+                break;
+            }
+            case 1: {
+                //GPS non connu, dernière position choisie / last known position QUALITY_LAST_KNOWN
+                imageGPS = WatchUi.loadResource( Rez.Drawables.gpsSignal0 );
+                break;
+            }    
+            case 2: {
+                //GPS qualité pauvre / poor quality QUALITY_POOR
+                imageGPS = WatchUi.loadResource( Rez.Drawables.gpsSignal25 );
+                break;
+            }
+            case 3: {
+                //GPS qualité utilisable / usable gps QUALITY_USABLE
+                 imageGPS = WatchUi.loadResource( Rez.Drawables.gpsSignal75 );
+                break;
+            }
+            case 4 : {
+                //bonne qualité GPS / good quality GUALITY_GOOD
+                imageGPS = WatchUi.loadResource( Rez.Drawables.gpsSignal100 );
+                break;
+            }
+            default: {
+                // par défaut pas de réception
+                imageGPS = WatchUi.loadResource( Rez.Drawables.gpsSignal0 );
+                break;
+            }
+        }
+
+        dc.drawBitmap( 85, 64, imageGPS );
+
+    }
+
+}
 // class pour l'affichage des gauges batterie et ratio pas/objectif pas quotidien
 // en forme d'arc de cercle
 // class for drawing Body Battery and Steps arcs
@@ -55,6 +112,7 @@ class JaugePasBatArc extends WatchUi.Drawable
         var ArcWidthFill = 10;
         var nbSteps = ActivityMonitor.getInfo().steps;
         var ObjSteps = Toybox.ActivityMonitor.getInfo().stepGoal;
+        //var ObjSteps = 10000;
         var nivbatterie = System.getSystemStats().battery;
         var ratio;
      
@@ -131,11 +189,11 @@ class cadran extends WatchUi.Drawable
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
         //dessin heartbeat / heartbeat display
         dc.drawText(
-				152,
+				143,
 				8,
                 Graphics.FONT_XTINY,
                 coeurbat,
-				Graphics.TEXT_JUSTIFY_CENTER
+				Graphics.TEXT_JUSTIFY_LEFT
 		);
         //dessin pas / step display
         dc.drawText(
@@ -249,11 +307,11 @@ class FunixWatchView extends WatchUi.WatchFace
         dc.setClip(142,7,30,40);
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_WHITE);
         dc.drawText(
-                152,
+                143,
                 8,
                 Graphics.FONT_XTINY,
                 coeurbat,
-                Graphics.TEXT_JUSTIFY_CENTER
+                Graphics.TEXT_JUSTIFY_LEFT
         );
 
         dc.clearClip();

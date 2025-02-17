@@ -1,3 +1,7 @@
 <drawables>
     <bitmap id="LauncherIcon" filename="launcher_icon.png" />
+    <bitmap id="gpsSignal25"  filename="gps-signal-25.png" />
+    <bitmap id="gpsSignal0" filename="gps-signal-0.png" />
+    <bitmap id="gpsSignal75" filename="gps-signal-75.png" />
+    <bitmap id="gpsSignal100" filename="gps-signal-100.png" />
 </drawables>
