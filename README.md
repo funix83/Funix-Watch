@@ -27,7 +27,13 @@ These sources are made available under GPL license for educational purposes with
 
 ## Change Log
 
-* Version 1.0.0
+* *Version 1.1.0*
+
+Icon of quality GPS (GPS is unavalaible with watchface app, only works when an activity is launched)
+
+![Garmin-Funix-Watch-1440-720-v1 1 0](https://github.com/user-attachments/assets/af6db280-269e-4106-94a9-e2c0e75d99d5)
+
+* *Version 1.0.0*
 
 color inversion in the top right dial
 
@@ -39,19 +45,19 @@ With a uniform font for hours and minutes
 
 ![Garmin-Funix-Watch-1440-720-v0 4 0](https://github.com/user-attachments/assets/cfd318fc-26e8-44a6-8ec0-4c5b2b96dcc9)
 
-*Version 0.3.0*
+* *Version 0.3.0*
 
 With the day of week, a different font for seconds and update of heartbeat every seconds
 
 ![Garmin-Funix-Watch-1440-720-v0 3 0](https://github.com/user-attachments/assets/ff99f5f5-88b9-4772-9dbf-26fe19347b03)
 
-*Version 0.2.0*
+* *Version 0.2.0*
 
 With the arc-shaped gauges for battery and steps and a outline font for minutes
 
   ![connectiq-funixv2-1](https://github.com/user-attachments/assets/441986ec-3ff9-4586-9282-b6e05f36a5e8)
 
-*Version 0.1.0*
+* *Version 0.1.0*
 
 Initial version with a rectangle gauge for battery
 
